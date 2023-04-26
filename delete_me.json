@@ -1,0 +1,256 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "name": "write-01",
+            "size": 10,
+            "id": "w"
+        },
+        {
+            "name": "and",
+            "size": 10,
+            "id": "a"
+        },
+        {
+            "name": "person",
+            "size": 10,
+            "id": "p"
+        },
+        {
+            "name": "name",
+            "size": 10,
+            "id": "n"
+        },
+        {
+            "name": "Jacqui",
+            "size": 10,
+            "id": "3"
+        },
+        {
+            "name": "Palumbo",
+            "size": 10,
+            "id": "4"
+        },
+        {
+            "name": "multi-sentence",
+            "size": 10,
+            "id": "m3"
+        },
+        {
+            "name": "person",
+            "size": 10,
+            "id": "p2"
+        },
+        {
+            "name": "name",
+            "size": 10,
+            "id": "n2"
+        },
+        {
+            "name": "Ana",
+            "size": 10,
+            "id": "1"
+        },
+        {
+            "name": "Rosado",
+            "size": 10,
+            "id": "5"
+        },
+        {
+            "name": "have-org-role-91",
+            "size": 10,
+            "id": "h"
+        },
+        {
+            "name": "publication",
+            "size": 10,
+            "id": "p3"
+        },
+        {
+            "name": "name",
+            "size": 10,
+            "id": "n3"
+        },
+        {
+            "name": "CNN",
+            "size": 10,
+            "id": "2"
+        },
+        {
+            "name": "it",
+            "size": 10,
+            "id": "i"
+        },
+        {
+            "name": "look-02",
+            "size": 10,
+            "id": "l"
+        },
+        {
+            "name": "month",
+            "size": 10,
+            "id": "m"
+        },
+        {
+            "name": "fashion",
+            "size": 10,
+            "id": "f"
+        },
+        {
+            "name": "month",
+            "size": 10,
+            "id": "m2"
+        },
+        {
+            "name": "resemble-01",
+            "size": 10,
+            "id": "r"
+        },
+        {
+            "name": "-",
+            "size": 10,
+            "id": "0"
+        },
+        {
+            "name": "other",
+            "size": 10,
+            "id": "o"
+        }
+    ],
+    "links": [
+        {
+            "amr_edge": ":ARG0",
+            "width": 1,
+            "source": "w",
+            "target": "a"
+        },
+        {
+            "amr_edge": ":snt1",
+            "width": 1,
+            "source": "w",
+            "target": "m3"
+        },
+        {
+            "amr_edge": ":op1",
+            "width": 1,
+            "source": "a",
+            "target": "p"
+        },
+        {
+            "amr_edge": ":op2",
+            "width": 1,
+            "source": "a",
+            "target": "p2"
+        },
+        {
+            "amr_edge": ":name",
+            "width": 1,
+            "source": "p",
+            "target": "n"
+        },
+        {
+            "amr_edge": ":op1",
+            "width": 1,
+            "source": "n",
+            "target": "3"
+        },
+        {
+            "amr_edge": ":op2",
+            "width": 1,
+            "source": "n",
+            "target": "4"
+        },
+        {
+            "amr_edge": ":snt2",
+            "width": 1,
+            "source": "m3",
+            "target": "l"
+        },
+        {
+            "amr_edge": ":name",
+            "width": 1,
+            "source": "p2",
+            "target": "n2"
+        },
+        {
+            "amr_edge": ":ARG0-of",
+            "width": 1,
+            "source": "p2",
+            "target": "h"
+        },
+        {
+            "amr_edge": ":op1",
+            "width": 1,
+            "source": "n2",
+            "target": "1"
+        },
+        {
+            "amr_edge": ":op2",
+            "width": 1,
+            "source": "n2",
+            "target": "5"
+        },
+        {
+            "amr_edge": ":ARG1",
+            "width": 1,
+            "source": "h",
+            "target": "p3"
+        },
+        {
+            "amr_edge": ":name",
+            "width": 1,
+            "source": "p3",
+            "target": "n3"
+        },
+        {
+            "amr_edge": ":op1",
+            "width": 1,
+            "source": "n3",
+            "target": "2"
+        },
+        {
+            "amr_edge": ":ARG0",
+            "width": 1,
+            "source": "i",
+            "target": "l"
+        },
+        {
+            "amr_edge": ":ARG1",
+            "width": 1,
+            "source": "l",
+            "target": "m2"
+        },
+        {
+            "amr_edge": ":ARG2",
+            "width": 1,
+            "source": "m",
+            "target": "r"
+        },
+        {
+            "amr_edge": ":mod",
+            "width": 1,
+            "source": "m",
+            "target": "o"
+        },
+        {
+            "amr_edge": ":mod",
+            "width": 1,
+            "source": "f",
+            "target": "m2"
+        },
+        {
+            "amr_edge": ":ARG1-of",
+            "width": 1,
+            "source": "m2",
+            "target": "r"
+        },
+        {
+            "amr_edge": ":polarity",
+            "width": 1,
+            "source": "r",
+            "target": "0"
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    .links line {
+        stroke: #999;
+        stroke-opacity: 0.6;
+    }
+
+    .nodes circle {
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+
+    .text {
+        font: 10px sans-serif;
+        pointer-events: none;
+        text-anchor: middle;
+    }
+
+    .edgetext {
+        font: 10px sans-serif;
+        pointer-events: none;
+        text-anchor: middle;
+    }
+</style>
+<label for="nodeSize">Node Size: </label><input type="range" id="nodeSize" name="nodeSize" min="1" max="50" value="10"
+    step="1">
+<label for="edgeSize">Edge Size: </label><input type="range" id="edgeSize" name="edgeSize" min="1" max="50" value="1"
+    step="1">
+<label for="distance">Distance: </label><input type="range" id="distance" name="distance" min="-1000" max="1000"
+    value="-500" step="10">
+<label for="fontSize">Font Size: </label>
+<input type="range" min="6" max="24" value="10" id="fontSize">
+
+<svg id="dynamic-svg"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+    var width = window.innerWidth,
+        height = window.innerHeight;
+
+    var nodeSize = document.getElementById("nodeSize").value;
+    var edgeSize = document.getElementById("edgeSize").value;
+    var distance = document.getElementById("distance").value;
+
+    var svg = d3.select("#dynamic-svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(100))
+        .force("charge", d3.forceManyBody().strength(distance))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+
+    d3.json("delete_me.json", function (graph) {
+
+        var link = svg.append("g")
+            .attr("class", "links")
+            .attr("id", "linksGroup")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", edgeSize);
+
+        var node = svg.append("g")
+            .attr("class", "nodes")
+            .attr("id", "nodesGroup")
+            .selectAll("circle")
+            .data(graph.nodes)
+            .enter().append("circle")
+            .attr("r", 10)
+            .attr("fill", function (d) { return color(d.group); })
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+
+
+        var text = svg.append("g")
+            .attr("class", "text")
+            .selectAll("text")
+            .data(graph.nodes)
+            .enter().append("text")
+            .text(function (d) { return d.name; });
+
+        var edgeText = svg.append("g")
+            .attr("class", "edgetext")
+            .selectAll("text")
+            .data(graph.links)
+            .enter().append("text")
+            .text(function (d) { return d.amr_edge; });
+
+        simulation
+            .nodes(graph.nodes)
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(graph.links);
+
+        function ticked() {
+            link
+                .attr("x1", function (d) { return d.source.x; })
+                .attr("y1", function (d) { return d.source.y; })
+                .attr("x2", function (d) { return d.target.x; })
+                .attr("y2", function (d) { return d.target.y; });
+
+            node
+                .attr("cx", function (d) { return d.x; })
+                .attr("cy", function (d) { return d.y; });
+
+            text
+                .attr("x", function (d) { return d.x; })
+                .attr("y", function (d) { return d.y; });
+
+            edgeText
+                .attr("x", function (d) { return (d.source.x + d.target.x) / 2; })
+                .attr("y", function (d) { return (d.source.y + d.target.y) / 2; });
+        }
+    });
+
+    function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+
+    function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    }
+
+    function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+    }
+    
+    document.getElementById("nodeSize").addEventListener("input", function () {
+        nodeSize = this.value;
+        d3.select("#nodesGroup").selectAll("circle").attr("r", nodeSize); // Modify this line
+    });
+
+
+    document.getElementById("edgeSize").addEventListener("input", function () {
+        edgeSize = this.value;
+        d3.select("#linksGroup").selectAll("line").attr("stroke-width", edgeSize);
+    });
+
+    document.getElementById("distance").addEventListener("input", function () {
+        distance = this.value;
+        simulation.force("charge", d3.forceManyBody().strength(distance));
+        simulation.alphaTarget(0.3).restart();
+    });
+
+    document.getElementById("fontSize").addEventListener("input", function () {
+        var fontSize = this.value;
+        d3.selectAll(".text").style("font-size", fontSize + "px");
+        d3.selectAll(".edgetext").style("font-size", fontSize + "px");
+    });
+
+
+</script>
