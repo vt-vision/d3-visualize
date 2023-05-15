@@ -74,8 +74,6 @@
         svg.selectAll('g').attr("transform", transform);
     }
 
-        
-
     var color = d3.scaleOrdinal(d3.schemeCategory10);
 
     var simulation = d3.forceSimulation()
@@ -84,7 +82,7 @@
             .force("center", d3.forceCenter(width / 2, height / 2))
             .force("collide", d3.forceCollide().radius(function (d) { return nodeSize + 1; }));
 
-    d3.json("delete_me.json", function (graph) {
+    d3.json("kg-storage-link/5291/graph.json", function (graph) {
 
         var link = svg.append("g")
             .attr("class", "links")
