@@ -45,6 +45,8 @@
     <svg id="dynamic-svg"></svg>
 </div>
 
+<button id="saveButton">Save SVG</button>
+
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
     var width = window.innerWidth,
@@ -82,7 +84,7 @@
             .force("center", d3.forceCenter(width / 2, height / 2))
             .force("collide", d3.forceCollide().radius(function (d) { return nodeSize + 1; }));
 
-    d3.json("kg-storage-link/5291/graph.json", function (graph) {
+    d3.json("./graph2.json", function (graph) {
 
         var link = svg.append("g")
             .attr("class", "links")
@@ -91,6 +93,7 @@
             .data(graph.links)
             .enter().append("line")
             .attr("stroke-width", edgeSize)
+            .style("stroke", function (d) { return d.edge_info === ':coref_event' ? 'green' : '#999'; })
             .style("stroke", function(d) { return d.edge_info === ':coref' ? 'red' : '#999'; });
 
 
@@ -218,5 +221,23 @@
         d3.selectAll(".edgetext").style("font-size", fontSize + "px");
     });
 
+    document.getElementById("saveButton").addEventListener("click", function () {
+            // Get the SVG content
+            var svgData = document.getElementById("dynamic-svg").outerHTML;
+
+            // Create a Blob object with the SVG content and specify the SVG MIME type
+            var blob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
+
+            // Create a URL for the Blob object
+            var url = URL.createObjectURL(blob);
+
+            // Create a temporary link and click it to start the download
+            var downloadLink = document.createElement("a");
+            downloadLink.href = url;
+            downloadLink.download = "graph.svg";
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+    });
 
 </script>
