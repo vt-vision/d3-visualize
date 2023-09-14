@@ -47,7 +47,7 @@
 
 <button id="saveButton">Save SVG</button>
 
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
     var width = window.innerWidth,
         height = window.innerHeight;
@@ -58,22 +58,10 @@
 
 
     var svgContainer = d3.select('#svgContainer');
-    const svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height);
-
-    // Create a single arrow marker
-    svg.append("defs").append("marker")
-        .attr("id", "arrow")
-        .attr("viewBox", "0 -5 10 10")
-        .attr("refX", 20)  // Adjust this for the position of the arrow tip
-        .attr("refY", 0)
-        .attr("markerWidth", 10)  // Adjust for size of the arrow
-        .attr("markerHeight", 10)
-        .attr("orient", "auto")
-        .append("path")
-        .attr("fill", color)  // Use your desired color here
-        .attr("d", 'M0,-5L10,0L0,5');  // Adjust this for the shape of the arrow
+    var svg = d3.select("#dynamic-svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 " + width + " " + height)
+        .classed("svg-content", true);
 
 
     // Define the zoom behavior, limiting the scale extent to 20x and translate extent to the size of the svg.
@@ -83,10 +71,10 @@
 
     svg.call(zoom);
 
-    function zoomed(event) {
-        svg.selectAll('g').attr("transform", event.transform);
+    function zoomed() {
+        var transform = d3.event.transform;
+        svg.selectAll('g').attr("transform", transform);
     }
-
 
     var color = d3.scaleOrdinal(d3.schemeCategory10);
 
@@ -96,7 +84,7 @@
         .force("center", d3.forceCenter(width / 2, height / 2))
         .force("collide", d3.forceCollide().radius(function (d) { return nodeSize + 1; }));
 
-    d3.json("./graph.json").then(function (graph) {
+    d3.json("./graph.json", function (graph) {
 
         var link = svg.append("g")
             .attr("class", "links")
@@ -105,10 +93,9 @@
             .data(graph.links)
             .enter().append("line")
             .attr("stroke-width", edgeSize)
-            .style("stroke", function (d) {
-                return d.edge_info === ":evidence" ? "#3d9ff5" : d.edge_info === ":event" ? "green" : d.edge_info === ":entity" ? "red" : "#999";
-            });
-        link.attr("marker-end", "url(#arrow)");
+            .style("stroke", function (d) { return d.edge_info === ':event' ? 'green' : '#999'; })
+            .style("stroke", function (d) { return d.edge_info === ':entity' ? 'red' : '#999'; });
+
 
         var node = svg.append("g")
             .attr("class", "nodes")
@@ -136,17 +123,15 @@
                     return document.createElementNS("http://www.w3.org/2000/svg", "circle");
                 }
             })
-            .attr("r", function (d) { return d.image ? 50 : 10; })  // Modify this line
+            .attr("r", function (d) { return d.image ? 100 : 10; })  // Modify this line
             .attr("class", function (d) { return d.image ? "image" : ""; })
-            .attr("fill", function (d) {
-                return d.image ? "url(#pattern" + d.id + ")" :
-                    d.label ? d.label == "entailment" ? "#5af542" : "#f20a0a" : color(d.group.split("-")[0]);
-            })
-
+            .attr("fill", function (d) { return d.image ? "url(#pattern" + d.id + ")" : color(d.group.split("-")[0]); })
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
                 .on("end", dragended));
+
+
 
 
         var text = svg.append("g")
@@ -154,9 +139,7 @@
             .selectAll("text")
             .data(graph.nodes)
             .enter().append("text")
-            .filter(function (d) { return !d.image; })  // only append text if there's no image for the node
             .text(function (d) { return d.amr_token; });
-
 
         var edgeText = svg.append("g")
             .attr("class", "edgetext")
@@ -198,27 +181,31 @@
         }
     });
 
-    function dragstarted(event, d) {
-        if (!event.active) simulation.alphaTarget(0.3).restart();
+    function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
         d.fx = d.x;
         d.fy = d.y;
     }
 
-    function dragged(event, d) {
-        d.fx = event.x;
-        d.fy = event.y;
+    function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
     }
 
-    function dragended(event, d) {
-        if (!event.active) simulation.alphaTarget(0);
+    function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(0);
         d.fx = null;
         d.fy = null;
     }
 
-
     document.getElementById("nodeSize").addEventListener("input", function () {
         nodeSize = this.value;
-        d3.select("#nodesGroup").selectAll("circle").attr("r", nodeSize);
+        nodeSize = this.value;
+        d3.select("#nodesGroup").selectAll("circle")
+            .attr("r", function (d) {
+            return d.image ? nodeSize * 5 : nodeSize;
+        });
+        
     });
 
 
