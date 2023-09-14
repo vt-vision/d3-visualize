@@ -96,7 +96,7 @@
         .force("center", d3.forceCenter(width / 2, height / 2))
         .force("collide", d3.forceCollide().radius(function (d) { return nodeSize + 1; }));
 
-    d3.json("./claim.json").then(function (graph) {
+    d3.json("./graph.json").then(function (graph) {
 
         var link = svg.append("g")
             .attr("class", "links")
