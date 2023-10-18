@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    #svgContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .links line {
+        stroke: #999;
+        stroke-opacity: 0.6;
+    }
+
+    .nodes circle {
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+
+    .nodes .image {
+        stroke-width: 1.5px;
+    }
+
+    .text {
+        font: 10px sans-serif;
+        pointer-events: none;
+        text-anchor: middle;
+    }
+
+    .edgetext {
+        font: 10px sans-serif;
+        pointer-events: none;
+        text-anchor: middle;
+    }
+</style>
+<label for="nodeSize">Node Size: </label><input type="range" id="nodeSize" name="nodeSize" min="1" max="100" value="1"
+    step="1">
+<label for="edgeSize">Edge Size: </label><input type="range" id="edgeSize" name="edgeSize" min="1" max="100" value="1"
+    step="1">
+<label for="distance">Distance: </label><input type="range" id="distance" name="distance" min="-2000" max="2000"
+    value="-500" step="10">
+<label for="fontSize">Font Size: </label>
+<input type="range" min="6" max="100" value="1" id="fontSize">
+
+<div id="svgContainer">
+    <svg id="dynamic-svg"></svg>
+</div>
+
+<button id="saveButton">Save SVG</button>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+    var width = window.innerWidth,
+        height = window.innerHeight;
+
+    var nodeSize = document.getElementById("nodeSize").value;
+    var edgeSize = document.getElementById("edgeSize").value;
+    var distance = document.getElementById("distance").value;
+
+
+    var svgContainer = d3.select('#svgContainer');
+    var svg = d3.select("#dynamic-svg")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 " + width + " " + height)
+        .classed("svg-content", true);
+
+
+    // Define the zoom behavior, limiting the scale extent to 20x and translate extent to the size of the svg.
+    var zoom = d3.zoom()
+        .scaleExtent([1, 10])
+        .on("zoom", zoomed);
+
+    svg.call(zoom);
+
+    function zoomed() {
+        var transform = d3.event.transform;
+        svg.selectAll('g').attr("transform", transform);
+    }
+
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    var simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(100))
+        .force("charge", d3.forceManyBody().strength(distance))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collide", d3.forceCollide().radius(function (d) { return nodeSize + 1; }));
+
+    d3.json("/graph_one.json", function (graph) {
+
+        var link = svg.append("g")
+            .attr("class", "links")
+            .attr("id", "linksGroup")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke-width", edgeSize)
+            .style("stroke", function (d) { return d.edge_info === ':event' ? 'green' : '#999'; })
+            .style("stroke", function (d) { return d.edge_info === ':entity' ? 'red' : '#999'; });
+
+
+        var node = svg.append("g")
+            .attr("class", "nodes")
+            .attr("id", "nodesGroup")
+            .selectAll("circle")
+            .data(graph.nodes)
+            .enter()
+            .append(function (d) {
+                if (d.image) {
+                    var patternId = "pattern" + d.id;
+                    svg.append("defs")
+                        .append("pattern")
+                        .attr("id", patternId)
+                        .attr("patternContentUnits", "objectBoundingBox")
+                        .attr("width", "100%")
+                        .attr("height", "100%")
+                        .append("image")
+                        .attr("width", 1)
+                        .attr("height", 1)
+                        .attr("preserveAspectRatio", "xMidYMid meet")
+                        .attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
+                        .attr("xlink:href", d.image);
+                    return document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                } else {
+                    return document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                }
+            })
+            .attr("r", function (d) { return d.image ? 100 : 10; })  // Modify this line
+            .attr("class", function (d) { return d.image ? "image" : ""; })
+            .attr("fill", function (d) { return d.image ? "url(#pattern" + d.id + ")" : color(d.group.split("-")[0]); })
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+
+
+
+
+        var text = svg.append("g")
+            .attr("class", "text")
+            .selectAll("text")
+            .data(graph.nodes)
+            .enter().append("text")
+            .text(function (d) { return d.amr_token; });
+
+        var edgeText = svg.append("g")
+            .attr("class", "edgetext")
+            .selectAll("text")
+            .data(graph.links)
+            .enter().append("text")
+            .text(function (d) { return d.edge_info; });
+
+        simulation
+            .nodes(graph.nodes)
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(graph.links);
+
+        function ticked() {
+            link
+                .attr("x1", function (d) { return d.source.x; })
+                .attr("y1", function (d) { return d.source.y; })
+                .attr("x2", function (d) { return d.target.x; })
+                .attr("y2", function (d) { return d.target.y; });
+
+            node
+                .attr("cx", function (d) { return d.x; })
+                .attr("cy", function (d) { return d.y; });
+
+            text
+                .attr("x", function (d) { return d.x; })
+                .attr("y", function (d) { return d.y; });
+
+            edgeText
+                .attr("x", function (d) { return (d.source.x + d.target.x) / 2; })
+                .attr("y", function (d) { return (d.source.y + d.target.y) / 2; });
+
+            var xExtent = d3.extent(graph.nodes, function (d) { return d.x; });
+            var yExtent = d3.extent(graph.nodes, function (d) { return d.y; });
+
+            svg.attr("viewBox", xExtent[0] + " " + yExtent[0] + " " + (xExtent[1] - xExtent[0]) + " " + (yExtent[1] - yExtent[0]));
+        }
+    });
+
+    function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+
+    function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    }
+
+    function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+    }
+
+    document.getElementById("nodeSize").addEventListener("input", function () {
+        nodeSize = this.value;
+        nodeSize = this.value;
+        d3.select("#nodesGroup").selectAll("circle")
+            .attr("r", function (d) {
+            return d.image ? nodeSize * 5 : nodeSize;
+        });
+        
+    });
+
+
+    document.getElementById("edgeSize").addEventListener("input", function () {
+        edgeSize = this.value;
+        d3.select("#linksGroup").selectAll("line").attr("stroke-width", edgeSize);
+    });
+
+    document.getElementById("distance").addEventListener("input", function () {
+        distance = this.value;
+        simulation.force("charge", d3.forceManyBody().strength(distance));
+        simulation.alphaTarget(0.3).restart();
+    });
+
+    document.getElementById("fontSize").addEventListener("input", function () {
+        var fontSize = this.value;
+        d3.selectAll(".text").style("font-size", fontSize + "px");
+        d3.selectAll(".edgetext").style("font-size", fontSize + "px");
+    });
+
+    document.getElementById("saveButton").addEventListener("click", function () {
+        // Get the SVG content
+        var svgData = document.getElementById("dynamic-svg").outerHTML;
+
+        // Create a Blob object with the SVG content and specify the SVG MIME type
+        var blob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
+
+        // Create a URL for the Blob object
+        var url = URL.createObjectURL(blob);
+
+        // Create a temporary link and click it to start the download
+        var downloadLink = document.createElement("a");
+        downloadLink.href = url;
+        downloadLink.download = "graph.svg";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    });
+
+</script>

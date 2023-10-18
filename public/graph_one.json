@@ -1,0 +1,3160 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {
+        "kg_penman": "(origin / multi-sentence :snt0 (1234-0-0-z0 / leave-13 :ARG0 (1234-0-0-z1 / person :quant (1234-0-0-z2 / at-least :op1 95) :ARG0-of (1234-0-0-z3 / reside-01 :location (1234-0-0-z4 / city :name (1234-0-0-z5 / name :op1 \"New\" :op2 \"York\" :op3 \"City\" :entity 1234-0-14-z4 :entity-of 1234-0-14-z4) :entity 1234-0-14-z4 :entity-of 1234-0-14-z4))) :ARG1 (1234-0-0-z6 / have-03 :ARG0 1234-0-0-z1 :ARG1 (1234-0-0-z7 / home) :polarity -) :time (1234-0-0-z8 / after :op1 (1234-0-0-z9 / spread-02 :ARG1 (1234-0-0-z10 / fire :mod (1234-0-0-z13 / massive) :ARG0-of (1234-0-0-z11 / injure-01 :ARG1 (1234-0-0-z12 / person :quant 4))) :ARG2 (1234-0-0-z14 / building :mod (1234-0-0-z15 / apartment) :poss 1234-0-0-z1)))) :snt1 (1234-0-1-z0 / fire :location (1234-0-1-z1 / building :consist-of (1234-0-1-z2 / story :quant 23) :location (1234-0-1-z3 / neighborhood :mod (1234-0-1-z5 / urban) :ARG0-of (1234-0-1-z4 / bustle-01)) :mod (1234-0-1-z6 / apartment)) :mod (1234-0-1-z7 / alarm-01 :quant (1234-0-1-z8 / multiple)) :time (1234-0-1-z9 / after :mod (1234-0-1-z10 / just) :op1 (1234-0-1-z11 / date-entity :time \"15:00\" :weekday (1234-0-1-z12 / saturday)))) :snt2 (1234-0-2-z0 / send-03 :ARG0 (1234-0-2-z1 / inferno :ARG0-of (1234-0-2-z2 / tower-01)) :ARG1 (1234-0-2-z3 / bill :consist-of (1234-0-2-z12 / smoke :ARG1-of (1234-0-2-z13 / thick-03)) :ARG1-of (1234-0-2-z4 / billow-01 :ARG2 (1234-0-2-z5 / sky :ARG1-of (1234-0-2-z6 / see-01 :source (1234-0-2-z7 / relative-position :op2 (1234-0-2-z11 / away) :quant (1234-0-2-z8 / several :op1 (1234-0-2-z9 / distance-quantity :quant 1 :unit (1234-0-2-z10 / block))))))))) :snt3 (1234-0-3-z0 / arrive-01 :ARG1 (1234-0-3-z1 / person :ord (1234-0-3-z3 / ordinal-entity :value 1) :ARG0-of (1234-0-3-z2 / respond-01)) :ARG4 (1234-0-3-z4 / scene :entity 1234-0-6-z1 :entity-of 1234-0-6-z1 :entity 1234-0-6-z0 :entity-of 1234-0-6-z0) :manner (1234-0-3-z5 / swift) :rel (1234-0-3-z6 / dedicate-01) :time-of (1234-0-3-z7 / battle-01 :ARG0 (1234-0-3-z8 / person :quant (1234-0-3-z9 / more-than :op1 100) :ARG0-of (1234-0-3-z10 / have-org-role-91 :ARG1 (1234-0-3-z11 / organization :name (1234-0-3-z12 / name :op1 \"NYFD\" :entity 1234-0-5-z17 :entity-of 1234-0-5-z17 :entity 1234-0-5-z18 :entity-of 1234-0-5-z18 :entity 1234-0-5-z16 :entity-of 1234-0-5-z16) :entity 1234-0-5-z17 :entity-of 1234-0-5-z17 :entity 1234-0-5-z18 :entity-of 1234-0-5-z18 :entity 1234-0-5-z16 :entity-of 1234-0-5-z16) :entity 1234-0-5-z17 :entity-of 1234-0-5-z17 :entity 1234-0-5-z18 :entity-of 1234-0-5-z18 :entity 1234-0-5-z16 :entity-of 1234-0-5-z16) :ARG0-of (1234-0-3-z13 / fight-01 :ARG1 (1234-0-3-z14 / fire) :ARG1 (1234-0-3-z15 / fire))) :ARG1 (1234-0-3-z16 / contain-01 :ARG0 1234-0-3-z8 :ARG1 (1234-0-3-z17 / blaze :ARG0-of (1234-0-3-z18 / rage-02))) :manner (1234-0-3-z19 / courage))) :snt4 (1234-0-4-z0 / work-01 :ARG0 (1234-0-4-z1 / person :ARG0-of (1234-0-4-z2 / fight-01 :ARG1 (1234-0-4-z3 / fire))) :ARG1 (1234-0-4-z4 / prevent-01 :ARG0 1234-0-4-z1 :ARG1 (1234-0-4-z5 / and :op1 (1234-0-4-z6 / spread-02 :ARG1 (1234-0-4-z7 / fire) :extent (1234-0-4-z8 / further)) :op2 (1234-0-4-z9 / endanger-01 :ARG0 1234-0-4-z7 :ARG1 (1234-0-4-z10 / structure :ARG1-of (1234-0-4-z11 / neighbor-01))))) :manner (1234-0-4-z12 / work-01 :ARG0 1234-0-4-z1 :polarity -)) :snt5 (1234-0-5-z0 / sacrifice-01 :ARG0 (1234-0-5-z1 / effort-01 :ARG0 (1234-0-5-z2 / they :entity 1234-0-5-z15 :entity-of 1234-0-5-z15 :entity 1234-0-5-z16 :entity-of 1234-0-5-z16 :entity 1234-0-5-z14 :entity-of 1234-0-5-z14 :entity 1234-0-5-z19 :entity-of 1234-0-5-z19 :entity 1234-0-5-z17 :entity-of 1234-0-5-z17 :entity 1234-0-5-z20 :entity-of 1234-0-5-z20 :entity 1234-0-5-z7 :entity-of 1234-0-5-z7 :entity 1234-0-5-z18 :entity-of 1234-0-5-z18 :entity 1234-0-5-z10 :entity-of 1234-0-5-z10) :manner (1234-0-5-z3 / hero :entity 1234-0-5-z10 :entity-of 1234-0-5-z10) :entity 1234-0-5-z10 :entity-of 1234-0-5-z10) :rel (1234-0-5-z14 / brave-02 :ARG0 (1234-0-5-z15 / person :ARG0-of (1234-0-5-z16 / have-org-role-91 :ARG1 (1234-0-5-z17 / military :name (1234-0-5-z18 / name :op1 \"NYFD\"))) :ARG0-of (1234-0-5-z19 / fight-01 :ARG1 (1234-0-5-z20 / fire)))) :ARG1-of (1234-0-5-z4 / cause-01 :ARG0 (1234-0-5-z5 / and :op1 (1234-0-5-z6 / sustain-01 :ARG1 (1234-0-5-z7 / person :quant 2 :ARG1-of (1234-0-5-z8 / include-91)) :ARG2 (1234-0-5-z9 / injure-01 :ARG1 1234-0-5-z7) :time (1234-0-5-z10 / operation)) :op2 (1234-0-5-z11 / rush-01 :ARG1 1234-0-5-z7 :ARG2 (1234-0-5-z13 / hospital) :purpose (1234-0-5-z12 / treat-03 :ARG1 1234-0-5-z7))))) :snt6 (1234-0-6-z0 / scene :domain (1234-0-6-z1 / scene :mod (1234-0-6-z2 / chaos) :mod (1234-0-6-z3 / concern-01)) :time (1234-0-6-z4 / watch-01 :ARG0 (1234-0-6-z5 / and :op1 (1234-0-6-z6 / person :ARG0-of (1234-0-6-z7 / reside-01)) :op2 (1234-0-6-z8 / person :mod (1234-0-6-z9 / onlooker))) :manner (1234-0-6-z10 / disbelieve-01 :ARG1 1234-0-6-z5 :ARG1 (1234-0-6-z11 / consume-01 :ARG0 (1234-0-6-z12 / fire) :ARG1 (1234-0-6-z13 / floor :quant (1234-0-6-z14 / several) :part-of (1234-0-6-z15 / building :mod (1234-0-6-z16 / apartment))))))) :snt7 (1234-0-7-z0 / possible-01 :ARG1 (1234-0-7-z1 / palpate-00 :ARG1 (1234-0-7-z2 / and :op1 (1234-0-7-z3 / panic-01) :op2 (1234-0-7-z4 / fear-01)) :location (1234-0-7-z5 / among :op1 (1234-0-7-z6 / crowd))) :time (1234-0-7-z7 / and :op1 (1234-0-7-z8 / separate-01 :ARG1 (1234-0-7-z9 / family)) :op2 (1234-0-7-z10 / search-01 :ARG0 (1234-0-7-z11 / individual) :ARG2 (1234-0-7-z12 / one :ARG1-of (1234-0-7-z13 / love-01 :ARG0 1234-0-7-z11)) :manner (1234-0-7-z14 / frantic)))) :snt8 (1234-0-8-z0 / work-01 :ARG0 (1234-0-8-z1 / personnel :mod (1234-0-8-z2 / medicine) :mod (1234-0-8-z3 / emergency)) :ARG1 (1234-0-8-z4 / provide-01 :ARG0 1234-0-8-z1 :ARG1 (1234-0-8-z5 / assist-01 :ARG0 1234-0-8-z1 :ARG1 (1234-0-8-z6 / person :ARG1-of (1234-0-8-z7 / affect-01 :ARG0 (1234-0-8-z8 / disaster))) :time (1234-0-8-z9 / immediate))) :accompanier (1234-0-8-z10 / person :ARG0-of (1234-0-8-z11 / fight-01 :ARG1 (1234-0-8-z12 / fire))) :manner (1234-0-8-z13 / side-by-side)) :snt9 (1234-0-9-z0 / and :op1 (1234-0-9-z1 / injure-01 :ARG1 (1234-0-9-z2 / person :quant 2 :ARG0-of (1234-0-9-z3 / reside-01 :ARG1 (1234-0-9-z4 / building))) :mod (1234-0-9-z5 / also)) :op2 (1234-0-9-z6 / take-01 :ARG1 1234-0-9-z2 :ARG3 (1234-0-9-z10 / facility :location (1234-0-9-z11 / nearby) :mod (1234-0-9-z12 / medical)) :purpose (1234-0-9-z7 / and :op1 (1234-0-9-z8 / evaluate-01 :ARG1 1234-0-9-z2) :op2 (1234-0-9-z9 / care-03 :ARG1 1234-0-9-z2)))) :snt10 (1234-0-10-z0 / emerge-02 :ARG0 (1234-0-10-z1 / story :topic (1234-0-10-z2 / and :op1 (1234-0-10-z3 / unity) :op2 (1234-0-10-z4 / resilience))) :time (1234-0-10-z5 / turmoil)) :snt11 (1234-0-11-z0 / and :op1 (1234-0-11-z1 / recount-01 :ARG0 (1234-0-11-z2 / person :ARG0-of (1234-0-11-z3 / witness-01)) :ARG1 (1234-0-11-z4 / help-01 :ARG0 (1234-0-11-z5 / stranger) :ARG1 (1234-0-11-z6 / escape-01 :ARG0 1234-0-11-z5 :ARG1 (1234-0-11-z7 / building)) :ARG2 1234-0-11-z5)) :op2 (1234-0-11-z8 / illustrate-01 :ARG0 1234-0-11-z2 :ARG1 (1234-0-11-z9 / strong-02 :ARG1 (1234-0-11-z10 / community) :concession (1234-0-11-z11 / face-01 :ARG0 1234-0-11-z5 :ARG1 (1234-0-11-z12 / adversity))))) :snt12 (1234-0-12-z0 / and :op1 (1234-0-12-z1 / organize-01 :ARG0 1234-0-12-z3 :manner (1234-0-12-z15 / swift) :purpose (1234-0-12-z2 / provide-01 :ARG0 (1234-0-12-z3 / and :op1 (1234-0-12-z5 / business) :op2 (1234-0-12-z6 / organization) :ARG1-of (1234-0-12-z4 / local-02)) :ARG1 (1234-0-12-z7 / and :op1 (1234-0-12-z8 / shelter-01) :op2 (1234-0-12-z9 / clothe-01) :op3 (1234-0-12-z10 / thing :ARG1-of (1234-0-12-z11 / need-01))) :ARG2 (1234-0-12-z12 / person :ARG0-of (1234-0-12-z13 / reside-01 :entity 1234-0-14-z15 :entity-of 1234-0-14-z15 :entity 1234-0-14-z16 :entity-of 1234-0-14-z16 :entity 1234-0-14-z14 :entity-of 1234-0-14-z14) :ARG1-of (1234-0-12-z14 / displace-01 :entity 1234-0-14-z15 :entity-of 1234-0-14-z15 :entity 1234-0-14-z16 :entity-of 1234-0-14-z16 :entity 1234-0-14-z14 :entity-of 1234-0-14-z14) :entity 1234-0-14-z15 :entity-of 1234-0-14-z15 :entity 1234-0-14-z16 :entity-of 1234-0-14-z16 :entity 1234-0-14-z14 :entity-of 1234-0-14-z14))) :op2 (1234-0-12-z16 / showcase-01 :ARG0 1234-0-12-z3 :ARG1 (1234-0-12-z17 / spirit :mod (1234-0-12-z24 / indomitable) :ARG0-of (1234-0-12-z18 / rally-01 :ARG1 (1234-0-12-z19 / city :name (1234-0-12-z20 / name :op1 \"New\" :op2 \"York\")) :ARG2 (1234-0-12-z21 / support-01 :ARG0 1234-0-12-z19 :ARG1 (1234-0-12-z22 / citizen :mod (1234-0-12-z23 / fellow) :poss 1234-0-12-z19)))))) :snt13 (1234-0-13-z0 / arise-02 :ARG1 (1234-0-13-z1 / question-03 :ARG1 (1234-0-13-z2 / and :op1 (1234-0-13-z3 / measure-02 :ARG1 (1234-0-13-z4 / safe-01) :mod (1234-0-13-z5 / in-place)) :op2 (1234-0-13-z6 / state :poss (1234-0-13-z7 / system :poss (1234-0-13-z10 / building :entity 1234-0-15-z1 :entity-of 1234-0-15-z1 :entity 1234-0-15-z2 :entity-of 1234-0-15-z2) :ARG0-of (1234-0-13-z8 / prevent-01 :ARG1 (1234-0-13-z9 / fire)))))) :time (1234-0-13-z11 / delve-01 :ARG0 (1234-0-13-z12 / person :ARG0-of (1234-0-13-z13 / investigate-01)) :ARG1 (1234-0-13-z14 / thing :ARG0-of (1234-0-13-z15 / cause-01 :ARG1 (1234-0-13-z16 / fire :ARG0-of (1234-0-13-z17 / devastate-01 :entity 1234-0-15-z4 :entity-of 1234-0-15-z4 :entity 1234-0-15-z3 :entity-of 1234-0-15-z3) :entity 1234-0-15-z4 :entity-of 1234-0-15-z4 :entity 1234-0-15-z3 :entity-of 1234-0-15-z3))))) :snt14 (1234-0-14-z0 / have-concession-91 :ARG1 (1234-0-14-z1 / shine-01 :ARG1 (1234-0-14-z2 / solidarity :poss (1234-0-14-z4 / city) :ARG0-of (1234-0-14-z3 / bend-02 :polarity -)) :prep-as (1234-0-14-z5 / beacon :mod (1234-0-14-z6 / hope-01) :time (1234-0-14-z7 / time :mod (1234-0-14-z9 / this) :ARG1-of (1234-0-14-z8 / try-01)))) :ARG2 (1234-0-14-z10 / arduous :domain (1234-0-14-z12 / road :direction (1234-0-14-z13 / recover-01 :ARG1 (1234-0-14-z14 / person :ARG0-of (1234-0-14-z15 / reside-01) :ARG1-of (1234-0-14-z16 / affect-01)))) :ARG1-of (1234-0-14-z11 / doubt-01 :polarity -))) :snt15 (1234-0-15-z0 / set-on-fire-09 :ARG1 (1234-0-15-z1 / building :part (1234-0-15-z2 / story :quant 23)) :ARG2 (1234-0-15-z3 / fire :mod (1234-0-15-z4 / massive))))",
+        "doc_info": {
+            "0": {
+                "text": "At least than 95 residents in New York City were left without a home after a massive fire spread through their apartment building , injuring 4 . The multi - alarm fire occurred just after 3 p . m. on Saturday at a 23 - story apartment building in a bustling urban neighborhood . The towering inferno sent plumes of thick smoke billowing into the sky , visible from several blocks away . First responders swiftly arrived at the scene , with more than 100 dedicated NYFD firefighters battling courageously to contain the raging blaze . The firefighters worked tirelessly to prevent the fire from spreading further and endangering neighboring structures . Their heroic efforts were not without sacrifice , as 2 of the brave NYFD firefighters sustained injuries during the operation and were rushed to the hospital for treatment . The scene was one of chaos and concern as residents and onlookers watched in disbelief as the fire consumed several floors of the apartment building . Panic and fear were palpable among the crowd as families were separated and individuals frantically searched for their loved ones . Emergency medical personnel worked side by side with firefighters , providing immediate assistance to those affected by the disaster . Two residents of the building were also injured and taken to nearby medical facilities for evaluation and care . Amid the turmoil , stories of both unity and resilience emerged . Witnesses recounted how strangers helped one another escape the building , illustrating the strength of community even in the face of adversity . Local businesses and organizations swiftly organized to provide shelter , clothing , and necessities to the displaced residents , showcasing the indomitable spirit of New Yorkers rallying to support their fellow citizens . As investigators delve into the cause of the devastating fire , questions arise about the safety measures in place and the state of the building 's fire prevention systems . The road to recovery for the affected residents will undoubtedly be arduous , but the city 's unwavering solidarity shines as a beacon of hope in these trying times .",
+                "image": "A 23 story building is set on a massive fire .",
+                "video": "",
+                "sentences": [
+                    "At least than 95 residents in New York City were left without a home after a massive fire spread through their apartment building , injuring 4 .",
+                    "The multi - alarm fire occurred just after 3 p . m. on Saturday at a 23 - story apartment building in a bustling urban neighborhood .",
+                    "The towering inferno sent plumes of thick smoke billowing into the sky , visible from several blocks away .",
+                    "First responders swiftly arrived at the scene , with more than 100 dedicated NYFD firefighters battling courageously to contain the raging blaze .",
+                    "The firefighters worked tirelessly to prevent the fire from spreading further and endangering neighboring structures .",
+                    "Their heroic efforts were not without sacrifice , as 2 of the brave NYFD firefighters sustained injuries during the operation and were rushed to the hospital for treatment .",
+                    "The scene was one of chaos and concern as residents and onlookers watched in disbelief as the fire consumed several floors of the apartment building .",
+                    "Panic and fear were palpable among the crowd as families were separated and individuals frantically searched for their loved ones .",
+                    "Emergency medical personnel worked side by side with firefighters , providing immediate assistance to those affected by the disaster .",
+                    "Two residents of the building were also injured and taken to nearby medical facilities for evaluation and care .",
+                    "Amid the turmoil , stories of both unity and resilience emerged .",
+                    "Witnesses recounted how strangers helped one another escape the building , illustrating the strength of community even in the face of adversity .",
+                    "Local businesses and organizations swiftly organized to provide shelter , clothing , and necessities to the displaced residents , showcasing the indomitable spirit of New Yorkers rallying to support their fellow citizens .",
+                    "As investigators delve into the cause of the devastating fire , questions arise about the safety measures in place and the state of the building 's fire prevention systems .",
+                    "The road to recovery for the affected residents will undoubtedly be arduous , but the city 's unwavering solidarity shines as a beacon of hope in these trying times .",
+                    "A 23 story building is set on a massive fire ."
+                ]
+            }
+        }
+    },
+    "nodes": [
+        {
+            "amr_token": "image-0",
+            "word_token": "image-0",
+            "group": "0-text",
+            "id": "1234-0-image-0",
+            "image": "images/image_0.png"
+        },
+        {
+            "amr_token": "leave-13",
+            "word_token": "left",
+            "group": "0-text",
+            "id": "1234-0-0-z0"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-0-z1"
+        },
+        {
+            "amr_token": "at-least",
+            "word_token": "least",
+            "group": "0-text",
+            "id": "1234-0-0-z2"
+        },
+        {
+            "amr_token": "reside-01",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-0-z3"
+        },
+        {
+            "amr_token": "city",
+            "word_token": "City",
+            "group": "0-text",
+            "id": "1234-0-0-z4"
+        },
+        {
+            "amr_token": "name",
+            "word_token": "New",
+            "group": "0-text",
+            "id": "1234-0-0-z5"
+        },
+        {
+            "amr_token": "have-03",
+            "word_token": "without",
+            "group": "0-text",
+            "id": "1234-0-0-z6"
+        },
+        {
+            "amr_token": "home",
+            "word_token": "home",
+            "group": "0-text",
+            "id": "1234-0-0-z7"
+        },
+        {
+            "amr_token": "after",
+            "word_token": "after",
+            "group": "0-text",
+            "id": "1234-0-0-z8"
+        },
+        {
+            "amr_token": "spread-02",
+            "word_token": "spread",
+            "group": "0-text",
+            "id": "1234-0-0-z9"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "fire",
+            "group": "0-text",
+            "id": "1234-0-0-z10"
+        },
+        {
+            "amr_token": "massive",
+            "word_token": "massive",
+            "group": "0-text",
+            "id": "1234-0-0-z13"
+        },
+        {
+            "amr_token": "injure-01",
+            "word_token": "injuring",
+            "group": "0-text",
+            "id": "1234-0-0-z11"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "4",
+            "group": "0-text",
+            "id": "1234-0-0-z12"
+        },
+        {
+            "amr_token": "building",
+            "word_token": "building",
+            "group": "0-text",
+            "id": "1234-0-0-z14"
+        },
+        {
+            "amr_token": "apartment",
+            "word_token": "apartment",
+            "group": "0-text",
+            "id": "1234-0-0-z15"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "fire",
+            "group": "0-text",
+            "id": "1234-0-1-z0"
+        },
+        {
+            "amr_token": "building",
+            "word_token": "building",
+            "group": "0-text",
+            "id": "1234-0-1-z1"
+        },
+        {
+            "amr_token": "story",
+            "word_token": "story",
+            "group": "0-text",
+            "id": "1234-0-1-z2"
+        },
+        {
+            "amr_token": "neighborhood",
+            "word_token": "neighborhood",
+            "group": "0-text",
+            "id": "1234-0-1-z3"
+        },
+        {
+            "amr_token": "urban",
+            "word_token": "urban",
+            "group": "0-text",
+            "id": "1234-0-1-z5"
+        },
+        {
+            "amr_token": "bustle-01",
+            "word_token": "bustling",
+            "group": "0-text",
+            "id": "1234-0-1-z4"
+        },
+        {
+            "amr_token": "apartment",
+            "word_token": "apartment",
+            "group": "0-text",
+            "id": "1234-0-1-z6"
+        },
+        {
+            "amr_token": "alarm-01",
+            "word_token": "alarm",
+            "group": "0-text",
+            "id": "1234-0-1-z7"
+        },
+        {
+            "amr_token": "multiple",
+            "word_token": "multi",
+            "group": "0-text",
+            "id": "1234-0-1-z8"
+        },
+        {
+            "amr_token": "after",
+            "word_token": "after",
+            "group": "0-text",
+            "id": "1234-0-1-z9"
+        },
+        {
+            "amr_token": "just",
+            "word_token": "just",
+            "group": "0-text",
+            "id": "1234-0-1-z10"
+        },
+        {
+            "amr_token": "date-entity",
+            "word_token": "Saturday",
+            "group": "0-text",
+            "id": "1234-0-1-z11"
+        },
+        {
+            "amr_token": "saturday",
+            "word_token": "Saturday",
+            "group": "0-text",
+            "id": "1234-0-1-z12"
+        },
+        {
+            "amr_token": "send-03",
+            "word_token": "sent",
+            "group": "0-text",
+            "id": "1234-0-2-z0"
+        },
+        {
+            "amr_token": "inferno",
+            "word_token": "inferno",
+            "group": "0-text",
+            "id": "1234-0-2-z1"
+        },
+        {
+            "amr_token": "tower-01",
+            "word_token": "towering",
+            "group": "0-text",
+            "id": "1234-0-2-z2"
+        },
+        {
+            "amr_token": "bill",
+            "word_token": "plumes",
+            "group": "0-text",
+            "id": "1234-0-2-z3"
+        },
+        {
+            "amr_token": "smoke",
+            "word_token": "smoke",
+            "group": "0-text",
+            "id": "1234-0-2-z12"
+        },
+        {
+            "amr_token": "thick-03",
+            "word_token": "thick",
+            "group": "0-text",
+            "id": "1234-0-2-z13"
+        },
+        {
+            "amr_token": "billow-01",
+            "word_token": "billowing",
+            "group": "0-text",
+            "id": "1234-0-2-z4"
+        },
+        {
+            "amr_token": "sky",
+            "word_token": "sky",
+            "group": "0-text",
+            "id": "1234-0-2-z5"
+        },
+        {
+            "amr_token": "see-01",
+            "word_token": "visible",
+            "group": "0-text",
+            "id": "1234-0-2-z6"
+        },
+        {
+            "amr_token": "relative-position",
+            "word_token": "blocks",
+            "group": "0-text",
+            "id": "1234-0-2-z7"
+        },
+        {
+            "amr_token": "away",
+            "word_token": "away",
+            "group": "0-text",
+            "id": "1234-0-2-z11"
+        },
+        {
+            "amr_token": "several",
+            "word_token": "several",
+            "group": "0-text",
+            "id": "1234-0-2-z8"
+        },
+        {
+            "amr_token": "distance-quantity",
+            "word_token": "blocks",
+            "group": "0-text",
+            "id": "1234-0-2-z9"
+        },
+        {
+            "amr_token": "block",
+            "word_token": "blocks",
+            "group": "0-text",
+            "id": "1234-0-2-z10"
+        },
+        {
+            "amr_token": "arrive-01",
+            "word_token": "arrived",
+            "group": "0-text",
+            "id": "1234-0-3-z0"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "responders",
+            "group": "0-text",
+            "id": "1234-0-3-z1"
+        },
+        {
+            "amr_token": "ordinal-entity",
+            "word_token": "First",
+            "group": "0-text",
+            "id": "1234-0-3-z3"
+        },
+        {
+            "amr_token": "respond-01",
+            "word_token": "responders",
+            "group": "0-text",
+            "id": "1234-0-3-z2"
+        },
+        {
+            "amr_token": "scene",
+            "word_token": "scene",
+            "group": "0-text",
+            "id": "1234-0-3-z4"
+        },
+        {
+            "amr_token": "swift",
+            "word_token": "swiftly",
+            "group": "0-text",
+            "id": "1234-0-3-z5"
+        },
+        {
+            "amr_token": "dedicate-01",
+            "word_token": "dedicated",
+            "group": "0-text",
+            "id": "1234-0-3-z6"
+        },
+        {
+            "amr_token": "battle-01",
+            "word_token": "battling",
+            "group": "0-text",
+            "id": "1234-0-3-z7"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-3-z8"
+        },
+        {
+            "amr_token": "more-than",
+            "word_token": "more",
+            "group": "0-text",
+            "id": "1234-0-3-z9"
+        },
+        {
+            "amr_token": "have-org-role-91",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-3-z10"
+        },
+        {
+            "amr_token": "organization",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-3-z11"
+        },
+        {
+            "amr_token": "name",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-3-z12"
+        },
+        {
+            "amr_token": "fight-01",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-3-z13"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "responders",
+            "group": "0-text",
+            "id": "1234-0-3-z14"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-3-z15"
+        },
+        {
+            "amr_token": "contain-01",
+            "word_token": "contain",
+            "group": "0-text",
+            "id": "1234-0-3-z16"
+        },
+        {
+            "amr_token": "blaze",
+            "word_token": "blaze",
+            "group": "0-text",
+            "id": "1234-0-3-z17"
+        },
+        {
+            "amr_token": "rage-02",
+            "word_token": "raging",
+            "group": "0-text",
+            "id": "1234-0-3-z18"
+        },
+        {
+            "amr_token": "courage",
+            "word_token": "courageously",
+            "group": "0-text",
+            "id": "1234-0-3-z19"
+        },
+        {
+            "amr_token": "work-01",
+            "word_token": "worked",
+            "group": "0-text",
+            "id": "1234-0-4-z0"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-4-z1"
+        },
+        {
+            "amr_token": "fight-01",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-4-z2"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-4-z3"
+        },
+        {
+            "amr_token": "prevent-01",
+            "word_token": "prevent",
+            "group": "0-text",
+            "id": "1234-0-4-z4"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-4-z5"
+        },
+        {
+            "amr_token": "spread-02",
+            "word_token": "spreading",
+            "group": "0-text",
+            "id": "1234-0-4-z6"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "fire",
+            "group": "0-text",
+            "id": "1234-0-4-z7"
+        },
+        {
+            "amr_token": "further",
+            "word_token": "further",
+            "group": "0-text",
+            "id": "1234-0-4-z8"
+        },
+        {
+            "amr_token": "endanger-01",
+            "word_token": "endangering",
+            "group": "0-text",
+            "id": "1234-0-4-z9"
+        },
+        {
+            "amr_token": "structure",
+            "word_token": "structures",
+            "group": "0-text",
+            "id": "1234-0-4-z10"
+        },
+        {
+            "amr_token": "neighbor-01",
+            "word_token": "neighboring",
+            "group": "0-text",
+            "id": "1234-0-4-z11"
+        },
+        {
+            "amr_token": "work-01",
+            "word_token": "tirelessly",
+            "group": "0-text",
+            "id": "1234-0-4-z12"
+        },
+        {
+            "amr_token": "sacrifice-01",
+            "word_token": "sacrifice",
+            "group": "0-text",
+            "id": "1234-0-5-z0"
+        },
+        {
+            "amr_token": "effort-01",
+            "word_token": "efforts",
+            "group": "0-text",
+            "id": "1234-0-5-z1"
+        },
+        {
+            "amr_token": "they",
+            "word_token": "Their",
+            "group": "0-text",
+            "id": "1234-0-5-z2"
+        },
+        {
+            "amr_token": "hero",
+            "word_token": "heroic",
+            "group": "0-text",
+            "id": "1234-0-5-z3"
+        },
+        {
+            "amr_token": "brave-02",
+            "word_token": "brave",
+            "group": "0-text",
+            "id": "1234-0-5-z14"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-5-z15"
+        },
+        {
+            "amr_token": "have-org-role-91",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-5-z16"
+        },
+        {
+            "amr_token": "military",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-5-z17"
+        },
+        {
+            "amr_token": "name",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-5-z18"
+        },
+        {
+            "amr_token": "fight-01",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-5-z19"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-5-z20"
+        },
+        {
+            "amr_token": "cause-01",
+            "word_token": "as",
+            "group": "0-text",
+            "id": "1234-0-5-z4"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-5-z5"
+        },
+        {
+            "amr_token": "sustain-01",
+            "word_token": "sustained",
+            "group": "0-text",
+            "id": "1234-0-5-z6"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-5-z7"
+        },
+        {
+            "amr_token": "include-91",
+            "word_token": "of",
+            "group": "0-text",
+            "id": "1234-0-5-z8"
+        },
+        {
+            "amr_token": "injure-01",
+            "word_token": "injuries",
+            "group": "0-text",
+            "id": "1234-0-5-z9"
+        },
+        {
+            "amr_token": "operation",
+            "word_token": "operation",
+            "group": "0-text",
+            "id": "1234-0-5-z10"
+        },
+        {
+            "amr_token": "rush-01",
+            "word_token": "rushed",
+            "group": "0-text",
+            "id": "1234-0-5-z11"
+        },
+        {
+            "amr_token": "hospital",
+            "word_token": "hospital",
+            "group": "0-text",
+            "id": "1234-0-5-z13"
+        },
+        {
+            "amr_token": "treat-03",
+            "word_token": "treatment",
+            "group": "0-text",
+            "id": "1234-0-5-z12"
+        },
+        {
+            "amr_token": "scene",
+            "word_token": "scene",
+            "group": "0-text",
+            "id": "1234-0-6-z0"
+        },
+        {
+            "amr_token": "scene",
+            "word_token": "scene",
+            "group": "0-text",
+            "id": "1234-0-6-z1"
+        },
+        {
+            "amr_token": "chaos",
+            "word_token": "chaos",
+            "group": "0-text",
+            "id": "1234-0-6-z2"
+        },
+        {
+            "amr_token": "concern-01",
+            "word_token": "concern",
+            "group": "0-text",
+            "id": "1234-0-6-z3"
+        },
+        {
+            "amr_token": "watch-01",
+            "word_token": "watched",
+            "group": "0-text",
+            "id": "1234-0-6-z4"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-6-z5"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-6-z6"
+        },
+        {
+            "amr_token": "reside-01",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-6-z7"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "onlookers",
+            "group": "0-text",
+            "id": "1234-0-6-z8"
+        },
+        {
+            "amr_token": "onlooker",
+            "word_token": "onlookers",
+            "group": "0-text",
+            "id": "1234-0-6-z9"
+        },
+        {
+            "amr_token": "disbelieve-01",
+            "word_token": "disbelief",
+            "group": "0-text",
+            "id": "1234-0-6-z10"
+        },
+        {
+            "amr_token": "consume-01",
+            "word_token": "consumed",
+            "group": "0-text",
+            "id": "1234-0-6-z11"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "fire",
+            "group": "0-text",
+            "id": "1234-0-6-z12"
+        },
+        {
+            "amr_token": "floor",
+            "word_token": "floors",
+            "group": "0-text",
+            "id": "1234-0-6-z13"
+        },
+        {
+            "amr_token": "several",
+            "word_token": "several",
+            "group": "0-text",
+            "id": "1234-0-6-z14"
+        },
+        {
+            "amr_token": "building",
+            "word_token": "building",
+            "group": "0-text",
+            "id": "1234-0-6-z15"
+        },
+        {
+            "amr_token": "apartment",
+            "word_token": "apartment",
+            "group": "0-text",
+            "id": "1234-0-6-z16"
+        },
+        {
+            "amr_token": "possible-01",
+            "word_token": "palpable",
+            "group": "0-text",
+            "id": "1234-0-7-z0"
+        },
+        {
+            "amr_token": "palpate-00",
+            "word_token": "palpable",
+            "group": "0-text",
+            "id": "1234-0-7-z1"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-7-z2"
+        },
+        {
+            "amr_token": "panic-01",
+            "word_token": "Panic",
+            "group": "0-text",
+            "id": "1234-0-7-z3"
+        },
+        {
+            "amr_token": "fear-01",
+            "word_token": "fear",
+            "group": "0-text",
+            "id": "1234-0-7-z4"
+        },
+        {
+            "amr_token": "among",
+            "word_token": "among",
+            "group": "0-text",
+            "id": "1234-0-7-z5"
+        },
+        {
+            "amr_token": "crowd",
+            "word_token": "crowd",
+            "group": "0-text",
+            "id": "1234-0-7-z6"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-7-z7"
+        },
+        {
+            "amr_token": "separate-01",
+            "word_token": "separated",
+            "group": "0-text",
+            "id": "1234-0-7-z8"
+        },
+        {
+            "amr_token": "family",
+            "word_token": "families",
+            "group": "0-text",
+            "id": "1234-0-7-z9"
+        },
+        {
+            "amr_token": "search-01",
+            "word_token": "searched",
+            "group": "0-text",
+            "id": "1234-0-7-z10"
+        },
+        {
+            "amr_token": "individual",
+            "word_token": "individuals",
+            "group": "0-text",
+            "id": "1234-0-7-z11"
+        },
+        {
+            "amr_token": "one",
+            "word_token": "ones",
+            "group": "0-text",
+            "id": "1234-0-7-z12"
+        },
+        {
+            "amr_token": "love-01",
+            "word_token": "loved",
+            "group": "0-text",
+            "id": "1234-0-7-z13"
+        },
+        {
+            "amr_token": "frantic",
+            "word_token": "frantically",
+            "group": "0-text",
+            "id": "1234-0-7-z14"
+        },
+        {
+            "amr_token": "work-01",
+            "word_token": "worked",
+            "group": "0-text",
+            "id": "1234-0-8-z0"
+        },
+        {
+            "amr_token": "personnel",
+            "word_token": "personnel",
+            "group": "0-text",
+            "id": "1234-0-8-z1"
+        },
+        {
+            "amr_token": "medicine",
+            "word_token": "medical",
+            "group": "0-text",
+            "id": "1234-0-8-z2"
+        },
+        {
+            "amr_token": "emergency",
+            "word_token": "Emergency",
+            "group": "0-text",
+            "id": "1234-0-8-z3"
+        },
+        {
+            "amr_token": "provide-01",
+            "word_token": "providing",
+            "group": "0-text",
+            "id": "1234-0-8-z4"
+        },
+        {
+            "amr_token": "assist-01",
+            "word_token": "assistance",
+            "group": "0-text",
+            "id": "1234-0-8-z5"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "those",
+            "group": "0-text",
+            "id": "1234-0-8-z6"
+        },
+        {
+            "amr_token": "affect-01",
+            "word_token": "affected",
+            "group": "0-text",
+            "id": "1234-0-8-z7"
+        },
+        {
+            "amr_token": "disaster",
+            "word_token": "disaster",
+            "group": "0-text",
+            "id": "1234-0-8-z8"
+        },
+        {
+            "amr_token": "immediate",
+            "word_token": "immediate",
+            "group": "0-text",
+            "id": "1234-0-8-z9"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-8-z10"
+        },
+        {
+            "amr_token": "fight-01",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-8-z11"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-8-z12"
+        },
+        {
+            "amr_token": "side-by-side",
+            "word_token": "side",
+            "group": "0-text",
+            "id": "1234-0-8-z13"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-9-z0"
+        },
+        {
+            "amr_token": "injure-01",
+            "word_token": "injured",
+            "group": "0-text",
+            "id": "1234-0-9-z1"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-9-z2"
+        },
+        {
+            "amr_token": "reside-01",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-9-z3"
+        },
+        {
+            "amr_token": "building",
+            "word_token": "building",
+            "group": "0-text",
+            "id": "1234-0-9-z4"
+        },
+        {
+            "amr_token": "also",
+            "word_token": "also",
+            "group": "0-text",
+            "id": "1234-0-9-z5"
+        },
+        {
+            "amr_token": "take-01",
+            "word_token": "taken",
+            "group": "0-text",
+            "id": "1234-0-9-z6"
+        },
+        {
+            "amr_token": "facility",
+            "word_token": "facilities",
+            "group": "0-text",
+            "id": "1234-0-9-z10"
+        },
+        {
+            "amr_token": "nearby",
+            "word_token": "nearby",
+            "group": "0-text",
+            "id": "1234-0-9-z11"
+        },
+        {
+            "amr_token": "medical",
+            "word_token": "medical",
+            "group": "0-text",
+            "id": "1234-0-9-z12"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-9-z7"
+        },
+        {
+            "amr_token": "evaluate-01",
+            "word_token": "evaluation",
+            "group": "0-text",
+            "id": "1234-0-9-z8"
+        },
+        {
+            "amr_token": "care-03",
+            "word_token": "care",
+            "group": "0-text",
+            "id": "1234-0-9-z9"
+        },
+        {
+            "amr_token": "emerge-02",
+            "word_token": "emerged",
+            "group": "0-text",
+            "id": "1234-0-10-z0"
+        },
+        {
+            "amr_token": "story",
+            "word_token": "stories",
+            "group": "0-text",
+            "id": "1234-0-10-z1"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-10-z2"
+        },
+        {
+            "amr_token": "unity",
+            "word_token": "unity",
+            "group": "0-text",
+            "id": "1234-0-10-z3"
+        },
+        {
+            "amr_token": "resilience",
+            "word_token": "resilience",
+            "group": "0-text",
+            "id": "1234-0-10-z4"
+        },
+        {
+            "amr_token": "turmoil",
+            "word_token": "turmoil",
+            "group": "0-text",
+            "id": "1234-0-10-z5"
+        },
+        {
+            "amr_token": "and",
+            "word_token": ",",
+            "group": "0-text",
+            "id": "1234-0-11-z0"
+        },
+        {
+            "amr_token": "recount-01",
+            "word_token": "recounted",
+            "group": "0-text",
+            "id": "1234-0-11-z1"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "Witnesses",
+            "group": "0-text",
+            "id": "1234-0-11-z2"
+        },
+        {
+            "amr_token": "witness-01",
+            "word_token": "Witnesses",
+            "group": "0-text",
+            "id": "1234-0-11-z3"
+        },
+        {
+            "amr_token": "help-01",
+            "word_token": "helped",
+            "group": "0-text",
+            "id": "1234-0-11-z4"
+        },
+        {
+            "amr_token": "stranger",
+            "word_token": "strangers",
+            "group": "0-text",
+            "id": "1234-0-11-z5"
+        },
+        {
+            "amr_token": "escape-01",
+            "word_token": "escape",
+            "group": "0-text",
+            "id": "1234-0-11-z6"
+        },
+        {
+            "amr_token": "building",
+            "word_token": "building",
+            "group": "0-text",
+            "id": "1234-0-11-z7"
+        },
+        {
+            "amr_token": "illustrate-01",
+            "word_token": "illustrating",
+            "group": "0-text",
+            "id": "1234-0-11-z8"
+        },
+        {
+            "amr_token": "strong-02",
+            "word_token": "strength",
+            "group": "0-text",
+            "id": "1234-0-11-z9"
+        },
+        {
+            "amr_token": "community",
+            "word_token": "community",
+            "group": "0-text",
+            "id": "1234-0-11-z10"
+        },
+        {
+            "amr_token": "face-01",
+            "word_token": "face",
+            "group": "0-text",
+            "id": "1234-0-11-z11"
+        },
+        {
+            "amr_token": "adversity",
+            "word_token": "adversity",
+            "group": "0-text",
+            "id": "1234-0-11-z12"
+        },
+        {
+            "amr_token": "and",
+            "word_token": ",",
+            "group": "0-text",
+            "id": "1234-0-12-z0"
+        },
+        {
+            "amr_token": "organize-01",
+            "word_token": "organized",
+            "group": "0-text",
+            "id": "1234-0-12-z1"
+        },
+        {
+            "amr_token": "swift",
+            "word_token": "swiftly",
+            "group": "0-text",
+            "id": "1234-0-12-z15"
+        },
+        {
+            "amr_token": "provide-01",
+            "word_token": "provide",
+            "group": "0-text",
+            "id": "1234-0-12-z2"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-12-z3"
+        },
+        {
+            "amr_token": "business",
+            "word_token": "businesses",
+            "group": "0-text",
+            "id": "1234-0-12-z5"
+        },
+        {
+            "amr_token": "organization",
+            "word_token": "organizations",
+            "group": "0-text",
+            "id": "1234-0-12-z6"
+        },
+        {
+            "amr_token": "local-02",
+            "word_token": "Local",
+            "group": "0-text",
+            "id": "1234-0-12-z4"
+        },
+        {
+            "amr_token": "and",
+            "word_token": ",",
+            "group": "0-text",
+            "id": "1234-0-12-z7"
+        },
+        {
+            "amr_token": "shelter-01",
+            "word_token": "shelter",
+            "group": "0-text",
+            "id": "1234-0-12-z8"
+        },
+        {
+            "amr_token": "clothe-01",
+            "word_token": "clothing",
+            "group": "0-text",
+            "id": "1234-0-12-z9"
+        },
+        {
+            "amr_token": "thing",
+            "word_token": "necessities",
+            "group": "0-text",
+            "id": "1234-0-12-z10"
+        },
+        {
+            "amr_token": "need-01",
+            "word_token": "necessities",
+            "group": "0-text",
+            "id": "1234-0-12-z11"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-12-z12"
+        },
+        {
+            "amr_token": "reside-01",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-12-z13"
+        },
+        {
+            "amr_token": "displace-01",
+            "word_token": "displaced",
+            "group": "0-text",
+            "id": "1234-0-12-z14"
+        },
+        {
+            "amr_token": "showcase-01",
+            "word_token": "showcasing",
+            "group": "0-text",
+            "id": "1234-0-12-z16"
+        },
+        {
+            "amr_token": "spirit",
+            "word_token": "spirit",
+            "group": "0-text",
+            "id": "1234-0-12-z17"
+        },
+        {
+            "amr_token": "indomitable",
+            "word_token": "indomitable",
+            "group": "0-text",
+            "id": "1234-0-12-z24"
+        },
+        {
+            "amr_token": "rally-01",
+            "word_token": "rallying",
+            "group": "0-text",
+            "id": "1234-0-12-z18"
+        },
+        {
+            "amr_token": "city",
+            "word_token": "Yorkers",
+            "group": "0-text",
+            "id": "1234-0-12-z19"
+        },
+        {
+            "amr_token": "name",
+            "word_token": "New",
+            "group": "0-text",
+            "id": "1234-0-12-z20"
+        },
+        {
+            "amr_token": "support-01",
+            "word_token": "support",
+            "group": "0-text",
+            "id": "1234-0-12-z21"
+        },
+        {
+            "amr_token": "citizen",
+            "word_token": "citizens",
+            "group": "0-text",
+            "id": "1234-0-12-z22"
+        },
+        {
+            "amr_token": "fellow",
+            "word_token": "fellow",
+            "group": "0-text",
+            "id": "1234-0-12-z23"
+        },
+        {
+            "amr_token": "arise-02",
+            "word_token": "arise",
+            "group": "0-text",
+            "id": "1234-0-13-z0"
+        },
+        {
+            "amr_token": "question-03",
+            "word_token": "questions",
+            "group": "0-text",
+            "id": "1234-0-13-z1"
+        },
+        {
+            "amr_token": "and",
+            "word_token": "and",
+            "group": "0-text",
+            "id": "1234-0-13-z2"
+        },
+        {
+            "amr_token": "measure-02",
+            "word_token": "measures",
+            "group": "0-text",
+            "id": "1234-0-13-z3"
+        },
+        {
+            "amr_token": "safe-01",
+            "word_token": "safety",
+            "group": "0-text",
+            "id": "1234-0-13-z4"
+        },
+        {
+            "amr_token": "in-place",
+            "word_token": "in",
+            "group": "0-text",
+            "id": "1234-0-13-z5"
+        },
+        {
+            "amr_token": "state",
+            "word_token": "state",
+            "group": "0-text",
+            "id": "1234-0-13-z6"
+        },
+        {
+            "amr_token": "system",
+            "word_token": "systems",
+            "group": "0-text",
+            "id": "1234-0-13-z7"
+        },
+        {
+            "amr_token": "building",
+            "word_token": "building",
+            "group": "0-text",
+            "id": "1234-0-13-z10"
+        },
+        {
+            "amr_token": "prevent-01",
+            "word_token": "prevention",
+            "group": "0-text",
+            "id": "1234-0-13-z8"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "fire",
+            "group": "0-text",
+            "id": "1234-0-13-z9"
+        },
+        {
+            "amr_token": "delve-01",
+            "word_token": "delve",
+            "group": "0-text",
+            "id": "1234-0-13-z11"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "investigators",
+            "group": "0-text",
+            "id": "1234-0-13-z12"
+        },
+        {
+            "amr_token": "investigate-01",
+            "word_token": "investigators",
+            "group": "0-text",
+            "id": "1234-0-13-z13"
+        },
+        {
+            "amr_token": "thing",
+            "word_token": "cause",
+            "group": "0-text",
+            "id": "1234-0-13-z14"
+        },
+        {
+            "amr_token": "cause-01",
+            "word_token": "cause",
+            "group": "0-text",
+            "id": "1234-0-13-z15"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "fire",
+            "group": "0-text",
+            "id": "1234-0-13-z16"
+        },
+        {
+            "amr_token": "devastate-01",
+            "word_token": "devastating",
+            "group": "0-text",
+            "id": "1234-0-13-z17"
+        },
+        {
+            "amr_token": "have-concession-91",
+            "word_token": "but",
+            "group": "0-text",
+            "id": "1234-0-14-z0"
+        },
+        {
+            "amr_token": "shine-01",
+            "word_token": "shines",
+            "group": "0-text",
+            "id": "1234-0-14-z1"
+        },
+        {
+            "amr_token": "solidarity",
+            "word_token": "solidarity",
+            "group": "0-text",
+            "id": "1234-0-14-z2"
+        },
+        {
+            "amr_token": "city",
+            "word_token": "city",
+            "group": "0-text",
+            "id": "1234-0-14-z4"
+        },
+        {
+            "amr_token": "bend-02",
+            "word_token": "unwavering",
+            "group": "0-text",
+            "id": "1234-0-14-z3"
+        },
+        {
+            "amr_token": "beacon",
+            "word_token": "beacon",
+            "group": "0-text",
+            "id": "1234-0-14-z5"
+        },
+        {
+            "amr_token": "hope-01",
+            "word_token": "hope",
+            "group": "0-text",
+            "id": "1234-0-14-z6"
+        },
+        {
+            "amr_token": "time",
+            "word_token": "times",
+            "group": "0-text",
+            "id": "1234-0-14-z7"
+        },
+        {
+            "amr_token": "this",
+            "word_token": "these",
+            "group": "0-text",
+            "id": "1234-0-14-z9"
+        },
+        {
+            "amr_token": "try-01",
+            "word_token": "trying",
+            "group": "0-text",
+            "id": "1234-0-14-z8"
+        },
+        {
+            "amr_token": "arduous",
+            "word_token": "arduous",
+            "group": "0-text",
+            "id": "1234-0-14-z10"
+        },
+        {
+            "amr_token": "road",
+            "word_token": "road",
+            "group": "0-text",
+            "id": "1234-0-14-z12"
+        },
+        {
+            "amr_token": "recover-01",
+            "word_token": "recovery",
+            "group": "0-text",
+            "id": "1234-0-14-z13"
+        },
+        {
+            "amr_token": "person",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-14-z14"
+        },
+        {
+            "amr_token": "reside-01",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-14-z15"
+        },
+        {
+            "amr_token": "affect-01",
+            "word_token": "affected",
+            "group": "0-text",
+            "id": "1234-0-14-z16"
+        },
+        {
+            "amr_token": "doubt-01",
+            "word_token": "undoubtedly",
+            "group": "0-text",
+            "id": "1234-0-14-z11"
+        },
+        {
+            "amr_token": "set-on-fire-09",
+            "word_token": "set",
+            "group": "0-image",
+            "id": "1234-0-15-z0"
+        },
+        {
+            "amr_token": "building",
+            "word_token": "building",
+            "group": "0-image",
+            "id": "1234-0-15-z1"
+        },
+        {
+            "amr_token": "story",
+            "word_token": "story",
+            "group": "0-image",
+            "id": "1234-0-15-z2"
+        },
+        {
+            "amr_token": "fire",
+            "word_token": "fire",
+            "group": "0-image",
+            "id": "1234-0-15-z3"
+        },
+        {
+            "amr_token": "massive",
+            "word_token": "massive",
+            "group": "0-image",
+            "id": "1234-0-15-z4"
+        },
+        {
+            "amr_token": "95",
+            "word_token": "least",
+            "group": "0-text",
+            "id": "1234-0-0-z2-:op1-95"
+        },
+        {
+            "amr_token": "\"New\"",
+            "word_token": "New",
+            "group": "0-text",
+            "id": "1234-0-0-z5-:op1-\"New\""
+        },
+        {
+            "amr_token": "\"York\"",
+            "word_token": "New",
+            "group": "0-text",
+            "id": "1234-0-0-z5-:op2-\"York\""
+        },
+        {
+            "amr_token": "\"City\"",
+            "word_token": "New",
+            "group": "0-text",
+            "id": "1234-0-0-z5-:op3-\"City\""
+        },
+        {
+            "amr_token": "-",
+            "word_token": "without",
+            "group": "0-text",
+            "id": "1234-0-0-z6-:polarity--"
+        },
+        {
+            "amr_token": "4",
+            "word_token": "4",
+            "group": "0-text",
+            "id": "1234-0-0-z12-:quant-4"
+        },
+        {
+            "amr_token": "23",
+            "word_token": "story",
+            "group": "0-text",
+            "id": "1234-0-1-z2-:quant-23"
+        },
+        {
+            "amr_token": "\"15:00\"",
+            "word_token": "Saturday",
+            "group": "0-text",
+            "id": "1234-0-1-z11-:time-\"15:00\""
+        },
+        {
+            "amr_token": "1",
+            "word_token": "blocks",
+            "group": "0-text",
+            "id": "1234-0-2-z9-:quant-1"
+        },
+        {
+            "amr_token": "1",
+            "word_token": "First",
+            "group": "0-text",
+            "id": "1234-0-3-z3-:value-1"
+        },
+        {
+            "amr_token": "100",
+            "word_token": "more",
+            "group": "0-text",
+            "id": "1234-0-3-z9-:op1-100"
+        },
+        {
+            "amr_token": "\"NYFD\"",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-3-z12-:op1-\"NYFD\""
+        },
+        {
+            "amr_token": "-",
+            "word_token": "tirelessly",
+            "group": "0-text",
+            "id": "1234-0-4-z12-:polarity--"
+        },
+        {
+            "amr_token": "\"NYFD\"",
+            "word_token": "NYFD",
+            "group": "0-text",
+            "id": "1234-0-5-z18-:op1-\"NYFD\""
+        },
+        {
+            "amr_token": "2",
+            "word_token": "firefighters",
+            "group": "0-text",
+            "id": "1234-0-5-z7-:quant-2"
+        },
+        {
+            "amr_token": "2",
+            "word_token": "residents",
+            "group": "0-text",
+            "id": "1234-0-9-z2-:quant-2"
+        },
+        {
+            "amr_token": "\"New\"",
+            "word_token": "New",
+            "group": "0-text",
+            "id": "1234-0-12-z20-:op1-\"New\""
+        },
+        {
+            "amr_token": "\"York\"",
+            "word_token": "New",
+            "group": "0-text",
+            "id": "1234-0-12-z20-:op2-\"York\""
+        },
+        {
+            "amr_token": "-",
+            "word_token": "unwavering",
+            "group": "0-text",
+            "id": "1234-0-14-z3-:polarity--"
+        },
+        {
+            "amr_token": "-",
+            "word_token": "undoubtedly",
+            "group": "0-text",
+            "id": "1234-0-14-z11-:polarity--"
+        },
+        {
+            "amr_token": "23",
+            "word_token": "story",
+            "group": "0-text",
+            "id": "1234-0-15-z2-:quant-23"
+        }
+    ],
+    "links": [
+        { "edge_info": ":snt0", "source": "1234-0-image-0", "target": "1234-0-0-z0" },
+        { "edge_info": ":snt1", "source": "1234-0-image-0", "target": "1234-0-1-z0" },
+        { "edge_info": ":snt2", "source": "1234-0-image-0", "target": "1234-0-2-z0" },
+        { "edge_info": ":snt3", "source": "1234-0-image-0", "target": "1234-0-3-z0" },
+        { "edge_info": ":snt4", "source": "1234-0-image-0", "target": "1234-0-4-z0" },
+        { "edge_info": ":snt5", "source": "1234-0-image-0", "target": "1234-0-5-z0" },
+        { "edge_info": ":snt6", "source": "1234-0-image-0", "target": "1234-0-6-z0" },
+        { "edge_info": ":snt7", "source": "1234-0-image-0", "target": "1234-0-7-z0" },
+        { "edge_info": ":snt8", "source": "1234-0-image-0", "target": "1234-0-8-z0" },
+        { "edge_info": ":snt9", "source": "1234-0-image-0", "target": "1234-0-9-z0" },
+        { "edge_info": ":snt10", "source": "1234-0-image-0", "target": "1234-0-10-z0" },
+        { "edge_info": ":snt11", "source": "1234-0-image-0", "target": "1234-0-11-z0" },
+        { "edge_info": ":snt12", "source": "1234-0-image-0", "target": "1234-0-12-z0" },
+        { "edge_info": ":snt13", "source": "1234-0-image-0", "target": "1234-0-13-z0" },
+        { "edge_info": ":snt14", "source": "1234-0-image-0", "target": "1234-0-14-z0" },
+        { "edge_info": ":snt15", "source": "1234-0-image-0", "target": "1234-0-15-z0" },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-0-z0",
+            "target": "1234-0-0-z1"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-0-z0",
+            "target": "1234-0-0-z6"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-0-z0",
+            "target": "1234-0-0-z8"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-0-z1",
+            "target": "1234-0-0-z2"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-0-z1",
+            "target": "1234-0-0-z3"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-0-z1",
+            "target": "1234-0-0-z6"
+        },
+        {
+            "edge_info": ":poss",
+            "source": "1234-0-0-z1",
+            "target": "1234-0-0-z14"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-0-z2",
+            "target": "1234-0-0-z2-:op1-95"
+        },
+        {
+            "edge_info": ":location",
+            "source": "1234-0-0-z3",
+            "target": "1234-0-0-z4"
+        },
+        {
+            "edge_info": ":name",
+            "source": "1234-0-0-z4",
+            "target": "1234-0-0-z5"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-0-z4",
+            "target": "1234-0-14-z4"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-0-z5",
+            "target": "1234-0-14-z4"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-0-z5",
+            "target": "1234-0-0-z5-:op1-\"New\""
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-0-z5",
+            "target": "1234-0-0-z5-:op2-\"York\""
+        },
+        {
+            "edge_info": ":op3",
+            "source": "1234-0-0-z5",
+            "target": "1234-0-0-z5-:op3-\"City\""
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-0-z6",
+            "target": "1234-0-0-z7"
+        },
+        {
+            "edge_info": ":polarity",
+            "source": "1234-0-0-z6",
+            "target": "1234-0-0-z6-:polarity--"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-0-z8",
+            "target": "1234-0-0-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-0-z9",
+            "target": "1234-0-0-z10"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-0-z9",
+            "target": "1234-0-0-z14"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-0-z10",
+            "target": "1234-0-0-z13"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-0-z10",
+            "target": "1234-0-0-z11"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-0-z11",
+            "target": "1234-0-0-z12"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-0-z12",
+            "target": "1234-0-0-z12-:quant-4"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-0-z14",
+            "target": "1234-0-0-z15"
+        },
+        {
+            "edge_info": ":location",
+            "source": "1234-0-1-z0",
+            "target": "1234-0-1-z1"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-1-z0",
+            "target": "1234-0-1-z7"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-1-z0",
+            "target": "1234-0-1-z9"
+        },
+        {
+            "edge_info": ":consist",
+            "source": "1234-0-1-z1",
+            "target": "1234-0-1-z2"
+        },
+        {
+            "edge_info": ":location",
+            "source": "1234-0-1-z1",
+            "target": "1234-0-1-z3"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-1-z1",
+            "target": "1234-0-1-z6"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-1-z2",
+            "target": "1234-0-1-z2-:quant-23"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-1-z3",
+            "target": "1234-0-1-z5"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-1-z3",
+            "target": "1234-0-1-z4"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-1-z7",
+            "target": "1234-0-1-z8"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-1-z9",
+            "target": "1234-0-1-z10"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-1-z9",
+            "target": "1234-0-1-z11"
+        },
+        {
+            "edge_info": ":weekday",
+            "source": "1234-0-1-z11",
+            "target": "1234-0-1-z12"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-1-z11",
+            "target": "1234-0-1-z11-:time-\"15:00\""
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-2-z0",
+            "target": "1234-0-2-z1"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-2-z0",
+            "target": "1234-0-2-z3"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-2-z1",
+            "target": "1234-0-2-z2"
+        },
+        {
+            "edge_info": ":consist",
+            "source": "1234-0-2-z3",
+            "target": "1234-0-2-z12"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-2-z3",
+            "target": "1234-0-2-z4"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-2-z12",
+            "target": "1234-0-2-z13"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-2-z4",
+            "target": "1234-0-2-z5"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-2-z5",
+            "target": "1234-0-2-z6"
+        },
+        {
+            "edge_info": ":source",
+            "source": "1234-0-2-z6",
+            "target": "1234-0-2-z7"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-2-z7",
+            "target": "1234-0-2-z11"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-2-z7",
+            "target": "1234-0-2-z8"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-2-z8",
+            "target": "1234-0-2-z9"
+        },
+        {
+            "edge_info": ":unit",
+            "source": "1234-0-2-z9",
+            "target": "1234-0-2-z10"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-2-z9",
+            "target": "1234-0-2-z9-:quant-1"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-3-z0",
+            "target": "1234-0-3-z1"
+        },
+        {
+            "edge_info": ":ARG4",
+            "source": "1234-0-3-z0",
+            "target": "1234-0-3-z4"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-3-z0",
+            "target": "1234-0-3-z5"
+        },
+        {
+            "edge_info": ":rel",
+            "source": "1234-0-3-z0",
+            "target": "1234-0-3-z6"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-3-z0",
+            "target": "1234-0-3-z7"
+        },
+        {
+            "edge_info": ":ord",
+            "source": "1234-0-3-z1",
+            "target": "1234-0-3-z3"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-3-z1",
+            "target": "1234-0-3-z2"
+        },
+        {
+            "edge_info": ":value",
+            "source": "1234-0-3-z3",
+            "target": "1234-0-3-z3-:value-1"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z4",
+            "target": "1234-0-6-z1"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z4",
+            "target": "1234-0-6-z0"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-3-z7",
+            "target": "1234-0-3-z8"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-3-z7",
+            "target": "1234-0-3-z16"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-3-z7",
+            "target": "1234-0-3-z19"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-3-z8",
+            "target": "1234-0-3-z9"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-3-z8",
+            "target": "1234-0-3-z10"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-3-z8",
+            "target": "1234-0-3-z13"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-3-z8",
+            "target": "1234-0-3-z16"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-3-z9",
+            "target": "1234-0-3-z9-:op1-100"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-3-z10",
+            "target": "1234-0-3-z11"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z10",
+            "target": "1234-0-5-z17"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z10",
+            "target": "1234-0-5-z18"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z10",
+            "target": "1234-0-5-z16"
+        },
+        {
+            "edge_info": ":name",
+            "source": "1234-0-3-z11",
+            "target": "1234-0-3-z12"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z11",
+            "target": "1234-0-5-z17"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z11",
+            "target": "1234-0-5-z18"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z11",
+            "target": "1234-0-5-z16"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z12",
+            "target": "1234-0-5-z17"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z12",
+            "target": "1234-0-5-z18"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-3-z12",
+            "target": "1234-0-5-z16"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-3-z12",
+            "target": "1234-0-3-z12-:op1-\"NYFD\""
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-3-z13",
+            "target": "1234-0-3-z14"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-3-z13",
+            "target": "1234-0-3-z15"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-3-z16",
+            "target": "1234-0-3-z17"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-3-z17",
+            "target": "1234-0-3-z18"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-4-z0",
+            "target": "1234-0-4-z1"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-4-z0",
+            "target": "1234-0-4-z4"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-4-z0",
+            "target": "1234-0-4-z12"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-4-z1",
+            "target": "1234-0-4-z2"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-4-z1",
+            "target": "1234-0-4-z4"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-4-z1",
+            "target": "1234-0-4-z12"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-4-z2",
+            "target": "1234-0-4-z3"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-4-z4",
+            "target": "1234-0-4-z5"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-4-z5",
+            "target": "1234-0-4-z6"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-4-z5",
+            "target": "1234-0-4-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-4-z6",
+            "target": "1234-0-4-z7"
+        },
+        {
+            "edge_info": ":extent",
+            "source": "1234-0-4-z6",
+            "target": "1234-0-4-z8"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-4-z7",
+            "target": "1234-0-4-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-4-z9",
+            "target": "1234-0-4-z10"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-4-z10",
+            "target": "1234-0-4-z11"
+        },
+        {
+            "edge_info": ":polarity",
+            "source": "1234-0-4-z12",
+            "target": "1234-0-4-z12-:polarity--"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-5-z0",
+            "target": "1234-0-5-z1"
+        },
+        {
+            "edge_info": ":rel",
+            "source": "1234-0-5-z0",
+            "target": "1234-0-5-z14"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z0",
+            "target": "1234-0-5-z4"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-5-z1",
+            "target": "1234-0-5-z2"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-5-z1",
+            "target": "1234-0-5-z3"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z1",
+            "target": "1234-0-5-z10"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z15"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z16"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z14"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z19"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z17"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z20"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z7"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z18"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z2",
+            "target": "1234-0-5-z10"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-5-z3",
+            "target": "1234-0-5-z10"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-5-z14",
+            "target": "1234-0-5-z15"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-5-z15",
+            "target": "1234-0-5-z16"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-5-z15",
+            "target": "1234-0-5-z19"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z16",
+            "target": "1234-0-5-z17"
+        },
+        {
+            "edge_info": ":name",
+            "source": "1234-0-5-z17",
+            "target": "1234-0-5-z18"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-5-z18",
+            "target": "1234-0-5-z18-:op1-\"NYFD\""
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z19",
+            "target": "1234-0-5-z20"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-5-z4",
+            "target": "1234-0-5-z5"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-5-z5",
+            "target": "1234-0-5-z6"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-5-z5",
+            "target": "1234-0-5-z11"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z6",
+            "target": "1234-0-5-z7"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-5-z6",
+            "target": "1234-0-5-z9"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-5-z6",
+            "target": "1234-0-5-z10"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z7",
+            "target": "1234-0-5-z8"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z7",
+            "target": "1234-0-5-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z7",
+            "target": "1234-0-5-z11"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-5-z7",
+            "target": "1234-0-5-z12"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-5-z7",
+            "target": "1234-0-5-z7-:quant-2"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-5-z11",
+            "target": "1234-0-5-z13"
+        },
+        {
+            "edge_info": ":purpose",
+            "source": "1234-0-5-z11",
+            "target": "1234-0-5-z12"
+        },
+        {
+            "edge_info": ":domain",
+            "source": "1234-0-6-z0",
+            "target": "1234-0-6-z1"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-6-z0",
+            "target": "1234-0-6-z4"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-6-z1",
+            "target": "1234-0-6-z2"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-6-z1",
+            "target": "1234-0-6-z3"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-6-z4",
+            "target": "1234-0-6-z5"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-6-z4",
+            "target": "1234-0-6-z10"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-6-z5",
+            "target": "1234-0-6-z6"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-6-z5",
+            "target": "1234-0-6-z8"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-6-z5",
+            "target": "1234-0-6-z10"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-6-z6",
+            "target": "1234-0-6-z7"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-6-z8",
+            "target": "1234-0-6-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-6-z10",
+            "target": "1234-0-6-z11"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-6-z11",
+            "target": "1234-0-6-z12"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-6-z11",
+            "target": "1234-0-6-z13"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-6-z13",
+            "target": "1234-0-6-z14"
+        },
+        {
+            "edge_info": ":part",
+            "source": "1234-0-6-z13",
+            "target": "1234-0-6-z15"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-6-z15",
+            "target": "1234-0-6-z16"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-7-z0",
+            "target": "1234-0-7-z1"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-7-z0",
+            "target": "1234-0-7-z7"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-7-z1",
+            "target": "1234-0-7-z2"
+        },
+        {
+            "edge_info": ":location",
+            "source": "1234-0-7-z1",
+            "target": "1234-0-7-z5"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-7-z2",
+            "target": "1234-0-7-z3"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-7-z2",
+            "target": "1234-0-7-z4"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-7-z5",
+            "target": "1234-0-7-z6"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-7-z7",
+            "target": "1234-0-7-z8"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-7-z7",
+            "target": "1234-0-7-z10"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-7-z8",
+            "target": "1234-0-7-z9"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-7-z10",
+            "target": "1234-0-7-z11"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-7-z10",
+            "target": "1234-0-7-z12"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-7-z10",
+            "target": "1234-0-7-z14"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-7-z11",
+            "target": "1234-0-7-z13"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-7-z12",
+            "target": "1234-0-7-z13"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-8-z0",
+            "target": "1234-0-8-z1"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-8-z0",
+            "target": "1234-0-8-z4"
+        },
+        {
+            "edge_info": ":accompanier",
+            "source": "1234-0-8-z0",
+            "target": "1234-0-8-z10"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-8-z0",
+            "target": "1234-0-8-z13"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-8-z1",
+            "target": "1234-0-8-z2"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-8-z1",
+            "target": "1234-0-8-z3"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-8-z1",
+            "target": "1234-0-8-z4"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-8-z1",
+            "target": "1234-0-8-z5"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-8-z4",
+            "target": "1234-0-8-z5"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-8-z5",
+            "target": "1234-0-8-z6"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-8-z5",
+            "target": "1234-0-8-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-8-z6",
+            "target": "1234-0-8-z7"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-8-z7",
+            "target": "1234-0-8-z8"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-8-z10",
+            "target": "1234-0-8-z11"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-8-z11",
+            "target": "1234-0-8-z12"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-9-z0",
+            "target": "1234-0-9-z1"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-9-z0",
+            "target": "1234-0-9-z6"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-9-z1",
+            "target": "1234-0-9-z2"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-9-z1",
+            "target": "1234-0-9-z5"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-9-z2",
+            "target": "1234-0-9-z3"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-9-z2",
+            "target": "1234-0-9-z6"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-9-z2",
+            "target": "1234-0-9-z8"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-9-z2",
+            "target": "1234-0-9-z9"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-9-z2",
+            "target": "1234-0-9-z2-:quant-2"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-9-z3",
+            "target": "1234-0-9-z4"
+        },
+        {
+            "edge_info": ":ARG3",
+            "source": "1234-0-9-z6",
+            "target": "1234-0-9-z10"
+        },
+        {
+            "edge_info": ":purpose",
+            "source": "1234-0-9-z6",
+            "target": "1234-0-9-z7"
+        },
+        {
+            "edge_info": ":location",
+            "source": "1234-0-9-z10",
+            "target": "1234-0-9-z11"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-9-z10",
+            "target": "1234-0-9-z12"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-9-z7",
+            "target": "1234-0-9-z8"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-9-z7",
+            "target": "1234-0-9-z9"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-10-z0",
+            "target": "1234-0-10-z1"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-10-z0",
+            "target": "1234-0-10-z5"
+        },
+        {
+            "edge_info": ":topic",
+            "source": "1234-0-10-z1",
+            "target": "1234-0-10-z2"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-10-z2",
+            "target": "1234-0-10-z3"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-10-z2",
+            "target": "1234-0-10-z4"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-11-z0",
+            "target": "1234-0-11-z1"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-11-z0",
+            "target": "1234-0-11-z8"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-11-z1",
+            "target": "1234-0-11-z2"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-11-z1",
+            "target": "1234-0-11-z4"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-11-z2",
+            "target": "1234-0-11-z3"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-11-z2",
+            "target": "1234-0-11-z8"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-11-z4",
+            "target": "1234-0-11-z5"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-11-z4",
+            "target": "1234-0-11-z6"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-11-z5",
+            "target": "1234-0-11-z6"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-11-z5",
+            "target": "1234-0-11-z11"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-11-z6",
+            "target": "1234-0-11-z7"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-11-z8",
+            "target": "1234-0-11-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-11-z9",
+            "target": "1234-0-11-z10"
+        },
+        {
+            "edge_info": ":concession",
+            "source": "1234-0-11-z9",
+            "target": "1234-0-11-z11"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-11-z11",
+            "target": "1234-0-11-z12"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-12-z0",
+            "target": "1234-0-12-z1"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-12-z0",
+            "target": "1234-0-12-z16"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-12-z1",
+            "target": "1234-0-12-z3"
+        },
+        {
+            "edge_info": ":manner",
+            "source": "1234-0-12-z1",
+            "target": "1234-0-12-z15"
+        },
+        {
+            "edge_info": ":purpose",
+            "source": "1234-0-12-z1",
+            "target": "1234-0-12-z2"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-12-z2",
+            "target": "1234-0-12-z3"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-12-z2",
+            "target": "1234-0-12-z7"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-12-z2",
+            "target": "1234-0-12-z12"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-12-z3",
+            "target": "1234-0-12-z5"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-12-z3",
+            "target": "1234-0-12-z6"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-12-z3",
+            "target": "1234-0-12-z4"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-12-z3",
+            "target": "1234-0-12-z16"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-12-z7",
+            "target": "1234-0-12-z8"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-12-z7",
+            "target": "1234-0-12-z9"
+        },
+        {
+            "edge_info": ":op3",
+            "source": "1234-0-12-z7",
+            "target": "1234-0-12-z10"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-12-z10",
+            "target": "1234-0-12-z11"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-12-z12",
+            "target": "1234-0-12-z13"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-12-z12",
+            "target": "1234-0-12-z14"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z12",
+            "target": "1234-0-14-z15"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z12",
+            "target": "1234-0-14-z16"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z12",
+            "target": "1234-0-14-z14"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z13",
+            "target": "1234-0-14-z15"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z13",
+            "target": "1234-0-14-z16"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z13",
+            "target": "1234-0-14-z14"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z14",
+            "target": "1234-0-14-z15"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z14",
+            "target": "1234-0-14-z16"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-12-z14",
+            "target": "1234-0-14-z14"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-12-z16",
+            "target": "1234-0-12-z17"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-12-z17",
+            "target": "1234-0-12-z24"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-12-z17",
+            "target": "1234-0-12-z18"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-12-z18",
+            "target": "1234-0-12-z19"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-12-z18",
+            "target": "1234-0-12-z21"
+        },
+        {
+            "edge_info": ":name",
+            "source": "1234-0-12-z19",
+            "target": "1234-0-12-z20"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-12-z19",
+            "target": "1234-0-12-z21"
+        },
+        {
+            "edge_info": ":poss",
+            "source": "1234-0-12-z19",
+            "target": "1234-0-12-z22"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-12-z20",
+            "target": "1234-0-12-z20-:op1-\"New\""
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-12-z20",
+            "target": "1234-0-12-z20-:op2-\"York\""
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-12-z21",
+            "target": "1234-0-12-z22"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-12-z22",
+            "target": "1234-0-12-z23"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-13-z0",
+            "target": "1234-0-13-z1"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-13-z0",
+            "target": "1234-0-13-z11"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-13-z1",
+            "target": "1234-0-13-z2"
+        },
+        {
+            "edge_info": ":op1",
+            "source": "1234-0-13-z2",
+            "target": "1234-0-13-z3"
+        },
+        {
+            "edge_info": ":op2",
+            "source": "1234-0-13-z2",
+            "target": "1234-0-13-z6"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-13-z3",
+            "target": "1234-0-13-z4"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-13-z3",
+            "target": "1234-0-13-z5"
+        },
+        {
+            "edge_info": ":poss",
+            "source": "1234-0-13-z6",
+            "target": "1234-0-13-z7"
+        },
+        {
+            "edge_info": ":poss",
+            "source": "1234-0-13-z7",
+            "target": "1234-0-13-z10"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-13-z7",
+            "target": "1234-0-13-z8"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-13-z10",
+            "target": "1234-0-15-z1"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-13-z10",
+            "target": "1234-0-15-z2"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-13-z8",
+            "target": "1234-0-13-z9"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-13-z11",
+            "target": "1234-0-13-z12"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-13-z11",
+            "target": "1234-0-13-z14"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-13-z12",
+            "target": "1234-0-13-z13"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-13-z14",
+            "target": "1234-0-13-z15"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-13-z15",
+            "target": "1234-0-13-z16"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-13-z16",
+            "target": "1234-0-13-z17"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-13-z16",
+            "target": "1234-0-15-z4"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-13-z16",
+            "target": "1234-0-15-z3"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-13-z17",
+            "target": "1234-0-15-z4"
+        },
+        {
+            "edge_info": ":entity",
+            "source": "1234-0-13-z17",
+            "target": "1234-0-15-z3"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-14-z0",
+            "target": "1234-0-14-z1"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-14-z0",
+            "target": "1234-0-14-z10"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-14-z1",
+            "target": "1234-0-14-z2"
+        },
+        {
+            "edge_info": ":prep-as",
+            "source": "1234-0-14-z1",
+            "target": "1234-0-14-z5"
+        },
+        {
+            "edge_info": ":poss",
+            "source": "1234-0-14-z2",
+            "target": "1234-0-14-z4"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-14-z2",
+            "target": "1234-0-14-z3"
+        },
+        {
+            "edge_info": ":polarity",
+            "source": "1234-0-14-z3",
+            "target": "1234-0-14-z3-:polarity--"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-14-z5",
+            "target": "1234-0-14-z6"
+        },
+        {
+            "edge_info": ":time",
+            "source": "1234-0-14-z5",
+            "target": "1234-0-14-z7"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-14-z7",
+            "target": "1234-0-14-z9"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-14-z7",
+            "target": "1234-0-14-z8"
+        },
+        {
+            "edge_info": ":domain",
+            "source": "1234-0-14-z10",
+            "target": "1234-0-14-z12"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-14-z10",
+            "target": "1234-0-14-z11"
+        },
+        {
+            "edge_info": ":direction",
+            "source": "1234-0-14-z12",
+            "target": "1234-0-14-z13"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-14-z13",
+            "target": "1234-0-14-z14"
+        },
+        {
+            "edge_info": ":ARG0",
+            "source": "1234-0-14-z14",
+            "target": "1234-0-14-z15"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-14-z14",
+            "target": "1234-0-14-z16"
+        },
+        {
+            "edge_info": ":polarity",
+            "source": "1234-0-14-z11",
+            "target": "1234-0-14-z11-:polarity--"
+        },
+        {
+            "edge_info": ":ARG1",
+            "source": "1234-0-15-z0",
+            "target": "1234-0-15-z1"
+        },
+        {
+            "edge_info": ":ARG2",
+            "source": "1234-0-15-z0",
+            "target": "1234-0-15-z3"
+        },
+        {
+            "edge_info": ":part",
+            "source": "1234-0-15-z1",
+            "target": "1234-0-15-z2"
+        },
+        {
+            "edge_info": ":quant",
+            "source": "1234-0-15-z2",
+            "target": "1234-0-15-z2-:quant-23"
+        },
+        {
+            "edge_info": ":mod",
+            "source": "1234-0-15-z3",
+            "target": "1234-0-15-z4"
+        }
+    ]
+}
