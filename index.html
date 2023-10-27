@@ -20,23 +20,28 @@
         }
 
         #info-panel {
-            position: absolute; /* Position it relative to the <body> */
-            top: 10px; /* Position at the bottom with a space of 10px */
-            left: 10px; /* Position from the left with a space of 10px */
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-            color: white; /* White text color */
-            padding: 10px; /* Add some space around the content */
-            max-width: 25%; /* Limit width */
-            font-size: 16px; /* Set font size */
-            border-radius: 5px; /* Optional: for rounded corners */
-            z-index: 100; /* Ensure it's above other elements */
-        }        
+            position: absolute;
+            /* Position it relative to the <body> */
+            top: 10px;
+            /* Position at the bottom with a space of 10px */
+            left: 10px;
+            /* Position from the left with a space of 10px */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent black */
+            color: white;
+            /* White text color */
+            padding: 10px;
+            /* Add some space around the content */
+            max-width: 25%;
+            /* Limit width */
+            font-size: 16px;
+            /* Set font size */
+            border-radius: 5px;
+            /* Optional: for rounded corners */
+            z-index: 100;
+            /* Ensure it's above other elements */
+        }
     </style>
-    <script src="https://unpkg.com/3d-force-graph"></script>
-    <script src="https://unpkg.com/three"></script>
-    <script src="//unpkg.com/three-spritetext"></script>
-    <script src="//unpkg.com/dat.gui"></script>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 
 <body>
@@ -46,14 +51,12 @@
 
 </html>
 
-<script type="importmap">
-  { "imports": { "three": "https://unpkg.com/three/build/three.module.js" } }
-</script>
 <script type="module">
-    import {
-        CSS2DRenderer,
-        CSS2DObject,
-    } from "https://unpkg.com/three/examples/jsm/renderers/CSS2DRenderer.js";
+    import { CSS2DRenderer, CSS2DObject } from "three/addons/renderers/CSS2DRenderer.js";
+    import ForceGraph3D from '3d-force-graph';
+    import * as d3 from 'd3';
+    import * as THREE from 'three';
+    import { GUI } from 'dat.gui';
     //import { UnrealBloomPass } from '//unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js';
 
     var graph;
@@ -72,12 +75,12 @@
             !b.neighbors && (b.neighbors = []);
             a.neighbors.push(b);
             b.neighbors.push(a);
-      
+
             !a.links && (a.links = []);
             !b.links && (b.links = []);
             a.links.push(link);
             b.links.push(link);
-          });
+        });
         //----------------------------------------
 
 
@@ -158,7 +161,7 @@
                 //----------------------------------------
             }).onLinkHover(link => {
                 document.body.style.cursor = link ? "pointer" : null;
-                
+
                 // highlight features
                 //----------------------------------------
                 highlightNodes.clear();
@@ -210,7 +213,7 @@
             } else {
                 nodeEl.textContent = link.edge_info;
             }
-            
+
             nodeEl.className = 'link-label';
             nodeEl.style.fontSize = `${settings.fontSize}px`;
 
@@ -230,15 +233,14 @@
         const Settings = function () {
             this.fontSize = 8;
             this.showLabels = true;
-
             this.nodeSize = 10;
             this.linkWidth = 3;
-            //this.distance = 20;
             this.imageSize = 45;
+            //this.distance = 20;
         };
 
         const settings = new Settings();
-        const controllerGUI = new dat.GUI();
+        const controllerGUI = new GUI();
 
         const fontSizeController = controllerGUI.add(settings, 'fontSize', 0, 30);
         const linkWidthController = controllerGUI.add(settings, 'linkWidth', 0, 30);
@@ -257,37 +259,34 @@
         //    .d3Force('link')
         //    .distance(link => settings.distance);
         //const distanceController = gui.add(settings, 'distance', 0, 100);
-        
+
         //distanceController.onChange(() => {
         //    linkForce.distance(link => settings.distance);
         //    graph.numDimensions(3); // Re-heat simulation
         //});
         // TODO adjust the font size
         fontSizeController.onChange(() => {
-           graph.nodeThreeObject(createNodeObject);
-           graph.linkThreeObject(createLinkLabel);
-           //graph.numDimensions(3);
-           graph.refresh();
+            graph.nodeThreeObject(createNodeObject);
+            graph.linkThreeObject(createLinkLabel);
+            graph.refresh();
         });
         showLabelsController.onChange(() => {
             graph.nodeThreeObject(createNodeObject); // These functions should consider 'settings.showLabels'
             graph.linkThreeObject(createLinkLabel);
             graph.refresh(); // Required to reflect the changes on the graph
-        });        
+        });
 
         imageSizeController.onChange(() => {
             graph.nodeThreeObject(createNodeObject);
             graph.linkThreeObject(createLinkLabel);
-            //graph.numDimensions(3);
             graph.refresh();
         });
-
 
         function updateInfoPanel(content) {
             const infoPanel = document.getElementById('info-panel');
             infoPanel.innerHTML = content; // you can insert HTML or text content here
         }
-        
+
         updateInfoPanel('Welcome to the Multi-Sourced Evidence Graph! \
         <br> \
         1. You can zoom in/out by scrolling the mouse wheel. \

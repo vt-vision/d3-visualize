@@ -6,7 +6,8 @@ workflow:
 
 pages:
   script:
-    - echo "Publishing to GitLab Pages"
+    - yarn install
+    - yarn build
   artifacts:
     paths:
-      - public
+      - dist
