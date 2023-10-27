@@ -6,9 +6,7 @@ workflow:
 
 pages:
   script:
-    - ;
+    - echo "Publishing to GitLab Pages"
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"
