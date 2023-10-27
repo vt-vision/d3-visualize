@@ -1,25 +1,17 @@
 image: node:latest
-
-workflow:
-  rules:
-    - if: $CI_COMMIT_BRANCH
-
-build:
-  stage: build
+pages:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: yarn
+    paths:
+      - node_modules/
   script:
     - yarn install
     - yarn build
-  artifacts:
-    untracked: true
-    paths:
-      - dist
-
-pages:
-  stage: deploy
-  dependencies:
-    - build
-  script:
-    - mv dist public
+    - cp -a dist/. public/
   artifacts:
     paths:
       - public
