@@ -2,7 +2,7 @@
   "directed": false,
   "multigraph": false,
   "graph": {
-    "kg_penman": "(origin / multi-sentence :snt0 (1234-0-0-z0 / leave-13 :ARG0 (1234-0-0-z1 / person :quant (1234-0-0-z2 / at-least :op1 95) :ARG0-of (1234-0-0-z3 / reside-01 :location (1234-0-0-z4 / city :name (1234-0-0-z5 / name :op1 \"New\" :op2 \"York\" :op3 \"City\")))) :ARG1 (1234-0-0-z6 / have-03 :ARG0 1234-0-0-z1 :ARG1 (1234-0-0-z7 / home) :polarity -) :time (1234-0-0-z8 / after :op1 (1234-0-0-z9 / spread-02 :ARG1 (1234-0-0-z10 / fire :mod (1234-0-0-z13 / massive) :ARG0-of (1234-0-0-z11 / injure-01 :ARG1 (1234-0-0-z12 / person :quant 4))) :ARG2 (1234-0-0-z14 / building :mod (1234-0-0-z15 / apartment) :poss 1234-0-0-z1)))) :snt1 (1234-0-1-z0 / fire :location (1234-0-1-z1 / building :consist-of (1234-0-1-z2 / story :quant 23) :location (1234-0-1-z3 / neighborhood :mod (1234-0-1-z5 / urban) :ARG0-of (1234-0-1-z4 / bustle-01)) :mod (1234-0-1-z6 / apartment)) :mod (1234-0-1-z7 / alarm-01 :quant (1234-0-1-z8 / multiple)) :time (1234-0-1-z9 / after :mod (1234-0-1-z10 / just) :op1 (1234-0-1-z11 / date-entity :time \"15:00\" :weekday (1234-0-1-z12 / saturday)))) :snt2 (1234-0-2-z0 / send-03 :ARG0 (1234-0-2-z1 / inferno :ARG0-of (1234-0-2-z2 / tower-01)) :ARG1 (1234-0-2-z3 / bill :consist-of (1234-0-2-z12 / smoke :ARG1-of (1234-0-2-z13 / thick-03)) :ARG1-of (1234-0-2-z4 / billow-01 :ARG2 (1234-0-2-z5 / sky :ARG1-of (1234-0-2-z6 / see-01 :source (1234-0-2-z7 / relative-position :op2 (1234-0-2-z11 / away) :quant (1234-0-2-z8 / several :op1 (1234-0-2-z9 / distance-quantity :quant 1 :unit (1234-0-2-z10 / block))))))))) :snt3 (1234-0-3-z0 / arrive-01 :ARG1 (1234-0-3-z1 / person :ord (1234-0-3-z3 / ordinal-entity :value 1) :ARG0-of (1234-0-3-z2 / respond-01)) :ARG4 (1234-0-3-z4 / scene :entity 1234-0-6-z0 :entity-of 1234-0-6-z0 :entity 1234-0-6-z1 :entity-of 1234-0-6-z1) :manner (1234-0-3-z5 / swift) :rel (1234-0-3-z6 / dedicate-01) :time-of (1234-0-3-z7 / battle-01 :ARG0 (1234-0-3-z8 / person :quant (1234-0-3-z9 / more-than :op1 100) :ARG0-of (1234-0-3-z10 / have-org-role-91 :ARG1 (1234-0-3-z11 / organization :name (1234-0-3-z12 / name :op1 \"NYFD\"))) :ARG0-of (1234-0-3-z13 / fight-01 :ARG1 (1234-0-3-z14 / fire) :ARG1 (1234-0-3-z15 / fire))) :ARG1 (1234-0-3-z16 / contain-01 :ARG0 1234-0-3-z8 :ARG1 (1234-0-3-z17 / blaze :ARG0-of (1234-0-3-z18 / rage-02))) :manner (1234-0-3-z19 / courage))) :snt4 (1234-0-4-z0 / work-01 :ARG0 (1234-0-4-z1 / person :ARG0-of (1234-0-4-z2 / fight-01 :ARG1 (1234-0-4-z3 / fire))) :ARG1 (1234-0-4-z4 / prevent-01 :ARG0 1234-0-4-z1 :ARG1 (1234-0-4-z5 / and :op1 (1234-0-4-z6 / spread-02 :ARG1 (1234-0-4-z7 / fire) :extent (1234-0-4-z8 / further)) :op2 (1234-0-4-z9 / endanger-01 :ARG0 1234-0-4-z7 :ARG1 (1234-0-4-z10 / structure :ARG1-of (1234-0-4-z11 / neighbor-01))))) :manner (1234-0-4-z12 / work-01 :ARG0 1234-0-4-z1 :polarity -)) :snt5 (1234-0-5-z0 / sacrifice-01 :ARG0 (1234-0-5-z1 / effort-01 :ARG0 (1234-0-5-z2 / they :entity 1234-0-5-z10 :entity-of 1234-0-5-z10) :manner (1234-0-5-z3 / hero :entity 1234-0-5-z10 :entity-of 1234-0-5-z10) :entity 1234-0-5-z10 :entity-of 1234-0-5-z10) :rel (1234-0-5-z14 / brave-02 :ARG0 (1234-0-5-z15 / person :ARG0-of (1234-0-5-z16 / have-org-role-91 :ARG1 (1234-0-5-z17 / military :name (1234-0-5-z18 / name :op1 \"NYFD\"))) :ARG0-of (1234-0-5-z19 / fight-01 :ARG1 (1234-0-5-z20 / fire)))) :ARG1-of (1234-0-5-z4 / cause-01 :ARG0 (1234-0-5-z5 / and :op1 (1234-0-5-z6 / sustain-01 :ARG1 (1234-0-5-z7 / person :quant 2 :ARG1-of (1234-0-5-z8 / include-91)) :ARG2 (1234-0-5-z9 / injure-01 :ARG1 1234-0-5-z7) :time (1234-0-5-z10 / operation)) :op2 (1234-0-5-z11 / rush-01 :ARG1 1234-0-5-z7 :ARG2 (1234-0-5-z13 / hospital) :purpose (1234-0-5-z12 / treat-03 :ARG1 1234-0-5-z7))))) :snt6 (1234-0-6-z0 / scene :domain (1234-0-6-z1 / scene :mod (1234-0-6-z2 / chaos) :mod (1234-0-6-z3 / concern-01)) :time (1234-0-6-z4 / watch-01 :ARG0 (1234-0-6-z5 / and :op1 (1234-0-6-z6 / person :ARG0-of (1234-0-6-z7 / reside-01)) :op2 (1234-0-6-z8 / person :mod (1234-0-6-z9 / onlooker))) :manner (1234-0-6-z10 / disbelieve-01 :ARG1 1234-0-6-z5 :ARG1 (1234-0-6-z11 / consume-01 :ARG0 (1234-0-6-z12 / fire) :ARG1 (1234-0-6-z13 / floor :quant (1234-0-6-z14 / several) :part-of (1234-0-6-z15 / building :mod (1234-0-6-z16 / apartment))))))) :snt7 (1234-0-7-z0 / possible-01 :ARG1 (1234-0-7-z1 / palpate-00 :ARG1 (1234-0-7-z2 / and :op1 (1234-0-7-z3 / panic-01) :op2 (1234-0-7-z4 / fear-01)) :location (1234-0-7-z5 / among :op1 (1234-0-7-z6 / crowd :entity 1234-1-10-z4 :entity-of 1234-1-10-z4 :entity 1234-1-10-z5 :entity-of 1234-1-10-z5))) :time (1234-0-7-z7 / and :op1 (1234-0-7-z8 / separate-01 :ARG1 (1234-0-7-z9 / family)) :op2 (1234-0-7-z10 / search-01 :ARG0 (1234-0-7-z11 / individual) :ARG2 (1234-0-7-z12 / one :ARG1-of (1234-0-7-z13 / love-01 :ARG0 1234-0-7-z11)) :manner (1234-0-7-z14 / frantic)))) :snt8 (1234-0-8-z0 / work-01 :ARG0 (1234-0-8-z1 / personnel :mod (1234-0-8-z2 / medicine) :mod (1234-0-8-z3 / emergency)) :ARG1 (1234-0-8-z4 / provide-01 :ARG0 1234-0-8-z1 :ARG1 (1234-0-8-z5 / assist-01 :ARG0 1234-0-8-z1 :ARG1 (1234-0-8-z6 / person :ARG1-of (1234-0-8-z7 / affect-01 :ARG0 (1234-0-8-z8 / disaster))) :time (1234-0-8-z9 / immediate))) :accompanier (1234-0-8-z10 / person :ARG0-of (1234-0-8-z11 / fight-01 :ARG1 (1234-0-8-z12 / fire))) :manner (1234-0-8-z13 / side-by-side)) :snt9 (1234-0-9-z0 / and :op1 (1234-0-9-z1 / injure-01 :ARG1 (1234-0-9-z2 / person :quant 2 :ARG0-of (1234-0-9-z3 / reside-01 :ARG1 (1234-0-9-z4 / building))) :mod (1234-0-9-z5 / also)) :op2 (1234-0-9-z6 / take-01 :ARG1 1234-0-9-z2 :ARG3 (1234-0-9-z10 / facility :location (1234-0-9-z11 / nearby) :mod (1234-0-9-z12 / medical)) :purpose (1234-0-9-z7 / and :op1 (1234-0-9-z8 / evaluate-01 :ARG1 1234-0-9-z2) :op2 (1234-0-9-z9 / care-03 :ARG1 1234-0-9-z2)))) :snt10 (1234-0-10-z0 / emerge-02 :ARG0 (1234-0-10-z1 / story :topic (1234-0-10-z2 / and :op1 (1234-0-10-z3 / unity) :op2 (1234-0-10-z4 / resilience))) :time (1234-0-10-z5 / turmoil)) :snt11 (1234-0-11-z0 / and :op1 (1234-0-11-z1 / recount-01 :ARG0 (1234-0-11-z2 / person :ARG0-of (1234-0-11-z3 / witness-01)) :ARG1 (1234-0-11-z4 / help-01 :ARG0 (1234-0-11-z5 / stranger) :ARG1 (1234-0-11-z6 / escape-01 :ARG0 1234-0-11-z5 :ARG1 (1234-0-11-z7 / building)) :ARG2 1234-0-11-z5)) :op2 (1234-0-11-z8 / illustrate-01 :ARG0 1234-0-11-z2 :ARG1 (1234-0-11-z9 / strong-02 :ARG1 (1234-0-11-z10 / community) :concession (1234-0-11-z11 / face-01 :ARG0 1234-0-11-z5 :ARG1 (1234-0-11-z12 / adversity))))) :snt12 (1234-0-12-z0 / and :op1 (1234-0-12-z1 / organize-01 :ARG0 1234-0-12-z3 :manner (1234-0-12-z15 / swift) :purpose (1234-0-12-z2 / provide-01 :ARG0 (1234-0-12-z3 / and :op1 (1234-0-12-z5 / business) :op2 (1234-0-12-z6 / organization) :ARG1-of (1234-0-12-z4 / local-02)) :ARG1 (1234-0-12-z7 / and :op1 (1234-0-12-z8 / shelter-01) :op2 (1234-0-12-z9 / clothe-01) :op3 (1234-0-12-z10 / thing :ARG1-of (1234-0-12-z11 / need-01))) :ARG2 (1234-0-12-z12 / person :ARG0-of (1234-0-12-z13 / reside-01) :ARG1-of (1234-0-12-z14 / displace-01)))) :op2 (1234-0-12-z16 / showcase-01 :ARG0 1234-0-12-z3 :ARG1 (1234-0-12-z17 / spirit :mod (1234-0-12-z24 / indomitable) :ARG0-of (1234-0-12-z18 / rally-01 :ARG1 (1234-0-12-z19 / city :name (1234-0-12-z20 / name :op1 \"New\" :op2 \"York\")) :ARG2 (1234-0-12-z21 / support-01 :ARG0 1234-0-12-z19 :ARG1 (1234-0-12-z22 / citizen :mod (1234-0-12-z23 / fellow) :poss 1234-0-12-z19)))))) :snt13 (1234-0-13-z0 / arise-02 :ARG1 (1234-0-13-z1 / question-03 :ARG1 (1234-0-13-z2 / and :op1 (1234-0-13-z3 / measure-02 :ARG1 (1234-0-13-z4 / safe-01) :mod (1234-0-13-z5 / in-place)) :op2 (1234-0-13-z6 / state :poss (1234-0-13-z7 / system :poss (1234-0-13-z10 / building) :ARG0-of (1234-0-13-z8 / prevent-01 :ARG1 (1234-0-13-z9 / fire)))))) :time (1234-0-13-z11 / delve-01 :ARG0 (1234-0-13-z12 / person :ARG0-of (1234-0-13-z13 / investigate-01)) :ARG1 (1234-0-13-z14 / thing :ARG0-of (1234-0-13-z15 / cause-01 :ARG1 (1234-0-13-z16 / fire :ARG0-of (1234-0-13-z17 / devastate-01)))))) :snt14 (1234-0-14-z0 / have-concession-91 :ARG1 (1234-0-14-z1 / shine-01 :ARG1 (1234-0-14-z2 / solidarity :poss (1234-0-14-z4 / city) :ARG0-of (1234-0-14-z3 / bend-02 :polarity -)) :prep-as (1234-0-14-z5 / beacon :mod (1234-0-14-z6 / hope-01) :time (1234-0-14-z7 / time :mod (1234-0-14-z9 / this) :ARG1-of (1234-0-14-z8 / try-01)))) :ARG2 (1234-0-14-z10 / arduous :domain (1234-0-14-z12 / road :direction (1234-0-14-z13 / recover-01 :ARG1 (1234-0-14-z14 / person :ARG0-of (1234-0-14-z15 / reside-01 :entity 1234-1-0-z13 :entity-of 1234-1-0-z13) :ARG1-of (1234-0-14-z16 / affect-01 :entity 1234-1-0-z13 :entity-of 1234-1-0-z13) :entity 1234-1-0-z13 :entity-of 1234-1-0-z13))) :ARG1-of (1234-0-14-z11 / doubt-01 :polarity -))) :snt15 (1234-0-15-z0 / set-on-fire-09 :ARG1 (1234-0-15-z1 / building :part (1234-0-15-z2 / story :quant 23)) :ARG2 (1234-0-15-z3 / fire :mod (1234-0-15-z4 / massive))) :snt16 (1234-1-0-z0 / say-01 :ARG0 (1234-1-0-z1 / official) :ARG1 (1234-1-0-z2 / fight-01 :ARG0 (1234-1-0-z3 / person :quant (1234-1-0-z4 / more-than :op1 100) :ARG0-of (1234-1-0-z5 / have-org-role-91 :ARG1 (1234-1-0-z6 / organization :name (1234-1-0-z7 / name :op1 \"NYFD\"))) :ARG0-of (1234-1-0-z8 / fight-01 :ARG1 (1234-1-0-z9 / fire))) :ARG2 (1234-1-0-z10 / contain-01 :ARG0 1234-1-0-z3 :ARG1 (1234-1-0-z11 / blaze :location (1234-1-0-z14 / building :location (1234-1-0-z15 / city-district :name (1234-1-0-z16 / name :op1 \"Manhattan\" :entity 1234-2-0-z9 :entity-of 1234-2-0-z9 :entity 1234-2-0-z8 :entity-of 1234-2-0-z8) :entity 1234-2-0-z9 :entity-of 1234-2-0-z9 :entity 1234-2-0-z8 :entity-of 1234-2-0-z8) :mod (1234-1-0-z17 / apartment)) :mod (1234-1-0-z18 / alarm-01 :quant (1234-1-0-z19 / multiple)) :time (1234-1-0-z20 / date-entity :dayperiod (1234-1-0-z21 / afternoon) :weekday (1234-1-0-z22 / saturday :entity 1234-2-0-z22 :entity-of 1234-2-0-z22)) :ARG0-of (1234-1-0-z12 / injure-01 :ARG1 (1234-1-0-z13 / person :quant 4)))))) :snt17 (1234-1-1-z0 / break-out-30 :ARG1 (1234-1-1-z16 / fire) :location (1234-1-1-z17 / building :mod (1234-1-1-z20 / apartment) :ARG1-of (1234-1-1-z18 / rise-01 :ARG2 (1234-1-1-z19 / high))) :time (1234-1-1-z21 / after :op1 (1234-1-1-z23 / date-entity :time \"15:00\") :ARG1-of (1234-1-1-z22 / short-07)) :ARG0-of (1234-1-1-z1 / create-01 :ARG1 (1234-1-1-z2 / scene :mod (1234-1-1-z3 / harrowing)) :time (1234-1-1-z4 / and :op1 (1234-1-1-z5 / billow-01 :ARG1 (1234-1-1-z6 / smoke) :ARG2 (1234-1-1-z7 / sky)) :op2 (1234-1-1-z8 / evacuate-01 :ARG1 (1234-1-1-z9 / stair :direction (1234-1-1-z13 / down) :ARG1-of (1234-1-1-z10 / crowd-01 :ARG2 (1234-1-1-z11 / personnel :mod (1234-1-1-z12 / emergency)))) :ARG2 (1234-1-1-z14 / person :ARG0-of (1234-1-1-z15 / reside-01)))))) :snt18 (1234-1-2-z0 / appear-01 :ARG1 (1234-1-2-z1 / respond-01 :ARG0 (1234-1-2-z2 / person :ARG0-of (1234-1-2-z3 / fight-01 :ARG1 (1234-1-2-z4 / fire))) :manner (1234-1-2-z5 / hero)) :time (1234-1-2-z6 / immediate) :time (1234-1-2-z7 / and :op1 (1234-1-2-z8 / echo-01 :ARG1 (1234-1-2-z9 / siren :poss 1234-1-2-z2) :ARG2 (1234-1-2-z10 / street :mod (1234-1-2-z11 / city))) :op2 (1234-1-2-z12 / direct-01 :ARG1 (1234-1-2-z13 / stream-01 :ARG1 (1234-1-2-z14 / water) :mod (1234-1-2-z15 / massive)) :ARG2 (1234-1-2-z16 / floor :mod (1234-1-2-z17 / upper) :part-of (1234-1-2-z18 / building))))) :snt19 (1234-1-3-z0 / rage-02 :ARG0 (1234-1-3-z1 / flame :entity 1234-1-10-z8 :entity-of 1234-1-10-z8) :manner (1234-1-3-z2 / explosive) :time-of (1234-1-3-z3 / test-01 :ARG0 1234-1-3-z1 :ARG1 (1234-1-3-z4 / limit-01 :ARG1 (1234-1-3-z5 / and :op1 (1234-1-3-z6 / expertise :poss (1234-1-3-z7 / team :ARG0-of (1234-1-3-z8 / fight-01 :ARG1 (1234-1-3-z9 / fire-04)))) :op2 (1234-1-3-z10 / equipment :poss 1234-1-3-z7))))) :snt20 (1234-1-4-z0 / evidence-01 :ARG1 (1234-1-4-z1 / determined-02 :ARG0 (1234-1-4-z2 / they) :ARG1 (1234-1-4-z4 / quell-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z5 / blaze-01)) :ARG0-of (1234-1-4-z3 / force-01 :polarity -)) :concession (1234-1-4-z6 / task :ARG2-of (1234-1-4-z7 / daunt-01)) :time (1234-1-4-z8 / and :op1 (1234-1-4-z9 / climb-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z10 / stair)) :op2 (1234-1-4-z11 / maneuver-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z16 / hose-00) :purpose (1234-1-4-z12 / battle-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z13 / inferno) :manner (1234-1-4-z14 / angle :mod (1234-1-4-z15 / various)))))) :snt21 (1234-1-5-z0 / become-01 :ARG2 (1234-1-5-z1 / see-01 :ARG1 (1234-1-5-z2 / extent :ARG1-of (1234-1-5-z3 / true-01) :degree-of (1234-1-5-z4 / emergency)) :ARG1-of (1234-1-5-z5 / contrast-01)) :time (1234-1-5-z6 / engulf-01 :ARG1 (1234-1-5-z7 / building) :ARG2 (1234-1-5-z8 / Bill :consist-of (1234-1-5-z10 / smoke) :ARG1-of (1234-1-5-z9 / thick-03)))) :snt22 (1234-1-6-z0 / circle-01 :ARG0 (1234-1-6-z1 / helicopter :mod (1234-1-6-z15 / news) :ARG0-of (1234-1-6-z2 / capture-01 :ARG1 (1234-1-6-z3 / image :mod (1234-1-6-z4 / dramatic) :mod (1234-1-6-z5 / person :ARG0-of (1234-1-6-z6 / fight-01 :ARG1 (1234-1-6-z7 / fire)) :ARG0-of (1234-1-6-z8 / work-01 :ARG1 (1234-1-6-z9 / prevent-01 :ARG0 1234-1-6-z5 :ARG1 (1234-1-6-z10 / progress-01 :ARG1 (1234-1-6-z11 / fire-03))) :manner (1234-1-6-z12 / diligent)) :ARG1-of (1234-1-6-z13 / position-01 :ARG2 (1234-1-6-z14 / roof)))))) :location (1234-1-6-z16 / overhead)) :snt23 (1234-1-7-z0 / stand-01 :ARG1 (1234-1-7-z1 / building :mod (1234-1-7-z2 / apartment) :mod (1234-1-7-z3 / structure :mod (1234-1-7-z5 / home :beneficiary (1234-1-7-z6 / family :quant (1234-1-7-z7 / numerous)) :time (1234-1-7-z8 / once)) :ARG0-of (1234-1-7-z4 / tower-01))) :ARG2 (1234-1-7-z9 / thing :ARG1-of (1234-1-7-z10 / symbolize-01 :ARG2 (1234-1-7-z11 / and :op1 (1234-1-7-z12 / tragedy) :op2 (1234-1-7-z13 / resilience :poss (1234-1-7-z14 / person :ARG0-of (1234-1-7-z15 / respond-01 :time (1234-1-7-z16 / hour :time-of (1234-1-7-z17 / need-01 :ARG0 1234-1-7-z14)))))))) :time (1234-1-7-z18 / now)) :snt24 (1234-1-8-z0 / and :op1 (1234-1-8-z1 / attend-01 :ARG0 (1234-1-8-z2 / personnel :mod (1234-1-8-z3 / medicine) :mod (1234-1-8-z4 / emergency)) :ARG1 (1234-1-8-z5 / victim :ARG1-of (1234-1-8-z6 / injure-01)) :location (1234-1-8-z7 / on-site) :manner (1234-1-8-z8 / swift)) :op2 (1234-1-8-z9 / provide-01 :ARG0 1234-1-8-z2 :ARG1 (1234-1-8-z10 / care-03 :ARG0 1234-1-8-z2 :ARG1 1234-1-8-z5 :ARG1-of (1234-1-8-z11 / critical-03)) :time (1234-1-8-z12 / before :op1 (1234-1-8-z13 / transport-01 :ARG0 1234-1-8-z2 :ARG1 1234-1-8-z5 :ARG3 (1234-1-8-z16 / facility :mod (1234-1-8-z18 / medicine) :ARG1-of (1234-1-8-z17 / near-02)) :purpose (1234-1-8-z14 / treat-03 :ARG1 1234-1-8-z5 :mod (1234-1-8-z15 / further)))))) :snt25 (1234-1-9-z0 / include-91 :ARG1 (1234-1-9-z9 / and :op1 (1234-1-9-z10 / person :ARG0-of (1234-1-9-z11 / reside-01))) :ARG2 (1234-1-9-z12 / and :op1 1234-1-9-z10 :op2 (1234-1-9-z14 / person :ARG0-of (1234-1-9-z15 / fight-01 :ARG1 (1234-1-9-z16 / fire))) :ARG1-of (1234-1-9-z13 / wound-01)) :ARG0-of (1234-1-9-z1 / remind-01 :ARG1 (1234-1-9-z2 / risk-01 :ARG0 (1234-1-9-z3 / person :mod (1234-1-9-z7 / that) :ARG0-of (1234-1-9-z4 / serve-01 :ARG1 (1234-1-9-z5 / protect-01 :ARG0 1234-1-9-z3 :ARG1 (1234-1-9-z6 / community)))) :ARG1-of (1234-1-9-z8 / face-01 :ARG0 1234-1-9-z3)))) :snt26 (1234-1-10-z0 / possible-01 :ARG1 (1234-1-10-z1 / palpate-00 :ARG1 (1234-1-10-z2 / sigh-02 :ARG1 (1234-1-10-z3 / relieve-01 :ARG0 (1234-1-10-z4 / crowd :ARG0-of (1234-1-10-z5 / gather-03))) :mod (1234-1-10-z6 / collective)) :time (1234-1-10-z7 / control-01 :ARG1 (1234-1-10-z8 / flame) :manner (1234-1-10-z9 / gradual))) :concession (1234-1-10-z10 / even-as :op1 (1234-1-10-z11 / remain-01 :ARG1 (1234-1-10-z12 / weight :poss (1234-1-10-z13 / situation)) :ARG3 (1234-1-10-z14 / heavy)))) :snt27 (1234-1-11-z0 / underway :domain (1234-1-11-z1 / investigate-01 :ARG0 (1234-1-11-z2 / authority :ARG0-of (1234-1-11-z3 / aim-01 :ARG1 (1234-1-11-z4 / uncover-01 :ARG0 1234-1-11-z2 :ARG1 (1234-1-11-z5 / factor :ARG0-of (1234-1-11-z6 / lead-03 :ARG2 (1234-1-11-z7 / incident :mod (1234-1-11-z9 / this) :ARG0-of (1234-1-11-z8 / destroy-01))))))) :ARG1 (1234-1-11-z10 / cause-01 :ARG0 (1234-1-11-z11 / fire :entity 1234-2-13-z2 :entity-of 1234-2-13-z2 :entity 1234-2-13-z3 :entity-of 1234-2-13-z3 :entity 1234-2-13-z4 :entity-of 1234-2-13-z4) :entity 1234-2-13-z2 :entity-of 1234-2-13-z2 :entity 1234-2-13-z3 :entity-of 1234-2-13-z3 :entity 1234-2-13-z4 :entity-of 1234-2-13-z4) :entity 1234-2-13-z2 :entity-of 1234-2-13-z2 :entity 1234-2-13-z3 :entity-of 1234-2-13-z3 :entity 1234-2-13-z4 :entity-of 1234-2-13-z4) :time (1234-1-11-z12 / now)) :snt28 (1234-1-12-z0 / begin-01 :ARG1 (1234-1-12-z6 / emerge-02 :ARG0 (1234-1-12-z7 / story :topic (1234-1-12-z8 / and :op1 (1234-1-12-z9 / unity) :op2 (1234-1-12-z10 / support-01)))) :time (1234-1-12-z11 / aftermath-01 :ARG1 (1234-1-12-z12 / tragedy)) :ARG0-of (1234-1-12-z1 / highlight-01 :ARG1 (1234-1-12-z2 / strong-02 :ARG1 (1234-1-12-z5 / community :entity 1234-2-1-z10 :entity-of 1234-2-1-z10) :ARG0-of (1234-1-12-z3 / face-01 :ARG1 (1234-1-12-z4 / adversity))))) :snt29 (1234-1-13-z0 / etch-01 :ARG1 (1234-1-13-z16 / image :mod 1234-1-13-z4) :ARG2 (1234-1-13-z17 / memory :poss 1234-1-13-z14) :duration (1234-1-13-z18 / forever) :ARG0-of (1234-1-13-z1 / testify-01 :ARG1 (1234-1-13-z2 / and :op1 (1234-1-13-z3 / dedicate-01 :ARG1 (1234-1-13-z4 / person :ARG0-of (1234-1-13-z5 / fight-01 :ARG1 (1234-1-13-z6 / fire)) :ARG1-of (1234-1-13-z7 / stand-01 :manner (1234-1-13-z8 / shoulder :op1 (1234-1-13-z9 / shoulder)) :manner (1234-1-13-z10 / resolute :domain (1234-1-13-z11 / mission-01 :ARG0 1234-1-13-z4))))) :op2 (1234-1-13-z12 / spirit :poss (1234-1-13-z14 / city :name (1234-1-13-z15 / name :op1 \"New\" :op2 \"York\")) :ARG0-of (1234-1-13-z13 / will-02 :polarity -))))) :snt30 (1234-1-14-z0 / engulf-01 :ARG0 (1234-1-14-z1 / fire :mod (1234-1-14-z2 / alarm-01 :quant (1234-1-14-z3 / multiple))) :ARG1 (1234-1-14-z4 / building :mod (1234-1-14-z5 / apartment))) :snt31 (1234-2-0-z0 / destroy-01 :ARG0 (1234-2-0-z1 / fire :mod (1234-2-0-z18 / alarm-01 :quant (1234-2-0-z19 / multiple)) :ARG0-of (1234-2-0-z2 / send-02 :ARG1 (1234-2-0-z3 / and :op1 (1234-2-0-z4 / person :quant 2 :ARG0-of (1234-2-0-z5 / reside-01 :ARG1 (1234-2-0-z6 / building :consist-of (1234-2-0-z7 / story :quant 23) :location (1234-2-0-z8 / city-district :name (1234-2-0-z9 / name :op1 \"Manhattan\")) :mod (1234-2-0-z10 / apartment)))) :op2 (1234-2-0-z11 / person :quant 2 :ARG0-of (1234-2-0-z12 / have-org-role-91 :ARG1 (1234-2-0-z13 / government-organization :name (1234-2-0-z14 / name :op1 \"NYFD\" :entity 1234-2-1-z4 :entity-of 1234-2-1-z4 :entity 1234-2-1-z5 :entity-of 1234-2-1-z5) :entity 1234-2-1-z4 :entity-of 1234-2-1-z4 :entity 1234-2-1-z5 :entity-of 1234-2-1-z5) :entity 1234-2-1-z4 :entity-of 1234-2-1-z4 :entity 1234-2-1-z5 :entity-of 1234-2-1-z5) :ARG0-of (1234-2-0-z15 / fight-01 :ARG1 (1234-2-0-z16 / fire)))) :ARG2 (1234-2-0-z17 / hospital))) :ARG1 1234-2-0-z6 :time (1234-2-0-z20 / date-entity :dayperiod (1234-2-0-z21 / afternoon) :weekday (1234-2-0-z22 / saturday))) :snt32 (1234-2-1-z0 / break-out-30 :ARG1 (1234-2-1-z12 / blaze :ARG0-of (1234-2-1-z13 / devastate-01)) :time (1234-2-1-z14 / after :op1 (1234-2-1-z16 / date-entity :time \"15:00\") :ARG1-of (1234-2-1-z15 / short-07)) :ARG0-of (1234-2-1-z1 / trigger-01 :ARG1 (1234-2-1-z2 / and :op1 (1234-2-1-z3 / respond-01 :ARG0 (1234-2-1-z4 / government-organization :name (1234-2-1-z5 / name :op1 \"NYFD\")) :manner (1234-2-1-z6 / rapid)) :op2 (1234-2-1-z7 / display-01 :ARG1 (1234-2-1-z8 / and :op1 (1234-2-1-z9 / unity :mod (1234-2-1-z10 / community)) :op2 (1234-2-1-z11 / support-01 :ARG0 1234-2-1-z10)))))) :snt33 (1234-2-2-z0 / present-01 :ARG0 (1234-2-2-z1 / inferno :ARG0-of (1234-2-2-z2 / tower-01)) :ARG1 (1234-2-2-z3 / challenge-01 :ARG1 (1234-2-2-z4 / person :ARG0-of (1234-2-2-z5 / fight-01 :ARG1 (1234-2-2-z6 / fire)) :ARG0-of (1234-2-2-z7 / brave-02) :ARG0-of (1234-2-2-z8 / work-01 :ARG1 (1234-2-2-z9 / contain-01 :ARG0 1234-2-2-z4 :ARG1 (1234-2-2-z10 / flame :ARG0-of (1234-2-2-z11 / engulf-01 :ARG1 (1234-2-2-z12 / structure :entity 1234-2-4-z7 :entity-of 1234-2-4-z7 :entity 1234-2-4-z8 :entity-of 1234-2-4-z8) :entity 1234-2-4-z7 :entity-of 1234-2-4-z7 :entity 1234-2-4-z8 :entity-of 1234-2-4-z8) :entity 1234-2-4-z7 :entity-of 1234-2-4-z7 :entity 1234-2-4-z8 :entity-of 1234-2-4-z8)) :ARG1-of (1234-2-2-z13 / work-01 :ARG0 1234-2-2-z4 :polarity -))) :mod (1234-2-2-z14 / formidable))) :snt34 (1234-2-3-z0 / scene :domain (1234-2-3-z1 / scene :mod (1234-2-3-z2 / chaos) :mod (1234-2-3-z3 / urgent)) :time (1234-2-3-z4 / line-01 :ARG0 (1234-2-3-z5 / truck :mod (1234-2-3-z6 / fire) :part (1234-2-3-z7 / light :ARG0-of (1234-2-3-z8 / cast-01 :ARG1 (1234-2-3-z9 / glow-01 :mod (1234-2-3-z10 / eerie)) :ARG2 (1234-2-3-z11 / building :ARG1-of (1234-2-3-z12 / surround-01))) :ARG1-of (1234-2-3-z13 / flash-01))) :ARG1 (1234-2-3-z14 / street))) :snt35 (1234-2-4-z0 / and :op1 (1234-2-4-z1 / watch-01 :ARG1 (1234-2-4-z2 / succumb-01 :ARG0 (1234-2-4-z3 / building :mod (1234-2-4-z6 / apartment) :ARG0-of (1234-2-4-z4 / pride-01 :time (1234-2-4-z5 / once))) :ARG1 (1234-2-4-z7 / element :ARG0-of (1234-2-4-z8 / forgive-01 :polarity -))) :manner (1234-2-4-z9 / dumb)) :op2 (1234-2-4-z10 / leave-13 :ARG0 1234-2-4-z3 :ARG1 (1234-2-4-z11 / trail :consist-of (1234-2-4-z12 / and :op1 (1234-2-4-z13 / destroy-01) :op2 (1234-2-4-z14 / certain))) :prep-in (1234-2-4-z15 / wake :poss 1234-2-4-z3)) :rel (1234-2-4-z16 / person :ARG0-of 1234-2-4-z1)) :snt36 (1234-2-5-z0 / emerge-02 :ARG0 (1234-2-5-z1 / tale :topic (1234-2-5-z2 / heroism)) :time (1234-2-5-z3 / chaos)) :snt37 (1234-2-6-z0 / recount-01 :ARG0 (1234-2-6-z1 / person :ARG0-of (1234-2-6-z2 / fight-01 :ARG1 (1234-2-6-z3 / fire))) :ARG1 (1234-2-6-z4 / moment :time-of (1234-2-6-z5 / and :op1 (1234-2-6-z7 / heat) :op2 (1234-2-6-z8 / smoke) :ARG1-of (1234-2-6-z6 / intense-02))) :time (1234-2-6-z9 / navigate-01 :ARG0 1234-2-6-z1 :ARG1 (1234-2-6-z13 / hallway :mod (1234-2-6-z14 / treachery)) :purpose (1234-2-6-z10 / search-01 :ARG0 1234-2-6-z1 :ARG1 (1234-2-6-z11 / person :ARG0-of (1234-2-6-z12 / reside-01))))) :snt38 (1234-2-7-z0 / lead-03 :ARG0 (1234-2-7-z1 / ordeal :mod (1234-2-7-z2 / harrowing)) :ARG2 (1234-2-7-z3 / rescue-01 :ARG1 (1234-2-7-z4 / individual :quant (1234-2-7-z5 / numerous) :ARG0-of (1234-2-7-z6 / need-01 :ARG1 (1234-2-7-z7 / attend-02 :mod (1234-2-7-z8 / medicine)) :mod (1234-2-7-z15 / dire) :ARG1-of (1234-2-7-z9 / cause-01 :ARG0 (1234-2-7-z10 / and :op1 (1234-2-7-z11 / inhale-01 :ARG0 1234-2-7-z4 :ARG1 (1234-2-7-z12 / smoke)) :op2 (1234-2-7-z13 / injure-01 :ARG0 1234-2-7-z4 :ARG1 (1234-2-7-z14 / other))))) :ARG2-of (1234-2-7-z16 / include-91 :ARG3 (1234-2-7-z17 / some))))) :snt39 (1234-2-8-z0 / and :op1 (1234-2-8-z1 / wail-01 :ARG0 (1234-2-8-z2 / sound-02 :ARG1 (1234-2-8-z3 / siren)) :path (1234-2-8-z4 / air)) :op2 (1234-2-8-z5 / serve-01 :ARG0 1234-2-8-z2 :ARG1 (1234-2-8-z6 / remind-01 :ARG0 1234-2-8-z2 :ARG1 (1234-2-8-z7 / battle-01 :ARG1 (1234-2-8-z8 / and :op1 (1234-2-8-z9 / save-02 :ARG1 (1234-2-8-z10 / life)) :op2 (1234-2-8-z11 / preserve-01 :ARG1 (1234-2-8-z12 / thing :ARG1-of (1234-2-8-z13 / remain-01 :ARG3 (1234-2-8-z14 / building))))) :ARG1-of (1234-2-8-z15 / go-on-15)) :frequency (1234-2-8-z16 / constant)))) :snt40 (1234-2-9-z0 / become-01 :ARG1 (1234-2-9-z1 / scale-01 :ARG1 (1234-2-9-z2 / devastate-01) :ARG1-of (1234-2-9-z3 / true-01)) :ARG2 (1234-2-9-z4 / appear-02 :ARG1 1234-2-9-z1) :time (1234-2-9-z5 / and :op1 (1234-2-9-z6 / subside-01 :ARG1 (1234-2-9-z7 / intense-02 :ARG1 (1234-2-9-z8 / fire))) :op2 (1234-2-9-z9 / extinguish-01 :ARG1 (1234-2-9-z10 / emote-01 :mod (1234-2-9-z11 / last))))) :snt41 (1234-2-10-z0 / stand-01 :ARG1 (1234-2-10-z1 / building :mod (1234-2-10-z4 / apartment :entity 1234-2-16-z6 :entity-of 1234-2-16-z6 :entity 1234-2-16-z4 :entity-of 1234-2-16-z4 :entity 1234-2-16-z3 :entity-of 1234-2-16-z3 :entity 1234-2-16-z7 :entity-of 1234-2-16-z7 :entity 1234-2-16-z5 :entity-of 1234-2-16-z5) :ARG0-of (1234-2-10-z2 / bustle-01 :time (1234-2-10-z3 / once :entity 1234-2-16-z6 :entity-of 1234-2-16-z6 :entity 1234-2-16-z4 :entity-of 1234-2-16-z4 :entity 1234-2-16-z3 :entity-of 1234-2-16-z3 :entity 1234-2-16-z7 :entity-of 1234-2-16-z7 :entity 1234-2-16-z5 :entity-of 1234-2-16-z5) :entity 1234-2-16-z6 :entity-of 1234-2-16-z6 :entity 1234-2-16-z4 :entity-of 1234-2-16-z4 :entity 1234-2-16-z3 :entity-of 1234-2-16-z3 :entity 1234-2-16-z7 :entity-of 1234-2-16-z7 :entity 1234-2-16-z5 :entity-of 1234-2-16-z5) :entity 1234-2-16-z6 :entity-of 1234-2-16-z6 :entity 1234-2-16-z4 :entity-of 1234-2-16-z4 :entity 1234-2-16-z3 :entity-of 1234-2-16-z3 :entity 1234-2-16-z7 :entity-of 1234-2-16-z7 :entity 1234-2-16-z5 :entity-of 1234-2-16-z5) :ARG2 (1234-2-10-z5 / monument :mod (1234-2-10-z6 / somber) :topic (1234-2-10-z7 / and :op1 (1234-2-10-z8 / challenge-01 :ARG1-of (1234-2-10-z9 / face-01 :ARG0 (1234-2-10-z10 / person :ARG0-of (1234-2-10-z11 / respond-01 :ord (1234-2-10-z12 / ordinal-entity :value 1))))) :op2 (1234-2-10-z13 / resilience :poss 1234-2-10-z15 :ARG0-of (1234-2-10-z14 / rally-01 :ARG1 (1234-2-10-z15 / city) :manner (1234-2-10-z16 / together) :manner (1234-2-10-z17 / face-01 :ARG0 1234-2-10-z15 :ARG1 (1234-2-10-z18 / adversity)))))) :time (1234-2-10-z19 / now)) :snt42 (1234-2-11-z0 / and :op1 (1234-2-11-z1 / transport-01 :ARG1 (1234-2-11-z2 / and :op1 (1234-2-11-z3 / person :ARG0-of (1234-2-11-z4 / reside-01) :ARG1-of (1234-2-11-z5 / injure-01)) :op2 (1234-2-11-z6 / person :ARG0-of (1234-2-11-z7 / fight-01 :ARG1 (1234-2-11-z8 / fire)))) :ARG3 (1234-2-11-z9 / hospital :location (1234-2-11-z10 / nearby))) :op2 (1234-2-11-z11 / testify-01 :ARG0 (1234-2-11-z12 / condition :poss 1234-2-11-z2) :ARG1 (1234-2-11-z13 / endanger-01 :ARG0 (1234-2-11-z14 / incident :mod (1234-2-11-z15 / catastrophe) :mod (1234-2-11-z16 / such))))) :snt43 (1234-2-12-z0 / leave-13 :ARG0 (1234-2-12-z1 / aftermath-01 :ARG1 (1234-2-12-z2 / fire)) :ARG1 (1234-2-12-z3 / grapple-01 :ARG0 (1234-2-12-z4 / community) :ARG1 (1234-2-12-z5 / and :op1 (1234-2-12-z6 / grief) :op2 (1234-2-12-z7 / task-01 :ARG1 (1234-2-12-z8 / rebuild-01 :ARG0 1234-2-12-z4 :ARG1 (1234-2-12-z9 / life)) :ARG2-of (1234-2-12-z10 / daunt-01))))) :snt44 (1234-2-13-z0 / and :op1 (1234-2-13-z1 / underway :domain (1234-2-13-z2 / investigate-01 :ARG1 (1234-2-13-z3 / cause-01 :ARG0 (1234-2-13-z4 / fire :entity 1234-2-16-z1 :entity-of 1234-2-16-z1 :entity 1234-2-16-z2 :entity-of 1234-2-16-z2)))) :op2 (1234-2-13-z5 / seek-01 :ARG0 (1234-2-13-z6 / person :ARG1-of (1234-2-13-z7 / expert-01)) :ARG1 (1234-2-13-z8 / uncover-01 :ARG0 1234-2-13-z6 :ARG1 (1234-2-13-z9 / factor :ARG0-of (1234-2-13-z10 / contribute-01 :ARG2 (1234-2-13-z11 / tragedy :entity 1234-2-14-z12 :entity-of 1234-2-14-z12)))))) :snt45 (1234-2-14-z0 / contrast-01 :ARG2 (1234-2-14-z1 / shine-01 :ARG1 (1234-2-14-z2 / glimmer-01 :ARG1 (1234-2-14-z3 / hope-01) :ARG1 (1234-2-14-z4 / and :mod (1234-2-14-z13 / form) :op1 (1234-2-14-z14 / neighbor) :op2 (1234-2-14-z15 / person :ARG0-of (1234-2-14-z16 / volunteer-01)) :ARG0-of (1234-2-14-z5 / offer-01 :ARG1 (1234-2-14-z6 / support-01 :ARG0 1234-2-14-z4)) :ARG1-of (1234-2-14-z7 / unite-01 :ARG2 (1234-2-14-z8 / determine-01 :ARG0 1234-2-14-z4 :ARG1 (1234-2-14-z9 / assist-01 :ARG0 1234-2-14-z4 :ARG1 (1234-2-14-z10 / person :ARG1-of (1234-2-14-z11 / affect-01 :ARG0 (1234-2-14-z12 / disaster)))))))) :direction (1234-2-14-z17 / darkness))) :snt46 (1234-2-15-z0 / prevail-01 :ARG0 (1234-2-15-z1 / spirit :mod (1234-2-15-z2 / unity)) :time (1234-2-15-z17 / rally-01 :ARG1 (1234-2-15-z18 / city) :ARG2 (1234-2-15-z19 / aid-01 :ARG0 1234-2-15-z18 :ARG1 (1234-2-15-z20 / community :poss 1234-2-15-z18))) :ARG0-of (1234-2-15-z3 / remind-01 :ARG1 (1234-2-15-z4 / possible-01 :ARG1 (1234-2-15-z5 / light-04 :ARG0 (1234-2-15-z6 / strong-02 :ARG1 (1234-2-15-z7 / community)) :ARG1 (1234-2-15-z8 / path :path-of (1234-2-15-z9 / recover-01))) :time (1234-2-15-z10 / time :mod (1234-2-15-z14 / even) :ARG1-of (1234-2-15-z11 / have-degree-91 :ARG2 (1234-2-15-z12 / dark-03 :ARG1 1234-2-15-z10) :ARG3 (1234-2-15-z13 / most)))) :ARG2 (1234-2-15-z15 / we :mod (1234-2-15-z16 / all)))) :snt47 (1234-2-16-z0 / engulf-01 :ARG0 (1234-2-16-z1 / fire :mod (1234-2-16-z2 / massive)) :ARG1 (1234-2-16-z3 / building :mod (1234-2-16-z6 / apartment) :part (1234-2-16-z7 / story :quant 23) :ARG1-of (1234-2-16-z4 / rise-01 :ARG2 (1234-2-16-z5 / high-02)))))",
+    "kg_penman": "(origin / multi-sentence :snt0 (1234-0-0-z0 / leave-13 :ARG0 (1234-0-0-z1 / person :quant (1234-0-0-z2 / at-least :op1 95) :ARG0-of (1234-0-0-z3 / reside-01 :location (1234-0-0-z4 / city :name (1234-0-0-z5 / name :op1 \"New\" :op2 \"York\" :op3 \"City\")))) :ARG1 (1234-0-0-z6 / have-03 :ARG0 1234-0-0-z1 :ARG1 (1234-0-0-z7 / home) :polarity -) :time (1234-0-0-z8 / after :op1 (1234-0-0-z9 / spread-02 :ARG1 (1234-0-0-z10 / fire :mod (1234-0-0-z13 / massive) :ARG0-of (1234-0-0-z11 / injure-01 :ARG1 (1234-0-0-z12 / person :quant 4))) :ARG2 (1234-0-0-z14 / building :mod (1234-0-0-z15 / apartment) :poss 1234-0-0-z1)))) :snt1 (1234-0-1-z0 / fire :location (1234-0-1-z1 / building :consist-of (1234-0-1-z2 / story :quant 23) :location (1234-0-1-z3 / neighborhood :mod (1234-0-1-z5 / urban) :ARG0-of (1234-0-1-z4 / bustle-01)) :mod (1234-0-1-z6 / apartment)) :mod (1234-0-1-z7 / alarm-01 :quant (1234-0-1-z8 / multiple)) :time (1234-0-1-z9 / after :mod (1234-0-1-z10 / just) :op1 (1234-0-1-z11 / date-entity :time \"15:00\" :weekday (1234-0-1-z12 / saturday)))) :snt2 (1234-0-2-z0 / send-03 :ARG0 (1234-0-2-z1 / inferno :ARG0-of (1234-0-2-z2 / tower-01)) :ARG1 (1234-0-2-z3 / bill :consist-of (1234-0-2-z12 / smoke :ARG1-of (1234-0-2-z13 / thick-03)) :ARG1-of (1234-0-2-z4 / billow-01 :ARG2 (1234-0-2-z5 / sky :ARG1-of (1234-0-2-z6 / see-01 :source (1234-0-2-z7 / relative-position :op2 (1234-0-2-z11 / away) :quant (1234-0-2-z8 / several :op1 (1234-0-2-z9 / distance-quantity :quant 1 :unit (1234-0-2-z10 / block))))))))) :snt3 (1234-0-3-z0 / arrive-01 :ARG1 (1234-0-3-z1 / person :ord (1234-0-3-z3 / ordinal-entity :value 1) :ARG0-of (1234-0-3-z2 / respond-01)) :ARG4 (1234-0-3-z4 / scene :coref 1234-0-6-z0 :coref-of 1234-0-6-z0 :coref 1234-0-6-z1 :coref-of 1234-0-6-z1) :manner (1234-0-3-z5 / swift) :rel (1234-0-3-z6 / dedicate-01) :time-of (1234-0-3-z7 / battle-01 :ARG0 (1234-0-3-z8 / person :quant (1234-0-3-z9 / more-than :op1 100) :ARG0-of (1234-0-3-z10 / have-org-role-91 :ARG1 (1234-0-3-z11 / organization :name (1234-0-3-z12 / name :op1 \"NYFD\"))) :ARG0-of (1234-0-3-z13 / fight-01 :ARG1 (1234-0-3-z14 / fire) :ARG1 (1234-0-3-z15 / fire))) :ARG1 (1234-0-3-z16 / contain-01 :ARG0 1234-0-3-z8 :ARG1 (1234-0-3-z17 / blaze :ARG0-of (1234-0-3-z18 / rage-02))) :manner (1234-0-3-z19 / courage))) :snt4 (1234-0-4-z0 / work-01 :ARG0 (1234-0-4-z1 / person :ARG0-of (1234-0-4-z2 / fight-01 :ARG1 (1234-0-4-z3 / fire))) :ARG1 (1234-0-4-z4 / prevent-01 :ARG0 1234-0-4-z1 :ARG1 (1234-0-4-z5 / and :op1 (1234-0-4-z6 / spread-02 :ARG1 (1234-0-4-z7 / fire) :extent (1234-0-4-z8 / further)) :op2 (1234-0-4-z9 / endanger-01 :ARG0 1234-0-4-z7 :ARG1 (1234-0-4-z10 / structure :ARG1-of (1234-0-4-z11 / neighbor-01))))) :manner (1234-0-4-z12 / work-01 :ARG0 1234-0-4-z1 :polarity -)) :snt5 (1234-0-5-z0 / sacrifice-01 :ARG0 (1234-0-5-z1 / effort-01 :ARG0 (1234-0-5-z2 / they :coref 1234-0-5-z10 :coref-of 1234-0-5-z10) :manner (1234-0-5-z3 / hero :coref 1234-0-5-z10 :coref-of 1234-0-5-z10) :coref 1234-0-5-z10 :coref-of 1234-0-5-z10) :rel (1234-0-5-z14 / brave-02 :ARG0 (1234-0-5-z15 / person :ARG0-of (1234-0-5-z16 / have-org-role-91 :ARG1 (1234-0-5-z17 / military :name (1234-0-5-z18 / name :op1 \"NYFD\"))) :ARG0-of (1234-0-5-z19 / fight-01 :ARG1 (1234-0-5-z20 / fire)))) :ARG1-of (1234-0-5-z4 / cause-01 :ARG0 (1234-0-5-z5 / and :op1 (1234-0-5-z6 / sustain-01 :ARG1 (1234-0-5-z7 / person :quant 2 :ARG1-of (1234-0-5-z8 / include-91)) :ARG2 (1234-0-5-z9 / injure-01 :ARG1 1234-0-5-z7) :time (1234-0-5-z10 / operation)) :op2 (1234-0-5-z11 / rush-01 :ARG1 1234-0-5-z7 :ARG2 (1234-0-5-z13 / hospital) :purpose (1234-0-5-z12 / treat-03 :ARG1 1234-0-5-z7))))) :snt6 (1234-0-6-z0 / scene :domain (1234-0-6-z1 / scene :mod (1234-0-6-z2 / chaos) :mod (1234-0-6-z3 / concern-01)) :time (1234-0-6-z4 / watch-01 :ARG0 (1234-0-6-z5 / and :op1 (1234-0-6-z6 / person :ARG0-of (1234-0-6-z7 / reside-01)) :op2 (1234-0-6-z8 / person :mod (1234-0-6-z9 / onlooker))) :manner (1234-0-6-z10 / disbelieve-01 :ARG1 1234-0-6-z5 :ARG1 (1234-0-6-z11 / consume-01 :ARG0 (1234-0-6-z12 / fire) :ARG1 (1234-0-6-z13 / floor :quant (1234-0-6-z14 / several) :part-of (1234-0-6-z15 / building :mod (1234-0-6-z16 / apartment))))))) :snt7 (1234-0-7-z0 / possible-01 :ARG1 (1234-0-7-z1 / palpate-00 :ARG1 (1234-0-7-z2 / and :op1 (1234-0-7-z3 / panic-01) :op2 (1234-0-7-z4 / fear-01)) :location (1234-0-7-z5 / among :op1 (1234-0-7-z6 / crowd :coref 1234-1-10-z4 :coref-of 1234-1-10-z4 :coref 1234-1-10-z5 :coref-of 1234-1-10-z5))) :time (1234-0-7-z7 / and :op1 (1234-0-7-z8 / separate-01 :ARG1 (1234-0-7-z9 / family)) :op2 (1234-0-7-z10 / search-01 :ARG0 (1234-0-7-z11 / individual) :ARG2 (1234-0-7-z12 / one :ARG1-of (1234-0-7-z13 / love-01 :ARG0 1234-0-7-z11)) :manner (1234-0-7-z14 / frantic)))) :snt8 (1234-0-8-z0 / work-01 :ARG0 (1234-0-8-z1 / personnel :mod (1234-0-8-z2 / medicine) :mod (1234-0-8-z3 / emergency)) :ARG1 (1234-0-8-z4 / provide-01 :ARG0 1234-0-8-z1 :ARG1 (1234-0-8-z5 / assist-01 :ARG0 1234-0-8-z1 :ARG1 (1234-0-8-z6 / person :ARG1-of (1234-0-8-z7 / affect-01 :ARG0 (1234-0-8-z8 / disaster))) :time (1234-0-8-z9 / immediate))) :accompanier (1234-0-8-z10 / person :ARG0-of (1234-0-8-z11 / fight-01 :ARG1 (1234-0-8-z12 / fire))) :manner (1234-0-8-z13 / side-by-side)) :snt9 (1234-0-9-z0 / and :op1 (1234-0-9-z1 / injure-01 :ARG1 (1234-0-9-z2 / person :quant 2 :ARG0-of (1234-0-9-z3 / reside-01 :ARG1 (1234-0-9-z4 / building))) :mod (1234-0-9-z5 / also)) :op2 (1234-0-9-z6 / take-01 :ARG1 1234-0-9-z2 :ARG3 (1234-0-9-z10 / facility :location (1234-0-9-z11 / nearby) :mod (1234-0-9-z12 / medical)) :purpose (1234-0-9-z7 / and :op1 (1234-0-9-z8 / evaluate-01 :ARG1 1234-0-9-z2) :op2 (1234-0-9-z9 / care-03 :ARG1 1234-0-9-z2)))) :snt10 (1234-0-10-z0 / emerge-02 :ARG0 (1234-0-10-z1 / story :topic (1234-0-10-z2 / and :op1 (1234-0-10-z3 / unity) :op2 (1234-0-10-z4 / resilience))) :time (1234-0-10-z5 / turmoil)) :snt11 (1234-0-11-z0 / and :op1 (1234-0-11-z1 / recount-01 :ARG0 (1234-0-11-z2 / person :ARG0-of (1234-0-11-z3 / witness-01)) :ARG1 (1234-0-11-z4 / help-01 :ARG0 (1234-0-11-z5 / stranger) :ARG1 (1234-0-11-z6 / escape-01 :ARG0 1234-0-11-z5 :ARG1 (1234-0-11-z7 / building)) :ARG2 1234-0-11-z5)) :op2 (1234-0-11-z8 / illustrate-01 :ARG0 1234-0-11-z2 :ARG1 (1234-0-11-z9 / strong-02 :ARG1 (1234-0-11-z10 / community) :concession (1234-0-11-z11 / face-01 :ARG0 1234-0-11-z5 :ARG1 (1234-0-11-z12 / adversity))))) :snt12 (1234-0-12-z0 / and :op1 (1234-0-12-z1 / organize-01 :ARG0 1234-0-12-z3 :manner (1234-0-12-z15 / swift) :purpose (1234-0-12-z2 / provide-01 :ARG0 (1234-0-12-z3 / and :op1 (1234-0-12-z5 / business) :op2 (1234-0-12-z6 / organization) :ARG1-of (1234-0-12-z4 / local-02)) :ARG1 (1234-0-12-z7 / and :op1 (1234-0-12-z8 / shelter-01) :op2 (1234-0-12-z9 / clothe-01) :op3 (1234-0-12-z10 / thing :ARG1-of (1234-0-12-z11 / need-01))) :ARG2 (1234-0-12-z12 / person :ARG0-of (1234-0-12-z13 / reside-01) :ARG1-of (1234-0-12-z14 / displace-01)))) :op2 (1234-0-12-z16 / showcase-01 :ARG0 1234-0-12-z3 :ARG1 (1234-0-12-z17 / spirit :mod (1234-0-12-z24 / indomitable) :ARG0-of (1234-0-12-z18 / rally-01 :ARG1 (1234-0-12-z19 / city :name (1234-0-12-z20 / name :op1 \"New\" :op2 \"York\")) :ARG2 (1234-0-12-z21 / support-01 :ARG0 1234-0-12-z19 :ARG1 (1234-0-12-z22 / citizen :mod (1234-0-12-z23 / fellow) :poss 1234-0-12-z19)))))) :snt13 (1234-0-13-z0 / arise-02 :ARG1 (1234-0-13-z1 / question-03 :ARG1 (1234-0-13-z2 / and :op1 (1234-0-13-z3 / measure-02 :ARG1 (1234-0-13-z4 / safe-01) :mod (1234-0-13-z5 / in-place)) :op2 (1234-0-13-z6 / state :poss (1234-0-13-z7 / system :poss (1234-0-13-z10 / building) :ARG0-of (1234-0-13-z8 / prevent-01 :ARG1 (1234-0-13-z9 / fire)))))) :time (1234-0-13-z11 / delve-01 :ARG0 (1234-0-13-z12 / person :ARG0-of (1234-0-13-z13 / investigate-01)) :ARG1 (1234-0-13-z14 / thing :ARG0-of (1234-0-13-z15 / cause-01 :ARG1 (1234-0-13-z16 / fire :ARG0-of (1234-0-13-z17 / devastate-01)))))) :snt14 (1234-0-14-z0 / have-concession-91 :ARG1 (1234-0-14-z1 / shine-01 :ARG1 (1234-0-14-z2 / solidarity :poss (1234-0-14-z4 / city) :ARG0-of (1234-0-14-z3 / bend-02 :polarity -)) :prep-as (1234-0-14-z5 / beacon :mod (1234-0-14-z6 / hope-01) :time (1234-0-14-z7 / time :mod (1234-0-14-z9 / this) :ARG1-of (1234-0-14-z8 / try-01)))) :ARG2 (1234-0-14-z10 / arduous :domain (1234-0-14-z12 / road :direction (1234-0-14-z13 / recover-01 :ARG1 (1234-0-14-z14 / person :ARG0-of (1234-0-14-z15 / reside-01 :coref 1234-1-0-z13 :coref-of 1234-1-0-z13) :ARG1-of (1234-0-14-z16 / affect-01 :coref 1234-1-0-z13 :coref-of 1234-1-0-z13) :coref 1234-1-0-z13 :coref-of 1234-1-0-z13))) :ARG1-of (1234-0-14-z11 / doubt-01 :polarity -))) :snt15 (1234-0-15-z0 / set-on-fire-09 :ARG1 (1234-0-15-z1 / building :part (1234-0-15-z2 / story :quant 23)) :ARG2 (1234-0-15-z3 / fire :mod (1234-0-15-z4 / massive))) :snt16 (1234-1-0-z0 / say-01 :ARG0 (1234-1-0-z1 / official) :ARG1 (1234-1-0-z2 / fight-01 :ARG0 (1234-1-0-z3 / person :quant (1234-1-0-z4 / more-than :op1 100) :ARG0-of (1234-1-0-z5 / have-org-role-91 :ARG1 (1234-1-0-z6 / organization :name (1234-1-0-z7 / name :op1 \"NYFD\"))) :ARG0-of (1234-1-0-z8 / fight-01 :ARG1 (1234-1-0-z9 / fire))) :ARG2 (1234-1-0-z10 / contain-01 :ARG0 1234-1-0-z3 :ARG1 (1234-1-0-z11 / blaze :location (1234-1-0-z14 / building :location (1234-1-0-z15 / city-district :name (1234-1-0-z16 / name :op1 \"Manhattan\" :coref 1234-2-0-z9 :coref-of 1234-2-0-z9 :coref 1234-2-0-z8 :coref-of 1234-2-0-z8) :coref 1234-2-0-z9 :coref-of 1234-2-0-z9 :coref 1234-2-0-z8 :coref-of 1234-2-0-z8) :mod (1234-1-0-z17 / apartment)) :mod (1234-1-0-z18 / alarm-01 :quant (1234-1-0-z19 / multiple)) :time (1234-1-0-z20 / date-entity :dayperiod (1234-1-0-z21 / afternoon) :weekday (1234-1-0-z22 / saturday :coref 1234-2-0-z22 :coref-of 1234-2-0-z22)) :ARG0-of (1234-1-0-z12 / injure-01 :ARG1 (1234-1-0-z13 / person :quant 4)))))) :snt17 (1234-1-1-z0 / break-out-30 :ARG1 (1234-1-1-z16 / fire) :location (1234-1-1-z17 / building :mod (1234-1-1-z20 / apartment) :ARG1-of (1234-1-1-z18 / rise-01 :ARG2 (1234-1-1-z19 / high))) :time (1234-1-1-z21 / after :op1 (1234-1-1-z23 / date-entity :time \"15:00\") :ARG1-of (1234-1-1-z22 / short-07)) :ARG0-of (1234-1-1-z1 / create-01 :ARG1 (1234-1-1-z2 / scene :mod (1234-1-1-z3 / harrowing)) :time (1234-1-1-z4 / and :op1 (1234-1-1-z5 / billow-01 :ARG1 (1234-1-1-z6 / smoke) :ARG2 (1234-1-1-z7 / sky)) :op2 (1234-1-1-z8 / evacuate-01 :ARG1 (1234-1-1-z9 / stair :direction (1234-1-1-z13 / down) :ARG1-of (1234-1-1-z10 / crowd-01 :ARG2 (1234-1-1-z11 / personnel :mod (1234-1-1-z12 / emergency)))) :ARG2 (1234-1-1-z14 / person :ARG0-of (1234-1-1-z15 / reside-01)))))) :snt18 (1234-1-2-z0 / appear-01 :ARG1 (1234-1-2-z1 / respond-01 :ARG0 (1234-1-2-z2 / person :ARG0-of (1234-1-2-z3 / fight-01 :ARG1 (1234-1-2-z4 / fire))) :manner (1234-1-2-z5 / hero)) :time (1234-1-2-z6 / immediate) :time (1234-1-2-z7 / and :op1 (1234-1-2-z8 / echo-01 :ARG1 (1234-1-2-z9 / siren :poss 1234-1-2-z2) :ARG2 (1234-1-2-z10 / street :mod (1234-1-2-z11 / city))) :op2 (1234-1-2-z12 / direct-01 :ARG1 (1234-1-2-z13 / stream-01 :ARG1 (1234-1-2-z14 / water) :mod (1234-1-2-z15 / massive)) :ARG2 (1234-1-2-z16 / floor :mod (1234-1-2-z17 / upper) :part-of (1234-1-2-z18 / building))))) :snt19 (1234-1-3-z0 / rage-02 :ARG0 (1234-1-3-z1 / flame :coref 1234-1-10-z8 :coref-of 1234-1-10-z8) :manner (1234-1-3-z2 / explosive) :time-of (1234-1-3-z3 / test-01 :ARG0 1234-1-3-z1 :ARG1 (1234-1-3-z4 / limit-01 :ARG1 (1234-1-3-z5 / and :op1 (1234-1-3-z6 / expertise :poss (1234-1-3-z7 / team :ARG0-of (1234-1-3-z8 / fight-01 :ARG1 (1234-1-3-z9 / fire-04)))) :op2 (1234-1-3-z10 / equipment :poss 1234-1-3-z7))))) :snt20 (1234-1-4-z0 / evidence-01 :ARG1 (1234-1-4-z1 / determined-02 :ARG0 (1234-1-4-z2 / they) :ARG1 (1234-1-4-z4 / quell-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z5 / blaze-01)) :ARG0-of (1234-1-4-z3 / force-01 :polarity -)) :concession (1234-1-4-z6 / task :ARG2-of (1234-1-4-z7 / daunt-01)) :time (1234-1-4-z8 / and :op1 (1234-1-4-z9 / climb-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z10 / stair)) :op2 (1234-1-4-z11 / maneuver-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z16 / hose-00) :purpose (1234-1-4-z12 / battle-01 :ARG0 1234-1-4-z2 :ARG1 (1234-1-4-z13 / inferno) :manner (1234-1-4-z14 / angle :mod (1234-1-4-z15 / various)))))) :snt21 (1234-1-5-z0 / become-01 :ARG2 (1234-1-5-z1 / see-01 :ARG1 (1234-1-5-z2 / extent :ARG1-of (1234-1-5-z3 / true-01) :degree-of (1234-1-5-z4 / emergency)) :ARG1-of (1234-1-5-z5 / contrast-01)) :time (1234-1-5-z6 / engulf-01 :ARG1 (1234-1-5-z7 / building) :ARG2 (1234-1-5-z8 / Bill :consist-of (1234-1-5-z10 / smoke) :ARG1-of (1234-1-5-z9 / thick-03)))) :snt22 (1234-1-6-z0 / circle-01 :ARG0 (1234-1-6-z1 / helicopter :mod (1234-1-6-z15 / news) :ARG0-of (1234-1-6-z2 / capture-01 :ARG1 (1234-1-6-z3 / image :mod (1234-1-6-z4 / dramatic) :mod (1234-1-6-z5 / person :ARG0-of (1234-1-6-z6 / fight-01 :ARG1 (1234-1-6-z7 / fire)) :ARG0-of (1234-1-6-z8 / work-01 :ARG1 (1234-1-6-z9 / prevent-01 :ARG0 1234-1-6-z5 :ARG1 (1234-1-6-z10 / progress-01 :ARG1 (1234-1-6-z11 / fire-03))) :manner (1234-1-6-z12 / diligent)) :ARG1-of (1234-1-6-z13 / position-01 :ARG2 (1234-1-6-z14 / roof)))))) :location (1234-1-6-z16 / overhead)) :snt23 (1234-1-7-z0 / stand-01 :ARG1 (1234-1-7-z1 / building :mod (1234-1-7-z2 / apartment) :mod (1234-1-7-z3 / structure :mod (1234-1-7-z5 / home :beneficiary (1234-1-7-z6 / family :quant (1234-1-7-z7 / numerous)) :time (1234-1-7-z8 / once)) :ARG0-of (1234-1-7-z4 / tower-01))) :ARG2 (1234-1-7-z9 / thing :ARG1-of (1234-1-7-z10 / symbolize-01 :ARG2 (1234-1-7-z11 / and :op1 (1234-1-7-z12 / tragedy) :op2 (1234-1-7-z13 / resilience :poss (1234-1-7-z14 / person :ARG0-of (1234-1-7-z15 / respond-01 :time (1234-1-7-z16 / hour :time-of (1234-1-7-z17 / need-01 :ARG0 1234-1-7-z14)))))))) :time (1234-1-7-z18 / now)) :snt24 (1234-1-8-z0 / and :op1 (1234-1-8-z1 / attend-01 :ARG0 (1234-1-8-z2 / personnel :mod (1234-1-8-z3 / medicine) :mod (1234-1-8-z4 / emergency)) :ARG1 (1234-1-8-z5 / victim :ARG1-of (1234-1-8-z6 / injure-01)) :location (1234-1-8-z7 / on-site) :manner (1234-1-8-z8 / swift)) :op2 (1234-1-8-z9 / provide-01 :ARG0 1234-1-8-z2 :ARG1 (1234-1-8-z10 / care-03 :ARG0 1234-1-8-z2 :ARG1 1234-1-8-z5 :ARG1-of (1234-1-8-z11 / critical-03)) :time (1234-1-8-z12 / before :op1 (1234-1-8-z13 / transport-01 :ARG0 1234-1-8-z2 :ARG1 1234-1-8-z5 :ARG3 (1234-1-8-z16 / facility :mod (1234-1-8-z18 / medicine) :ARG1-of (1234-1-8-z17 / near-02)) :purpose (1234-1-8-z14 / treat-03 :ARG1 1234-1-8-z5 :mod (1234-1-8-z15 / further)))))) :snt25 (1234-1-9-z0 / include-91 :ARG1 (1234-1-9-z9 / and :op1 (1234-1-9-z10 / person :ARG0-of (1234-1-9-z11 / reside-01))) :ARG2 (1234-1-9-z12 / and :op1 1234-1-9-z10 :op2 (1234-1-9-z14 / person :ARG0-of (1234-1-9-z15 / fight-01 :ARG1 (1234-1-9-z16 / fire))) :ARG1-of (1234-1-9-z13 / wound-01)) :ARG0-of (1234-1-9-z1 / remind-01 :ARG1 (1234-1-9-z2 / risk-01 :ARG0 (1234-1-9-z3 / person :mod (1234-1-9-z7 / that) :ARG0-of (1234-1-9-z4 / serve-01 :ARG1 (1234-1-9-z5 / protect-01 :ARG0 1234-1-9-z3 :ARG1 (1234-1-9-z6 / community)))) :ARG1-of (1234-1-9-z8 / face-01 :ARG0 1234-1-9-z3)))) :snt26 (1234-1-10-z0 / possible-01 :ARG1 (1234-1-10-z1 / palpate-00 :ARG1 (1234-1-10-z2 / sigh-02 :ARG1 (1234-1-10-z3 / relieve-01 :ARG0 (1234-1-10-z4 / crowd :ARG0-of (1234-1-10-z5 / gather-03))) :mod (1234-1-10-z6 / collective)) :time (1234-1-10-z7 / control-01 :ARG1 (1234-1-10-z8 / flame) :manner (1234-1-10-z9 / gradual))) :concession (1234-1-10-z10 / even-as :op1 (1234-1-10-z11 / remain-01 :ARG1 (1234-1-10-z12 / weight :poss (1234-1-10-z13 / situation)) :ARG3 (1234-1-10-z14 / heavy)))) :snt27 (1234-1-11-z0 / underway :domain (1234-1-11-z1 / investigate-01 :ARG0 (1234-1-11-z2 / authority :ARG0-of (1234-1-11-z3 / aim-01 :ARG1 (1234-1-11-z4 / uncover-01 :ARG0 1234-1-11-z2 :ARG1 (1234-1-11-z5 / factor :ARG0-of (1234-1-11-z6 / lead-03 :ARG2 (1234-1-11-z7 / incident :mod (1234-1-11-z9 / this) :ARG0-of (1234-1-11-z8 / destroy-01))))))) :ARG1 (1234-1-11-z10 / cause-01 :ARG0 (1234-1-11-z11 / fire :coref 1234-2-13-z2 :coref-of 1234-2-13-z2 :coref 1234-2-13-z3 :coref-of 1234-2-13-z3 :coref 1234-2-13-z4 :coref-of 1234-2-13-z4) :coref 1234-2-13-z2 :coref-of 1234-2-13-z2 :coref 1234-2-13-z3 :coref-of 1234-2-13-z3 :coref 1234-2-13-z4 :coref-of 1234-2-13-z4) :coref 1234-2-13-z2 :coref-of 1234-2-13-z2 :coref 1234-2-13-z3 :coref-of 1234-2-13-z3 :coref 1234-2-13-z4 :coref-of 1234-2-13-z4) :time (1234-1-11-z12 / now)) :snt28 (1234-1-12-z0 / begin-01 :ARG1 (1234-1-12-z6 / emerge-02 :ARG0 (1234-1-12-z7 / story :topic (1234-1-12-z8 / and :op1 (1234-1-12-z9 / unity) :op2 (1234-1-12-z10 / support-01)))) :time (1234-1-12-z11 / aftermath-01 :ARG1 (1234-1-12-z12 / tragedy)) :ARG0-of (1234-1-12-z1 / highlight-01 :ARG1 (1234-1-12-z2 / strong-02 :ARG1 (1234-1-12-z5 / community :coref 1234-2-1-z10 :coref-of 1234-2-1-z10) :ARG0-of (1234-1-12-z3 / face-01 :ARG1 (1234-1-12-z4 / adversity))))) :snt29 (1234-1-13-z0 / etch-01 :ARG1 (1234-1-13-z16 / image :mod 1234-1-13-z4) :ARG2 (1234-1-13-z17 / memory :poss 1234-1-13-z14) :duration (1234-1-13-z18 / forever) :ARG0-of (1234-1-13-z1 / testify-01 :ARG1 (1234-1-13-z2 / and :op1 (1234-1-13-z3 / dedicate-01 :ARG1 (1234-1-13-z4 / person :ARG0-of (1234-1-13-z5 / fight-01 :ARG1 (1234-1-13-z6 / fire)) :ARG1-of (1234-1-13-z7 / stand-01 :manner (1234-1-13-z8 / shoulder :op1 (1234-1-13-z9 / shoulder)) :manner (1234-1-13-z10 / resolute :domain (1234-1-13-z11 / mission-01 :ARG0 1234-1-13-z4))))) :op2 (1234-1-13-z12 / spirit :poss (1234-1-13-z14 / city :name (1234-1-13-z15 / name :op1 \"New\" :op2 \"York\")) :ARG0-of (1234-1-13-z13 / will-02 :polarity -))))) :snt30 (1234-1-14-z0 / engulf-01 :ARG0 (1234-1-14-z1 / fire :mod (1234-1-14-z2 / alarm-01 :quant (1234-1-14-z3 / multiple))) :ARG1 (1234-1-14-z4 / building :mod (1234-1-14-z5 / apartment))) :snt31 (1234-2-0-z0 / destroy-01 :ARG0 (1234-2-0-z1 / fire :mod (1234-2-0-z18 / alarm-01 :quant (1234-2-0-z19 / multiple)) :ARG0-of (1234-2-0-z2 / send-02 :ARG1 (1234-2-0-z3 / and :op1 (1234-2-0-z4 / person :quant 2 :ARG0-of (1234-2-0-z5 / reside-01 :ARG1 (1234-2-0-z6 / building :consist-of (1234-2-0-z7 / story :quant 23) :location (1234-2-0-z8 / city-district :name (1234-2-0-z9 / name :op1 \"Manhattan\")) :mod (1234-2-0-z10 / apartment)))) :op2 (1234-2-0-z11 / person :quant 2 :ARG0-of (1234-2-0-z12 / have-org-role-91 :ARG1 (1234-2-0-z13 / government-organization :name (1234-2-0-z14 / name :op1 \"NYFD\" :coref 1234-2-1-z4 :coref-of 1234-2-1-z4 :coref 1234-2-1-z5 :coref-of 1234-2-1-z5) :coref 1234-2-1-z4 :coref-of 1234-2-1-z4 :coref 1234-2-1-z5 :coref-of 1234-2-1-z5) :coref 1234-2-1-z4 :coref-of 1234-2-1-z4 :coref 1234-2-1-z5 :coref-of 1234-2-1-z5) :ARG0-of (1234-2-0-z15 / fight-01 :ARG1 (1234-2-0-z16 / fire)))) :ARG2 (1234-2-0-z17 / hospital))) :ARG1 1234-2-0-z6 :time (1234-2-0-z20 / date-entity :dayperiod (1234-2-0-z21 / afternoon) :weekday (1234-2-0-z22 / saturday))) :snt32 (1234-2-1-z0 / break-out-30 :ARG1 (1234-2-1-z12 / blaze :ARG0-of (1234-2-1-z13 / devastate-01)) :time (1234-2-1-z14 / after :op1 (1234-2-1-z16 / date-entity :time \"15:00\") :ARG1-of (1234-2-1-z15 / short-07)) :ARG0-of (1234-2-1-z1 / trigger-01 :ARG1 (1234-2-1-z2 / and :op1 (1234-2-1-z3 / respond-01 :ARG0 (1234-2-1-z4 / government-organization :name (1234-2-1-z5 / name :op1 \"NYFD\")) :manner (1234-2-1-z6 / rapid)) :op2 (1234-2-1-z7 / display-01 :ARG1 (1234-2-1-z8 / and :op1 (1234-2-1-z9 / unity :mod (1234-2-1-z10 / community)) :op2 (1234-2-1-z11 / support-01 :ARG0 1234-2-1-z10)))))) :snt33 (1234-2-2-z0 / present-01 :ARG0 (1234-2-2-z1 / inferno :ARG0-of (1234-2-2-z2 / tower-01)) :ARG1 (1234-2-2-z3 / challenge-01 :ARG1 (1234-2-2-z4 / person :ARG0-of (1234-2-2-z5 / fight-01 :ARG1 (1234-2-2-z6 / fire)) :ARG0-of (1234-2-2-z7 / brave-02) :ARG0-of (1234-2-2-z8 / work-01 :ARG1 (1234-2-2-z9 / contain-01 :ARG0 1234-2-2-z4 :ARG1 (1234-2-2-z10 / flame :ARG0-of (1234-2-2-z11 / engulf-01 :ARG1 (1234-2-2-z12 / structure :coref 1234-2-4-z7 :coref-of 1234-2-4-z7 :coref 1234-2-4-z8 :coref-of 1234-2-4-z8) :coref 1234-2-4-z7 :coref-of 1234-2-4-z7 :coref 1234-2-4-z8 :coref-of 1234-2-4-z8) :coref 1234-2-4-z7 :coref-of 1234-2-4-z7 :coref 1234-2-4-z8 :coref-of 1234-2-4-z8)) :ARG1-of (1234-2-2-z13 / work-01 :ARG0 1234-2-2-z4 :polarity -))) :mod (1234-2-2-z14 / formidable))) :snt34 (1234-2-3-z0 / scene :domain (1234-2-3-z1 / scene :mod (1234-2-3-z2 / chaos) :mod (1234-2-3-z3 / urgent)) :time (1234-2-3-z4 / line-01 :ARG0 (1234-2-3-z5 / truck :mod (1234-2-3-z6 / fire) :part (1234-2-3-z7 / light :ARG0-of (1234-2-3-z8 / cast-01 :ARG1 (1234-2-3-z9 / glow-01 :mod (1234-2-3-z10 / eerie)) :ARG2 (1234-2-3-z11 / building :ARG1-of (1234-2-3-z12 / surround-01))) :ARG1-of (1234-2-3-z13 / flash-01))) :ARG1 (1234-2-3-z14 / street))) :snt35 (1234-2-4-z0 / and :op1 (1234-2-4-z1 / watch-01 :ARG1 (1234-2-4-z2 / succumb-01 :ARG0 (1234-2-4-z3 / building :mod (1234-2-4-z6 / apartment) :ARG0-of (1234-2-4-z4 / pride-01 :time (1234-2-4-z5 / once))) :ARG1 (1234-2-4-z7 / element :ARG0-of (1234-2-4-z8 / forgive-01 :polarity -))) :manner (1234-2-4-z9 / dumb)) :op2 (1234-2-4-z10 / leave-13 :ARG0 1234-2-4-z3 :ARG1 (1234-2-4-z11 / trail :consist-of (1234-2-4-z12 / and :op1 (1234-2-4-z13 / destroy-01) :op2 (1234-2-4-z14 / certain))) :prep-in (1234-2-4-z15 / wake :poss 1234-2-4-z3)) :rel (1234-2-4-z16 / person :ARG0-of 1234-2-4-z1)) :snt36 (1234-2-5-z0 / emerge-02 :ARG0 (1234-2-5-z1 / tale :topic (1234-2-5-z2 / heroism)) :time (1234-2-5-z3 / chaos)) :snt37 (1234-2-6-z0 / recount-01 :ARG0 (1234-2-6-z1 / person :ARG0-of (1234-2-6-z2 / fight-01 :ARG1 (1234-2-6-z3 / fire))) :ARG1 (1234-2-6-z4 / moment :time-of (1234-2-6-z5 / and :op1 (1234-2-6-z7 / heat) :op2 (1234-2-6-z8 / smoke) :ARG1-of (1234-2-6-z6 / intense-02))) :time (1234-2-6-z9 / navigate-01 :ARG0 1234-2-6-z1 :ARG1 (1234-2-6-z13 / hallway :mod (1234-2-6-z14 / treachery)) :purpose (1234-2-6-z10 / search-01 :ARG0 1234-2-6-z1 :ARG1 (1234-2-6-z11 / person :ARG0-of (1234-2-6-z12 / reside-01))))) :snt38 (1234-2-7-z0 / lead-03 :ARG0 (1234-2-7-z1 / ordeal :mod (1234-2-7-z2 / harrowing)) :ARG2 (1234-2-7-z3 / rescue-01 :ARG1 (1234-2-7-z4 / individual :quant (1234-2-7-z5 / numerous) :ARG0-of (1234-2-7-z6 / need-01 :ARG1 (1234-2-7-z7 / attend-02 :mod (1234-2-7-z8 / medicine)) :mod (1234-2-7-z15 / dire) :ARG1-of (1234-2-7-z9 / cause-01 :ARG0 (1234-2-7-z10 / and :op1 (1234-2-7-z11 / inhale-01 :ARG0 1234-2-7-z4 :ARG1 (1234-2-7-z12 / smoke)) :op2 (1234-2-7-z13 / injure-01 :ARG0 1234-2-7-z4 :ARG1 (1234-2-7-z14 / other))))) :ARG2-of (1234-2-7-z16 / include-91 :ARG3 (1234-2-7-z17 / some))))) :snt39 (1234-2-8-z0 / and :op1 (1234-2-8-z1 / wail-01 :ARG0 (1234-2-8-z2 / sound-02 :ARG1 (1234-2-8-z3 / siren)) :path (1234-2-8-z4 / air)) :op2 (1234-2-8-z5 / serve-01 :ARG0 1234-2-8-z2 :ARG1 (1234-2-8-z6 / remind-01 :ARG0 1234-2-8-z2 :ARG1 (1234-2-8-z7 / battle-01 :ARG1 (1234-2-8-z8 / and :op1 (1234-2-8-z9 / save-02 :ARG1 (1234-2-8-z10 / life)) :op2 (1234-2-8-z11 / preserve-01 :ARG1 (1234-2-8-z12 / thing :ARG1-of (1234-2-8-z13 / remain-01 :ARG3 (1234-2-8-z14 / building))))) :ARG1-of (1234-2-8-z15 / go-on-15)) :frequency (1234-2-8-z16 / constant)))) :snt40 (1234-2-9-z0 / become-01 :ARG1 (1234-2-9-z1 / scale-01 :ARG1 (1234-2-9-z2 / devastate-01) :ARG1-of (1234-2-9-z3 / true-01)) :ARG2 (1234-2-9-z4 / appear-02 :ARG1 1234-2-9-z1) :time (1234-2-9-z5 / and :op1 (1234-2-9-z6 / subside-01 :ARG1 (1234-2-9-z7 / intense-02 :ARG1 (1234-2-9-z8 / fire))) :op2 (1234-2-9-z9 / extinguish-01 :ARG1 (1234-2-9-z10 / emote-01 :mod (1234-2-9-z11 / last))))) :snt41 (1234-2-10-z0 / stand-01 :ARG1 (1234-2-10-z1 / building :mod (1234-2-10-z4 / apartment :coref 1234-2-16-z6 :coref-of 1234-2-16-z6 :coref 1234-2-16-z4 :coref-of 1234-2-16-z4 :coref 1234-2-16-z3 :coref-of 1234-2-16-z3 :coref 1234-2-16-z7 :coref-of 1234-2-16-z7 :coref 1234-2-16-z5 :coref-of 1234-2-16-z5) :ARG0-of (1234-2-10-z2 / bustle-01 :time (1234-2-10-z3 / once :coref 1234-2-16-z6 :coref-of 1234-2-16-z6 :coref 1234-2-16-z4 :coref-of 1234-2-16-z4 :coref 1234-2-16-z3 :coref-of 1234-2-16-z3 :coref 1234-2-16-z7 :coref-of 1234-2-16-z7 :coref 1234-2-16-z5 :coref-of 1234-2-16-z5) :coref 1234-2-16-z6 :coref-of 1234-2-16-z6 :coref 1234-2-16-z4 :coref-of 1234-2-16-z4 :coref 1234-2-16-z3 :coref-of 1234-2-16-z3 :coref 1234-2-16-z7 :coref-of 1234-2-16-z7 :coref 1234-2-16-z5 :coref-of 1234-2-16-z5) :coref 1234-2-16-z6 :coref-of 1234-2-16-z6 :coref 1234-2-16-z4 :coref-of 1234-2-16-z4 :coref 1234-2-16-z3 :coref-of 1234-2-16-z3 :coref 1234-2-16-z7 :coref-of 1234-2-16-z7 :coref 1234-2-16-z5 :coref-of 1234-2-16-z5) :ARG2 (1234-2-10-z5 / monument :mod (1234-2-10-z6 / somber) :topic (1234-2-10-z7 / and :op1 (1234-2-10-z8 / challenge-01 :ARG1-of (1234-2-10-z9 / face-01 :ARG0 (1234-2-10-z10 / person :ARG0-of (1234-2-10-z11 / respond-01 :ord (1234-2-10-z12 / ordinal-entity :value 1))))) :op2 (1234-2-10-z13 / resilience :poss 1234-2-10-z15 :ARG0-of (1234-2-10-z14 / rally-01 :ARG1 (1234-2-10-z15 / city) :manner (1234-2-10-z16 / together) :manner (1234-2-10-z17 / face-01 :ARG0 1234-2-10-z15 :ARG1 (1234-2-10-z18 / adversity)))))) :time (1234-2-10-z19 / now)) :snt42 (1234-2-11-z0 / and :op1 (1234-2-11-z1 / transport-01 :ARG1 (1234-2-11-z2 / and :op1 (1234-2-11-z3 / person :ARG0-of (1234-2-11-z4 / reside-01) :ARG1-of (1234-2-11-z5 / injure-01)) :op2 (1234-2-11-z6 / person :ARG0-of (1234-2-11-z7 / fight-01 :ARG1 (1234-2-11-z8 / fire)))) :ARG3 (1234-2-11-z9 / hospital :location (1234-2-11-z10 / nearby))) :op2 (1234-2-11-z11 / testify-01 :ARG0 (1234-2-11-z12 / condition :poss 1234-2-11-z2) :ARG1 (1234-2-11-z13 / endanger-01 :ARG0 (1234-2-11-z14 / incident :mod (1234-2-11-z15 / catastrophe) :mod (1234-2-11-z16 / such))))) :snt43 (1234-2-12-z0 / leave-13 :ARG0 (1234-2-12-z1 / aftermath-01 :ARG1 (1234-2-12-z2 / fire)) :ARG1 (1234-2-12-z3 / grapple-01 :ARG0 (1234-2-12-z4 / community) :ARG1 (1234-2-12-z5 / and :op1 (1234-2-12-z6 / grief) :op2 (1234-2-12-z7 / task-01 :ARG1 (1234-2-12-z8 / rebuild-01 :ARG0 1234-2-12-z4 :ARG1 (1234-2-12-z9 / life)) :ARG2-of (1234-2-12-z10 / daunt-01))))) :snt44 (1234-2-13-z0 / and :op1 (1234-2-13-z1 / underway :domain (1234-2-13-z2 / investigate-01 :ARG1 (1234-2-13-z3 / cause-01 :ARG0 (1234-2-13-z4 / fire :coref 1234-2-16-z1 :coref-of 1234-2-16-z1 :coref 1234-2-16-z2 :coref-of 1234-2-16-z2)))) :op2 (1234-2-13-z5 / seek-01 :ARG0 (1234-2-13-z6 / person :ARG1-of (1234-2-13-z7 / expert-01)) :ARG1 (1234-2-13-z8 / uncover-01 :ARG0 1234-2-13-z6 :ARG1 (1234-2-13-z9 / factor :ARG0-of (1234-2-13-z10 / contribute-01 :ARG2 (1234-2-13-z11 / tragedy :coref 1234-2-14-z12 :coref-of 1234-2-14-z12)))))) :snt45 (1234-2-14-z0 / contrast-01 :ARG2 (1234-2-14-z1 / shine-01 :ARG1 (1234-2-14-z2 / glimmer-01 :ARG1 (1234-2-14-z3 / hope-01) :ARG1 (1234-2-14-z4 / and :mod (1234-2-14-z13 / form) :op1 (1234-2-14-z14 / neighbor) :op2 (1234-2-14-z15 / person :ARG0-of (1234-2-14-z16 / volunteer-01)) :ARG0-of (1234-2-14-z5 / offer-01 :ARG1 (1234-2-14-z6 / support-01 :ARG0 1234-2-14-z4)) :ARG1-of (1234-2-14-z7 / unite-01 :ARG2 (1234-2-14-z8 / determine-01 :ARG0 1234-2-14-z4 :ARG1 (1234-2-14-z9 / assist-01 :ARG0 1234-2-14-z4 :ARG1 (1234-2-14-z10 / person :ARG1-of (1234-2-14-z11 / affect-01 :ARG0 (1234-2-14-z12 / disaster)))))))) :direction (1234-2-14-z17 / darkness))) :snt46 (1234-2-15-z0 / prevail-01 :ARG0 (1234-2-15-z1 / spirit :mod (1234-2-15-z2 / unity)) :time (1234-2-15-z17 / rally-01 :ARG1 (1234-2-15-z18 / city) :ARG2 (1234-2-15-z19 / aid-01 :ARG0 1234-2-15-z18 :ARG1 (1234-2-15-z20 / community :poss 1234-2-15-z18))) :ARG0-of (1234-2-15-z3 / remind-01 :ARG1 (1234-2-15-z4 / possible-01 :ARG1 (1234-2-15-z5 / light-04 :ARG0 (1234-2-15-z6 / strong-02 :ARG1 (1234-2-15-z7 / community)) :ARG1 (1234-2-15-z8 / path :path-of (1234-2-15-z9 / recover-01))) :time (1234-2-15-z10 / time :mod (1234-2-15-z14 / even) :ARG1-of (1234-2-15-z11 / have-degree-91 :ARG2 (1234-2-15-z12 / dark-03 :ARG1 1234-2-15-z10) :ARG3 (1234-2-15-z13 / most)))) :ARG2 (1234-2-15-z15 / we :mod (1234-2-15-z16 / all)))) :snt47 (1234-2-16-z0 / engulf-01 :ARG0 (1234-2-16-z1 / fire :mod (1234-2-16-z2 / massive)) :ARG1 (1234-2-16-z3 / building :mod (1234-2-16-z6 / apartment) :part (1234-2-16-z7 / story :quant 23) :ARG1-of (1234-2-16-z4 / rise-01 :ARG2 (1234-2-16-z5 / high-02)))))",
     "doc_info": {
       "0": {
         "text": "At least than 95 residents in New York City were left without a home after a massive fire spread through their apartment building , injuring 4 . The multi - alarm fire occurred just after 3 p . m. on Saturday at a 23 - story apartment building in a bustling urban neighborhood . The towering inferno sent plumes of thick smoke billowing into the sky , visible from several blocks away . First responders swiftly arrived at the scene , with more than 100 dedicated NYFD firefighters battling courageously to contain the raging blaze . The firefighters worked tirelessly to prevent the fire from spreading further and endangering neighboring structures . Their heroic efforts were not without sacrifice , as 2 of the brave NYFD firefighters sustained injuries during the operation and were rushed to the hospital for treatment . The scene was one of chaos and concern as residents and onlookers watched in disbelief as the fire consumed several floors of the apartment building . Panic and fear were palpable among the crowd as families were separated and individuals frantically searched for their loved ones . Emergency medical personnel worked side by side with firefighters , providing immediate assistance to those affected by the disaster . Two residents of the building were also injured and taken to nearby medical facilities for evaluation and care . Amid the turmoil , stories of both unity and resilience emerged . Witnesses recounted how strangers helped one another escape the building , illustrating the strength of community even in the face of adversity . Local businesses and organizations swiftly organized to provide shelter , clothing , and necessities to the displaced residents , showcasing the indomitable spirit of New Yorkers rallying to support their fellow citizens . As investigators delve into the cause of the devastating fire , questions arise about the safety measures in place and the state of the building 's fire prevention systems . The road to recovery for the affected residents will undoubtedly be arduous , but the city 's unwavering solidarity shines as a beacon of hope in these trying times .",
@@ -4997,12 +4997,12 @@
       "target": "1234-0-3-z3-:value-1"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-3-z4",
       "target": "1234-0-6-z0"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-3-z4",
       "target": "1234-0-6-z1"
     },
@@ -5099,17 +5099,17 @@
       "target": "1234-0-5-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-5-z1",
       "target": "1234-0-5-z10"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-5-z2",
       "target": "1234-0-5-z10"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-5-z3",
       "target": "1234-0-5-z10"
     },
@@ -5230,12 +5230,12 @@
     { "edge_info": ":op2", "source": "1234-0-7-z2", "target": "1234-0-7-z4" },
     { "edge_info": ":op1", "source": "1234-0-7-z5", "target": "1234-0-7-z6" },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-7-z6",
       "target": "1234-1-10-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-7-z6",
       "target": "1234-1-10-z5"
     },
@@ -5691,17 +5691,17 @@
       "target": "1234-0-14-z16"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-14-z14",
       "target": "1234-1-0-z13"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-14-z15",
       "target": "1234-1-0-z13"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-0-14-z16",
       "target": "1234-1-0-z13"
     },
@@ -5785,22 +5785,22 @@
       "target": "1234-1-0-z16"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-0-z15",
       "target": "1234-2-0-z9"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-0-z15",
       "target": "1234-2-0-z8"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-0-z16",
       "target": "1234-2-0-z9"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-0-z16",
       "target": "1234-2-0-z8"
     },
@@ -5825,7 +5825,7 @@
       "target": "1234-1-0-z22"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-0-z22",
       "target": "1234-2-0-z22"
     },
@@ -5943,7 +5943,7 @@
     { "edge_info": ":time", "source": "1234-1-3-z0", "target": "1234-1-3-z3" },
     { "edge_info": ":ARG0", "source": "1234-1-3-z1", "target": "1234-1-3-z3" },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-3-z1",
       "target": "1234-1-10-z8"
     },
@@ -6268,17 +6268,17 @@
       "target": "1234-1-11-z10"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z1",
       "target": "1234-2-13-z2"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z1",
       "target": "1234-2-13-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z1",
       "target": "1234-2-13-z4"
     },
@@ -6324,32 +6324,32 @@
       "target": "1234-1-11-z11"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z10",
       "target": "1234-2-13-z2"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z10",
       "target": "1234-2-13-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z10",
       "target": "1234-2-13-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z11",
       "target": "1234-2-13-z2"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z11",
       "target": "1234-2-13-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-11-z11",
       "target": "1234-2-13-z4"
     },
@@ -6405,7 +6405,7 @@
       "target": "1234-1-12-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-1-12-z5",
       "target": "1234-2-1-z10"
     },
@@ -6607,12 +6607,12 @@
       "target": "1234-2-0-z13"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-0-z12",
       "target": "1234-2-1-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-0-z12",
       "target": "1234-2-1-z5"
     },
@@ -6622,22 +6622,22 @@
       "target": "1234-2-0-z14"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-0-z13",
       "target": "1234-2-1-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-0-z13",
       "target": "1234-2-1-z5"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-0-z14",
       "target": "1234-2-1-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-0-z14",
       "target": "1234-2-1-z5"
     },
@@ -6724,12 +6724,12 @@
       "target": "1234-2-2-z11"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-2-z10",
       "target": "1234-2-4-z7"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-2-z10",
       "target": "1234-2-4-z8"
     },
@@ -6739,22 +6739,22 @@
       "target": "1234-2-2-z12"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-2-z11",
       "target": "1234-2-4-z7"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-2-z11",
       "target": "1234-2-4-z8"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-2-z12",
       "target": "1234-2-4-z7"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-2-z12",
       "target": "1234-2-4-z8"
     },
@@ -6955,52 +6955,52 @@
       "target": "1234-2-10-z2"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z1",
       "target": "1234-2-16-z6"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z1",
       "target": "1234-2-16-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z1",
       "target": "1234-2-16-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z1",
       "target": "1234-2-16-z7"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z1",
       "target": "1234-2-16-z5"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z4",
       "target": "1234-2-16-z6"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z4",
       "target": "1234-2-16-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z4",
       "target": "1234-2-16-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z4",
       "target": "1234-2-16-z7"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z4",
       "target": "1234-2-16-z5"
     },
@@ -7010,52 +7010,52 @@
       "target": "1234-2-10-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z2",
       "target": "1234-2-16-z6"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z2",
       "target": "1234-2-16-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z2",
       "target": "1234-2-16-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z2",
       "target": "1234-2-16-z7"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z2",
       "target": "1234-2-16-z5"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z3",
       "target": "1234-2-16-z6"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z3",
       "target": "1234-2-16-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z3",
       "target": "1234-2-16-z3"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z3",
       "target": "1234-2-16-z7"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-10-z3",
       "target": "1234-2-16-z5"
     },
@@ -7269,12 +7269,12 @@
       "target": "1234-2-13-z4"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-13-z4",
       "target": "1234-2-16-z1"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-13-z4",
       "target": "1234-2-16-z2"
     },
@@ -7314,7 +7314,7 @@
       "target": "1234-2-13-z11"
     },
     {
-      "edge_info": ":entity",
+      "edge_info": ":coref",
       "source": "1234-2-13-z11",
       "target": "1234-2-14-z12"
     },

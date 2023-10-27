@@ -1,248 +1,198 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html lang="en">
+
 <style>
-    #svgContainer {
-        width: 100%;
-        height: 100%;
-    }
-
-    .links line {
-        stroke: #999;
-        stroke-opacity: 0.6;
-    }
-
-    .nodes circle {
-        stroke: #fff;
-        stroke-width: 1.5px;
-    }
-
-    .nodes .image {
-        stroke-width: 1.5px;
-    }
-
-    .text {
-        font: 10px sans-serif;
-        pointer-events: none;
-        text-anchor: middle;
-    }
-
-    .edgetext {
-        font: 10px sans-serif;
-        pointer-events: none;
-        text-anchor: middle;
+    .node-label {
+        background-color: rgba(0, 0, 0, 0.5);
+        user-select: none;
     }
 </style>
-<label for="nodeSize">Node Size: </label><input type="range" id="nodeSize" name="nodeSize" min="1" max="100" value="1"
-    step="1">
-<label for="edgeSize">Edge Size: </label><input type="range" id="edgeSize" name="edgeSize" min="1" max="100" value="1"
-    step="1">
-<label for="distance">Distance: </label><input type="range" id="distance" name="distance" min="-2000" max="2000"
-    value="-500" step="10">
-<label for="fontSize">Font Size: </label>
-<input type="range" min="6" max="100" value="1" id="fontSize">
 
-<div id="svgContainer">
-    <svg id="dynamic-svg"></svg>
-</div>
+<head>
+    <meta charset="UTF-8" />
+    <title>3D Force-Directed Graph</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+    <script src="https://unpkg.com/3d-force-graph"></script>
+    <script src="https://unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
+    <script src="//unpkg.com/dat.gui"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
 
-<button id="saveButton">Save SVG</button>
+<body>
+    <div id="3d-graph"></div>
+</body>
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-    var width = window.innerWidth,
-        height = window.innerHeight;
+</html>
 
-    var nodeSize = document.getElementById("nodeSize").value;
-    var edgeSize = document.getElementById("edgeSize").value;
-    var distance = document.getElementById("distance").value;
-
-
-    var svgContainer = d3.select('#svgContainer');
-    var svg = d3.select("#dynamic-svg")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 " + width + " " + height)
-        .classed("svg-content", true);
-
-
-    // Define the zoom behavior, limiting the scale extent to 20x and translate extent to the size of the svg.
-    var zoom = d3.zoom()
-        .scaleExtent([1, 10])
-        .on("zoom", zoomed);
-
-    svg.call(zoom);
-
-    function zoomed() {
-        var transform = d3.event.transform;
-        svg.selectAll('g').attr("transform", transform);
-    }
-
-    var color = d3.scaleOrdinal(d3.schemeCategory10);
-
-    var simulation = d3.forceSimulation()
-        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(100))
-        .force("charge", d3.forceManyBody().strength(distance))
-        .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collide", d3.forceCollide().radius(function (d) { return nodeSize + 1; }));
-
-    d3.json("/graph_one.json", function (graph) {
-
-        var link = svg.append("g")
-            .attr("class", "links")
-            .attr("id", "linksGroup")
-            .selectAll("line")
-            .data(graph.links)
-            .enter().append("line")
-            .attr("stroke-width", edgeSize)
-            .style("stroke", function (d) { return d.edge_info === ':event' ? 'green' : '#999'; })
-            .style("stroke", function (d) { return d.edge_info === ':entity' ? 'red' : '#999'; });
+<script type="importmap">
+  { "imports": { "three": "https://unpkg.com/three/build/three.module.js" } }
+</script>
+<script type="module">
+    import {
+        CSS2DRenderer,
+        CSS2DObject,
+    } from "https://unpkg.com/three/examples/jsm/renderers/CSS2DRenderer.js";
+    //import { UnrealBloomPass } from '//unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 
-        var node = svg.append("g")
-            .attr("class", "nodes")
-            .attr("id", "nodesGroup")
-            .selectAll("circle")
-            .data(graph.nodes)
-            .enter()
-            .append(function (d) {
-                if (d.image) {
-                    var patternId = "pattern" + d.id;
-                    svg.append("defs")
-                        .append("pattern")
-                        .attr("id", patternId)
-                        .attr("patternContentUnits", "objectBoundingBox")
-                        .attr("width", "100%")
-                        .attr("height", "100%")
-                        .append("image")
-                        .attr("width", 1)
-                        .attr("height", 1)
-                        .attr("preserveAspectRatio", "xMidYMid meet")
-                        .attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
-                        .attr("xlink:href", d.image);
-                    return document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    var graph;
+    d3.json("./graph_merge_groups.json").then(function (loadedGraph) {
+        const graph = ForceGraph3D({
+            extraRenderers: [new CSS2DRenderer()],
+        })(document.getElementById("3d-graph"))
+            .graphData(loadedGraph)
+            .nodeLabel('word_token')
+            .linkLabel(link => {
+                if (link.edge_info.startsWith(":snt")) {
+                    return null;
                 } else {
-                    return document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                    return `${link.source.amr_token} <-> ${link.target.amr_token}`
                 }
             })
-            .attr("r", function (d) { return d.image ? 100 : 10; })  // Modify this line
-            .attr("class", function (d) { return d.image ? "image" : ""; })
-            .attr("fill", function (d) { return d.image ? "url(#pattern" + d.id + ")" : color(d.group.split("-")[0]); })
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
+            .nodeAutoColorBy("group") // color nodes by group
+            .linkAutoColorBy(d => {
+                if (d.edge_info == ":coref") {
+                    return "red";
+                } else {
+                    return loadedGraph.nodes.find(e => {
+                        return e.id == d.source;
+                    }).group;
+                }
+            }) // color links with their source node color
+            .linkOpacity(0.5)
+            .onNodeClick((node) => {
+                // Aim at node from outside it
+                const distance = 70;
+                const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
 
+                graph.cameraPosition(
+                    {
+                        x: node.x * distRatio,
+                        y: node.y * distRatio,
+                        z: node.z * distRatio,
+                    }, // new position
+                    node, // lookAt ({ x, y, z })
+                    3000 // ms transition duration
+                );
+            })
+            .onNodeDragEnd((node) => {
+                node.fx = node.x;
+                node.fy = node.y;
+                node.fz = node.z;
+            })
+            .linkThreeObjectExtend(true)
+            .linkPositionUpdate((sprite, { start, end }) => {
+                const middlePos = Object.assign(
+                    ...["x", "y", "z"].map((c) => ({
+                        [c]: start[c] + (end[c] - start[c]) / 2, // calc middle point
+                    }))
+                );
+                // Position sprite
+                Object.assign(sprite.position, middlePos);
+            })
+            .onNodeHover(node => {
+                document.body.style.cursor = node ? "pointer" : null;
+            });
 
+        graph.nodeThreeObjectExtend(true);
+        graph.nodeThreeObject(createNodeObject);
+        graph.linkThreeObject(createLinkLabel);
 
-
-        var text = svg.append("g")
-            .attr("class", "text")
-            .selectAll("text")
-            .data(graph.nodes)
-            .enter().append("text")
-            .text(function (d) { return d.amr_token; });
-
-        var edgeText = svg.append("g")
-            .attr("class", "edgetext")
-            .selectAll("text")
-            .data(graph.links)
-            .enter().append("text")
-            .text(function (d) { return d.edge_info; });
-
-        simulation
-            .nodes(graph.nodes)
-            .on("tick", ticked);
-
-        simulation.force("link")
-            .links(graph.links);
-
-        function ticked() {
-            link
-                .attr("x1", function (d) { return d.source.x; })
-                .attr("y1", function (d) { return d.source.y; })
-                .attr("x2", function (d) { return d.target.x; })
-                .attr("y2", function (d) { return d.target.y; });
-
-            node
-                .attr("cx", function (d) { return d.x; })
-                .attr("cy", function (d) { return d.y; });
-
-            text
-                .attr("x", function (d) { return d.x; })
-                .attr("y", function (d) { return d.y; });
-
-            edgeText
-                .attr("x", function (d) { return (d.source.x + d.target.x) / 2; })
-                .attr("y", function (d) { return (d.source.y + d.target.y) / 2; });
-
-            var xExtent = d3.extent(graph.nodes, function (d) { return d.x; });
-            var yExtent = d3.extent(graph.nodes, function (d) { return d.y; });
-
-            svg.attr("viewBox", xExtent[0] + " " + yExtent[0] + " " + (xExtent[1] - xExtent[0]) + " " + (yExtent[1] - yExtent[0]));
+        function createNodeObject(node) {
+            if (node.image) {
+                // Create a texture for the image
+                const imgTexture = new THREE.TextureLoader().load(node.image);
+                imgTexture.colorSpace = THREE.SRGBColorSpace;
+                // Create a sphere to represent the node
+                const material = new THREE.SpriteMaterial({ map: imgTexture });
+                const sprite = new THREE.Sprite(material);
+                sprite.scale.set(45, 45);
+                return sprite;
+            } else {
+                const sprite = new SpriteText(node.amr_token);
+                sprite.material.depthWrite = false; // make sprite background transparent
+                sprite.color = node.color;
+                sprite.textHeight = 8;
+                
+                return sprite;
+            }
         }
-    });
 
-    function dragstarted(d) {
-        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-        d.fx = d.x;
-        d.fy = d.y;
-    }
+        function createLinkLabel(link) {
+            if (link.edge_info.startsWith(":snt")) {
+                // TODO
+                return new SpriteText("");
+            }
 
-    function dragged(d) {
-        d.fx = d3.event.x;
-        d.fy = d3.event.y;
-    }
+            const sprite = new SpriteText(`${link.edge_info}`);
+            sprite.color = "lightgrey";
+            sprite.textHeight = 1.5;
 
-    function dragended(d) {
-        if (!d3.event.active) simulation.alphaTarget(0);
-        d.fx = null;
-        d.fy = null;
-    }
+            if (link.edge_info == ":coref") {
+                sprite.color = "red";
+                sprite.textHeight = 2;
+            }
 
-    document.getElementById("nodeSize").addEventListener("input", function () {
-        nodeSize = this.value;
-        nodeSize = this.value;
-        d3.select("#nodesGroup").selectAll("circle")
-            .attr("r", function (d) {
-            return d.image ? nodeSize * 5 : nodeSize;
+            return sprite;
+        }
+
+        //Define GUI
+        const Settings = function () {
+            this.nodeSize = 10;
+            this.linkWidth = 3;
+            
+            //this.distance = 20;
+            //this.fontSize = 6;
+        };
+
+
+        const settings = new Settings();
+        const gui = new dat.GUI();
+
+        const nodeSizeController = gui.add(settings, 'nodeSize', 0, 40);
+        const linkWidthController = gui.add(settings, 'linkWidth', 0, 30);
+        
+
+        nodeSizeController.onChange(() => {
+            graph.nodeRelSize(settings.nodeSize);
+        });
+        linkWidthController.onChange(() => {
+            graph.linkWidth(settings.linkWidth);
         });
         
+        //const linkForce = graph
+        //    .d3Force('link')
+        //    .distance(link => settings.distance);
+        //const distanceController = gui.add(settings, 'distance', 0, 100);
+        //const fontSizeController = gui.add(settings, 'fontSize', 0, 20);
+        //distanceController.onChange(() => {
+        //    linkForce.distance(link => settings.distance);
+        //    graph.numDimensions(3); // Re-heat simulation
+        //});
+        // TODO adjust the font size
+        //fontSizeController.onChange(() => {
+            // When fontSize changes, re-create the labels with the new size
+         //   graph.nodeThreeObject(createNodeObject);
+         //   graph.linkThreeObject(createLinkLabel);
+
+            // Refresh the graph to reflect changes
+        //    graph.refresh();
+        //});
+        
+
+
+        // for fun
+        //----------------------------------------
+        //const bloomPass = new UnrealBloomPass();
+        //bloomPass.strength = 1;
+        //bloomPass.radius = 0.5;
+        //bloomPass.threshold = 0;
+        //graph.postProcessingComposer().addPass(bloomPass);
+        //----------------------------------------
     });
-
-
-    document.getElementById("edgeSize").addEventListener("input", function () {
-        edgeSize = this.value;
-        d3.select("#linksGroup").selectAll("line").attr("stroke-width", edgeSize);
-    });
-
-    document.getElementById("distance").addEventListener("input", function () {
-        distance = this.value;
-        simulation.force("charge", d3.forceManyBody().strength(distance));
-        simulation.alphaTarget(0.3).restart();
-    });
-
-    document.getElementById("fontSize").addEventListener("input", function () {
-        var fontSize = this.value;
-        d3.selectAll(".text").style("font-size", fontSize + "px");
-        d3.selectAll(".edgetext").style("font-size", fontSize + "px");
-    });
-
-    document.getElementById("saveButton").addEventListener("click", function () {
-        // Get the SVG content
-        var svgData = document.getElementById("dynamic-svg").outerHTML;
-
-        // Create a Blob object with the SVG content and specify the SVG MIME type
-        var blob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
-
-        // Create a URL for the Blob object
-        var url = URL.createObjectURL(blob);
-
-        // Create a temporary link and click it to start the download
-        var downloadLink = document.createElement("a");
-        downloadLink.href = url;
-        downloadLink.download = "graph.svg";
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-    });
-
 </script>
