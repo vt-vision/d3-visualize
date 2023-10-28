@@ -3,15 +3,15 @@ import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-    base: '/kg-visualize/',
+    // base: '/kg-visualize/'
     plugins: [vue()],
     build: {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                network2d: resolve(__dirname, 'pages', 'network2d.html'),
-                network3d: resolve(__dirname, 'pages', 'network3d.html'),
+                network2d: new URL('network2d.html', import.meta.url).pathname,
+                network3d: new URL('network3d.html', import.meta.url).pathname
             },
         }
-    }
+    },
 })
