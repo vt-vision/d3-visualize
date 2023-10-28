@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Multi-Sourced Evidence Graph</title>
+    <title>Multi-Document Knowledge Graph"</title>
     <style>
         body {
             margin: 0;
@@ -40,6 +40,11 @@
             /* Optional: for rounded corners */
             z-index: 100;
             /* Ensure it's above other elements */
+            height: 30%;
+            overflow-y: auto;
+            /* Make it scrollable vertically */
+            overflow-x: hidden;
+            /* Ensure any horizontal overflow is hidden, optional based on your content */
         }
     </style>
 </head>
@@ -242,7 +247,7 @@
         const settings = new Settings();
         const controllerGUI = new GUI();
 
-        const fontSizeController = controllerGUI.add(settings, 'fontSize', 0, 30);
+        const fontSizeController = controllerGUI.add(settings, 'fontSize', 0, 40);
         const linkWidthController = controllerGUI.add(settings, 'linkWidth', 0, 30);
         const imageSizeController = controllerGUI.add(settings, 'imageSize', 0, 200);
         const nodeSizeController = controllerGUI.add(settings, 'nodeSize', 0, 40);
@@ -287,25 +292,23 @@
             infoPanel.innerHTML = content; // you can insert HTML or text content here
         }
 
-        updateInfoPanel('Welcome to the Multi-Sourced Evidence Graph! \
-        <br> \
-        1. You can zoom in/out by scrolling the mouse wheel. \
-        <br> \
-        2. You can move the graph by dragging the mouse with the right button pressed. \
-        <br> \
-        3. You can click on a node to focus on it. \
-        <br> \
-        4. You can adjust the settings of the graph from the menu on the top right corner. \
-        <br> \
-        <br> \
-        Every nodes represents a word token in the AMR graph. \
-        <br> \
-        And every link represents a relation between two word tokens. \
-        <br> \
-        <br> \
-        The color of the nodes and links represent the group of the word tokens.\
-        <br> \
-        The red links represent the coreference relations.');
+        updateInfoPanel(`Welcome to the multi-document knowledge graph visualization!\
+        <br><br>\
+        Nodes represent knowledge elements (e.g. verbs, nouns) while edges represent relations between knowledge elements.<br>\
+        The colors represent the document from which the knowledge came. <br>\
+        Red edges represent that different knowledge elements refer to the same entity allowing knowledge to be linked within and across documents.<br>\
+        <br><br>\
+        Scavenger hunt: <br>
+        Your task is to investigate information about the number of investigators and the cause of the fire. <br>
+        One of the cross-document groups with red edges links knowledge across documents about the cause of the fire.<br>
+        Try to investigate the claim that "three investigators are investigating the cause, believed to be a toaster".<br>
+        The knowledge needed to check this can't be found in any single document, but is apparent when cross-document links are added.<br>
+        <br><br>
+        Instructions for interacting:<br>
+        1. Zoom in/out by scrolling the mouse wheel or via pinch gestures on mobile.<br>
+        2. Drag the graph using the right mouse button (finger on mobile).<br>
+        3. Clicking a node focuses on it. Hovering will animate its connections.<br>
+        4. Visualization settings are adjustable in upper right corner.`);
 
 
         // highlight feature
