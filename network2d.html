@@ -60,10 +60,10 @@
     import { GUI } from "dat.gui";
 
     var graph;
-    d3.json("/graph_merge_groups.json").then(function (loadedGraph) {
+    d3.json("graph_merge_groups.json").then(function (loadedGraph) {
         loadedGraph.nodes.forEach((node) => {
             const img = new Image();
-            img.src = node.image;
+            img.src = `${node.image}`;
             node.img_data = img;
         });
 
