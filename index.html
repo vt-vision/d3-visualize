@@ -45,12 +45,35 @@
                 overflow-x: hidden;
                 /* Ensure any horizontal overflow is hidden, optional based on your content */
             }
+
+            #footer-link {
+                position: fixed; /* Fixed position */
+                bottom: 10px;    /* Distance from bottom */
+                left: 50%;       /* Center horizontally */
+                transform: translateX(-50%); /* Precise centering */
+                z-index: 101;    /* Ensure it's above other elements */
+            }
+        
+            #footer-link a {
+                color: white; /* Text color */
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+                padding: 8px; /* Some padding */
+                border-radius: 5px; /* Rounded corners */
+                text-decoration: none; /* Optional: Removes the underline on the link */
+            }
+        
+            #footer-link a:hover {
+                background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+            }
         </style>
     </head>
 
     <body>
         <div id="2d-graph"></div>
         <div id="info-panel"></div>
+        <div id="footer-link">
+            <a href="network3d.html" target="_blank">Checkout the 3D graph</a>
+        </div>
     </body>
 </html>
 
