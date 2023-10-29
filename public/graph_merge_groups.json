@@ -22,7 +22,7 @@
             "Amid the turmoil , stories of both unity and resilience emerged .",
             "Witnesses recounted how strangers helped one another escape the building , illustrating the strength of community even in the face of adversity .",
             "Local businesses and organizations swiftly organized to provide shelter , clothing , and necessities to the displaced residents , showcasing the indomitable spirit of New Yorkers rallying to support their fellow citizens .",
-            "As 7 investigators delve into the cause of the devastating fire , questions arise about the safety measures in place and the state of the building 's fire prevention systems .",
+            "As investigators delve into the cause of the devastating fire , questions arise about the safety measures in place and the state of the building 's fire prevention systems .",
             "The road to recovery for the affected residents will undoubtedly be arduous , but the city 's unwavering solidarity shines as a beacon of hope in these trying times .",
             "A 23 story building is set on a massive fire ."
           ]
@@ -43,7 +43,7 @@
             "The injured victims were swiftly attended to by emergency medical personnel on - site , providing critical care before transporting them to nearby medical facilities for further treatment .",
             "Among the wounded were both residents and firefighters , a reminder of the risks faced by those who serve to protect the community .",
             "As the flames were gradually brought under control , the collective sigh of relief from the crowd that had gathered was palpable , even as the weight of the situation remained heavy .",
-            "The investigation into the fire 's cause is now underway , with authorities aiming to uncover the factors that led to this destructive incident .",
+            "The investigation into the fire 's cause is now underway , with authorities with 7 people aiming to uncover the factors that led to this destructive incident .",
             "In the aftermath of the tragedy , stories of unity and support began to emerge , highlighting the strength of the community in the face of adversity .",
             "The image of firefighters standing shoulder to shoulder , resolute in their mission , will forever be etched in the memory of the city as a testament to their dedication and the unwavering spirit of New York .",
             "A multi - alarm fire engulfed an apartment building ."
@@ -1377,12 +1377,6 @@
         "id": "1234-0-13-z12"
       },
       {
-        "amr_token": "7",
-        "word_token": "7",
-        "group": "0-text",
-        "id": "1234-0-0-z12-:quant-7"
-      },
-      {
         "amr_token": "investigate-01",
         "word_token": "investigators",
         "group": "0-text",
@@ -2714,6 +2708,28 @@
         "group": "1-text",
         "id": "1234-1-11-z2"
       },
+
+
+      {
+        "amr_token": "have-03",
+        "word_token": "with",
+        "group": "1-text",
+        "id": "1234-1-11-z2-have-03"
+      },
+      {
+        "amr_token": "person",
+        "word_token": "people",
+        "group": "1-text",
+        "id": "1234-1-11-z2-person"
+      },
+      {
+        "amr_token": "7",
+        "word_token": "7",
+        "group": "1-text",
+        "id": "1234-1-11-z2-7"
+      },
+
+
       {
         "amr_token": "aim-01",
         "word_token": "aiming",
@@ -5668,11 +5684,6 @@
         "target": "1234-0-13-z13"
       },
       {
-        "edge_info": ":quant",
-        "source": "1234-0-13-z12",
-        "target": "1234-0-0-z12-:quant-7"
-      },
-      {
         "edge_info": ":ARG0",
         "source": "1234-0-13-z14",
         "target": "1234-0-13-z15"
@@ -7651,7 +7662,11 @@
       { "edge_info": ":coref", "source": "1234-2-17-z6", "target": "1234-1-11-z11" },
       { "edge_info": ":coref", "source": "1234-1-11-z11", "target": "1234-2-17-z6" },
       { "edge_info": ":coref", "source": "1234-2-17-z6", "target": "1234-2-13-z4" },
-      { "edge_info": ":coref", "source": "1234-2-13-z4", "target": "1234-2-17-z6" } 
+      { "edge_info": ":coref", "source": "1234-2-13-z4", "target": "1234-2-17-z6" },
+      
+      { "edge_info": ":ARG0-of", "source": "1234-1-11-z2", "target": "1234-1-11-z2-have-03" },
+      { "edge_info": ":ARG1", "source": "1234-1-11-z2-have-03", "target": "1234-1-11-z2-person" },
+      { "edge_info": ":quant", "source": "1234-1-11-z2-person", "target": "1234-1-11-z2-7" }
     ]
   }
   
