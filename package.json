@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "3d-force-graph": "^1.73.0",
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
     "d3": "^7.8.4",
     "dat.gui": "^0.7.9",
     "force-graph": "^1.43.4",

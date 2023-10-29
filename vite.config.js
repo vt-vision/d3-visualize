@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import vue from '@vitejs/plugin-vue'
+import basicSsl from '@vitejs/plugin-basic-ssl'
 
 export default defineConfig({
-    plugins: [vue()],
+    plugins: [basicSsl()],
     build: {
         rollupOptions: {
             input: {
