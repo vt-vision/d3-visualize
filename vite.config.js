@@ -3,7 +3,6 @@ import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-    base: '/d3-visualize/',
     plugins: [vue()],
     build: {
         rollupOptions: {
