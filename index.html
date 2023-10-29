@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Multi-Document Knowledge Graph"</title>
+        <link rel="stylesheet" href="main.css" />
     </head>
 
     <body>
@@ -281,67 +282,3 @@
         //----------------------------------------
     });
 </script>
-
-<style>
-    body {
-        margin: 0;
-    }
-
-    .node-label {
-        background-color: rgba(0, 0, 0, 0.5);
-        user-select: none;
-    }
-
-    .link-label {
-        background-color: rgba(0, 0, 0, 0.5);
-        user-select: none;
-    }
-
-    #info-panel {
-        position: absolute;
-        /* Position it relative to the <body> */
-        top: 10px;
-        /* Position at the bottom with a space of 10px */
-        left: 10px;
-        /* Position from the left with a space of 10px */
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent black */
-        color: white;
-        /* White text color */
-        padding: 10px;
-        /* Add some space around the content */
-        max-width: 20%;
-        /* Limit width */
-        font-size: 16px;
-        /* Set font size */
-        border-radius: 5px;
-        /* Optional: for rounded corners */
-        z-index: 100;
-        /* Ensure it's above other elements */
-        height: 30%;
-        overflow-y: auto;
-        /* Make it scrollable vertically */
-        overflow-x: hidden;
-        /* Ensure any horizontal overflow is hidden, optional based on your content */
-    }
-
-    #footer-link {
-        position: fixed; /* Fixed position */
-        bottom: 10px;    /* Distance from bottom */
-        left: 50%;       /* Center horizontally */
-        transform: translateX(-50%); /* Precise centering */
-        z-index: 101;    /* Ensure it's above other elements */
-    }
-
-    #footer-link a {
-        color: white; /* Text color */
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-        padding: 8px; /* Some padding */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Optional: Removes the underline on the link */
-    }
-
-    #footer-link a:hover {
-        background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
-    }
-</style>
