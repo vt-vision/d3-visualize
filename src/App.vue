@@ -4,10 +4,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <a href="/kg-visualize/network2d.html" target="_blank">
+    <a href="/network2d.html" target="_blank">
       <img src="" class="logo" alt="2D logo" />
     </a>
-    <a href="/kg-visualize/network3d.html" target="_blank">
+    <a href="/network3d.html" target="_blank">
       <img src="" class="logo vue" alt="3D logo" />
     </a>
   </div>

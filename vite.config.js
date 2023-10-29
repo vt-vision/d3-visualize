@@ -9,7 +9,6 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                network2d: new URL('network2d.html', import.meta.url).pathname,
                 network3d: new URL('network3d.html', import.meta.url).pathname
             },
         }

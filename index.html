@@ -1,13 +1,323 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Multi-Document Knowledge Graph"</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .node-label {
+                background-color: rgba(0, 0, 0, 0.5);
+                user-select: none;
+            }
+
+            .link-label {
+                background-color: rgba(0, 0, 0, 0.5);
+                user-select: none;
+            }
+
+            #info-panel {
+                position: absolute;
+                /* Position it relative to the <body> */
+                top: 10px;
+                /* Position at the bottom with a space of 10px */
+                left: 10px;
+                /* Position from the left with a space of 10px */
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Semi-transparent black */
+                color: white;
+                /* White text color */
+                padding: 10px;
+                /* Add some space around the content */
+                max-width: 20%;
+                /* Limit width */
+                font-size: 16px;
+                /* Set font size */
+                border-radius: 5px;
+                /* Optional: for rounded corners */
+                z-index: 100;
+                /* Ensure it's above other elements */
+                height: 30%;
+                overflow-y: auto;
+                /* Make it scrollable vertically */
+                overflow-x: hidden;
+                /* Ensure any horizontal overflow is hidden, optional based on your content */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="2d-graph"></div>
+        <div id="info-panel"></div>
+    </body>
 </html>
+
+<script type="module">
+    import ForceGraph from "force-graph";
+    import * as d3 from "d3";
+    import { GUI } from "dat.gui";
+
+    var graph;
+    d3.json("graph_merge_groups.json").then(function (loadedGraph) {
+        loadedGraph.nodes.forEach((node) => {
+            const img = new Image();
+            img.src = `${node.image}`;
+            node.img_data = img;
+        });
+
+        // Highlight function
+        //----------------------------------------
+        const highlightNodes = new Set();
+        const highlightLinks = new Set();
+        let hoverNode = null;
+
+        loadedGraph.links.forEach((link) => {
+            const a = loadedGraph.nodes.find((e) => e.id == link.source);
+            const b = loadedGraph.nodes.find((e) => e.id == link.target);
+            !a.neighbors && (a.neighbors = []);
+            !b.neighbors && (b.neighbors = []);
+            a.neighbors.push(b);
+            b.neighbors.push(a);
+
+            !a.links && (a.links = []);
+            !b.links && (b.links = []);
+            a.links.push(link);
+            b.links.push(link);
+        });
+        //----------------------------------------
+
+        const graph = ForceGraph()(document.getElementById("2d-graph"))
+            .graphData(loadedGraph)
+            .backgroundColor("#000011")
+            .nodeLabel("word_token")
+            .linkLabel((link) => {
+                if (link.edge_info.startsWith(":snt")) {
+                    return null;
+                } else {
+                    return `${link.source.amr_token} <-> ${link.target.amr_token}`;
+                }
+            })
+            .nodeAutoColorBy("group") // color nodes by group
+            .linkAutoColorBy((d) => {
+                return loadedGraph.nodes.find((e) => {
+                    return e.id == d.source;
+                }).group;
+            }) // color links with their source node color
+            .nodeCanvasObjectMode(() => "after")
+            .nodeCanvasObject((node, ctx, globalScale) => {
+                if (node.image) {
+                    ctx.drawImage(
+                        node.img_data,
+                        node.x - settings.imageSize / 2,
+                        node.y - settings.imageSize / 2,
+                        settings.imageSize,
+                        settings.imageSize
+                    );
+                } else {
+                    if (settings.showLabels) {
+                        ctx.font = `${settings.fontSize}px Sans-Serif`;
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillStyle = node.color;
+                        ctx.fillText(node.amr_token, node.x, node.y + 20);
+                    }
+                }
+            })
+            .linkCanvasObjectMode(() => "after")
+            .linkCanvasObject((link, ctx) => {
+                if (link.edge_info.startsWith(":snt")) {
+                    return;
+                }
+
+                if (settings.showLabels) {
+                    ctx.font = `${settings.fontSize}px Sans-Serif`;
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+
+                    if (link.edge_info.startsWith(":coref")) {
+                        link.color = "#ff3b3b";
+                        ctx.fillStyle = "#ff3b3b";
+                    } else {
+                        ctx.fillStyle = link.color;
+                    }
+
+                    ctx.globalAlpha = 0.5;
+                    ctx.fillText(
+                        link.edge_info,
+                        (link.source.x + link.target.x) / 2,
+                        (link.source.y + link.target.y) / 2
+                    );
+                }
+            })
+            .onNodeDragEnd((node) => {
+                node.fx = node.x;
+                node.fy = node.y;
+            })
+            .onNodeHover((node) => {
+                document.body.style.cursor = node ? "pointer" : null;
+
+                // highlight features
+                //---------------------------
+                highlightNodes.clear();
+                highlightLinks.clear();
+                if (node) {
+                    highlightNodes.add(node);
+                    node.neighbors.forEach((neighbor) =>
+                        highlightNodes.add(neighbor)
+                    );
+                    node.links.forEach((link) => highlightLinks.add(link));
+                }
+
+                hoverNode = node || null;
+                //---------------------------
+            })
+            .onLinkHover((link) => {
+                document.body.style.cursor = link ? "pointer" : null;
+
+                // highlight features
+                //---------------------------
+                highlightNodes.clear();
+                highlightLinks.clear();
+
+                if (link) {
+                    highlightLinks.add(link);
+                    highlightNodes.add(link.source);
+                    highlightNodes.add(link.target);
+                }
+                //---------------------------
+            })
+            .onNodeClick((node) => {
+                graph.centerAt(node.x, node.y, 1000);
+                graph.zoom(4, 2000);
+            })
+            .onLinkClick((link) => {
+                graph.centerAt(
+                    (link.source.x + link.target.x) / 2,
+                    (link.source.y + link.target.y) / 2,
+                    1000
+                );
+                graph.zoom(4, 2000);
+            })
+            .linkDirectionalParticles(4)
+            .linkDirectionalParticleWidth((link) =>
+                highlightLinks.has(link) ? 8 : 0
+            );
+
+        //Define settings
+        const Settings = function () {
+            this.fontSize = 8;
+            this.showLabels = true;
+            this.nodeSize = 15;
+            this.linkWidth = 4;
+            this.imageSize = 55;
+            //this.distance = 20;
+        };
+
+        const settings = new Settings();
+        const controllerGUI = new GUI();
+
+        const fontSizeController = controllerGUI.add(
+            settings,
+            "fontSize",
+            0,
+            40
+        );
+        const linkWidthController = controllerGUI.add(
+            settings,
+            "linkWidth",
+            0,
+            30
+        );
+        const imageSizeController = controllerGUI.add(
+            settings,
+            "imageSize",
+            0,
+            200
+        );
+        const nodeSizeController = controllerGUI.add(
+            settings,
+            "nodeSize",
+            0,
+            40
+        );
+        const showLabelsController = controllerGUI.add(settings, "showLabels");
+        //const distanceController = controllerGUI.add(settings, 'distance', 0, 1000)
+
+        nodeSizeController.onChange(() => {
+            graph.nodeRelSize(settings.nodeSize);
+        });
+        linkWidthController.onChange(() => {
+            graph.linkWidth(settings.linkWidth);
+        });
+
+        imageSizeController.onChange(() => updateNode());
+        fontSizeController.onChange(() => updateNode());
+
+        function updateNode() {
+            graph.nodeCanvasObject((node, ctx, globalScale) => {
+                if (node.image) {
+                    ctx.drawImage(
+                        node.img_data,
+                        node.x - settings.imageSize / 2,
+                        node.y - settings.imageSize / 2,
+                        settings.imageSize,
+                        settings.imageSize
+                    );
+                } else {
+                    if (settings.showLabels) {
+                        ctx.font = `${settings.fontSize}px Sans-Serif`;
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillStyle = node.color;
+                        ctx.fillText(node.amr_token, node.x, node.y + 20);
+                    }
+                }
+            });
+        }
+
+        function updateInfoPanel(content) {
+            const infoPanel = document.getElementById("info-panel");
+            infoPanel.innerHTML = content; // you can insert HTML or text content here
+        }
+
+        updateInfoPanel(`Welcome to the multi-document knowledge graph visualization!<br>
+        <br><br>
+        Nodes represent knowledge elements (e.g. verbs, nouns) while edges represent relations between knowledge elements.<br>
+        The colors represent the document from which the knowledge came. <br>
+        Red edges represent that different knowledge elements refer to the same entity allowing knowledge to be linked within and across documents.<br>
+        <br><br>
+        Fact-check scavenger hunt:<br>
+        A social media post has posted a claim that "three investigators are investigating the cause, believed to be a toaster".<br>
+        Your task is to investigate information about the number of investigators and the cause of the fire within the knowledge graph.<br>
+        One of the cross-document groups with red edges links knowledge across documents about the cause of the fire.<br>
+        The knowledge needed to check this can't be found in any single document, but can be found easily when cross-document links between knowledge are added.<br>
+        <br><br>
+        Instructions for interacting:<br>
+        1. Zoom in/out by scrolling the mouse wheel or via pinch gestures on mobile.<br>
+        2. Drag the graph using the right mouse button (finger on mobile).<br>
+        3. Clicking a node focuses on it. Hovering will animate its connections.<br>
+        4. Visualization settings are adjustable in upper right corner.`);
+
+        // highlight feature
+        //----------------------------------------
+        function updateHighlight() {
+            // trigger update of highlighted objects in scene
+            graph
+                .nodeColor(graph.nodeColor())
+                .linkWidth(graph.linkWidth())
+                .linkDirectionalParticles(graph.linkDirectionalParticles());
+        }
+        //----------------------------------------
+
+        // for fun
+        //----------------------------------------
+        //const bloomPass = new UnrealBloomPass();
+        //bloomPass.strength = 1;
+        //bloomPass.radius = 0.5;
+        //bloomPass.threshold = 0;
+        //graph.postProcessingComposer().addPass(bloomPass);
+        //----------------------------------------
+    });
+</script>
