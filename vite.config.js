@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import basicSsl from '@vitejs/plugin-basic-ssl'
 
 export default defineConfig({
-    plugins: [basicSsl()],
+    base: '/d3-visualize/',
+    plugins: [],
     build: {
         rollupOptions: {
             input: {
